@@ -114,7 +114,8 @@ const routes: Routes = [
 		MatRadioModule
 	],
 	exports: [RouterModule],
-	entryComponents: [],
+	entryComponents: [
+	],
 	providers: [MatIconRegistry],
 	declarations: [
 		MetronicComponent,
