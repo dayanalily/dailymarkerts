@@ -7,7 +7,7 @@ import { LayoutConfig } from '../../../config/layout';
 
 @Component({
 	selector: 'm-builder',
-	templateUrl: './builder.component.html',
+	template: "./builder.component.html",
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BuilderComponent implements OnInit {

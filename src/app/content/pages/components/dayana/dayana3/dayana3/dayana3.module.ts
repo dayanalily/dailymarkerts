@@ -13,6 +13,6 @@ import { RouterModule } from '@angular/router';
       }
     ])
   ],
-  declarations: [Dayana3Component]
+ // declarations: [Dayana3Component]
 })
 export class Dayana3Module { }

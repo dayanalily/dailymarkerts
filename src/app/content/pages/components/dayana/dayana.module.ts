@@ -6,7 +6,6 @@ import { Dayana3Component } from './dayana3/dayana3/dayana3.component';
 import { Dayana2Component } from './dayana2/dayana2/dayana2.component';
 import {
   MatIconRegistry,
-  MatIcon,
   MatInputModule,
   MatDatepickerModule,
   MatFormFieldModule,

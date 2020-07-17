@@ -37,8 +37,10 @@ export class TokenStorage {
 	 * @returns {TokenStorage}
 	 */
 	public setAccessToken(token: string): TokenStorage {
+		if (token != null) {
 		localStorage.setItem('accessToken', token);
-
+			return this;
+		}
 		return this;
 	}
 
@@ -47,8 +49,10 @@ export class TokenStorage {
 	 * @returns {TokenStorage}
 	 */
 	public setRefreshToken(token: string): TokenStorage {
+		if (token != null) {
 		localStorage.setItem('refreshToken', token);
-
+			return this;
+		}
 		return this;
 	}
 

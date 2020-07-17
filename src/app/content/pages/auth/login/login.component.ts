@@ -25,7 +25,7 @@ import { SpinnerButtonOptions } from '../../../partials/content/general/spinner-
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LoginComponent implements OnInit, OnDestroy {
-	public model: any = { email: 'admin@demo.com', pass: 'demo' };
+	public model: any = { email: '', password: '' };
 	@HostBinding('class') classes: string = 'm-login__signin';
 	@Output() actionChange = new Subject<string>();
 	public loading = false;
@@ -54,18 +54,23 @@ export class LoginComponent implements OnInit, OnDestroy {
 
 	submit() {
 		this.spinner.active = true;
+		
 		if (this.validate(this.f)) {
 			this.authService.login(this.model).subscribe(response => {
 				console.log(response);
 				
-				if (typeof response !== 'undefined') {
+				if (response !== 'undefined') {
+					
 					this.router.navigate(['/']);
 				} else {
-					this.authNoticeService.setNotice(this.translate.instant('AUTH.VALIDATION.INVALID_LOGIN'), 'error');
+					 this.authNoticeService.setNotice(this.translate.instant('AUTH.VALIDATION.INVALID_LOGIN'), 'error');
 				}
 				this.spinner.active = false;
 				this.cdr.detectChanges();
-			});
+			}, () => error =>{
+				console.log(error, "dayana logim");
+				
+			} );
 		}
 	}
 
@@ -89,10 +94,10 @@ export class LoginComponent implements OnInit, OnDestroy {
 		}
 
 		this.errors = [];
-		if (objectPath.get(f, 'form.controls.email.errors.email')) {
+		if (objectPath.get(f, 'form.controls.username.errors.email')) {
 			this.errors.push(this.translate.instant('AUTH.VALIDATION.INVALID', {name: this.translate.instant('AUTH.INPUT.EMAIL')}));
 		}
-		if (objectPath.get(f, 'form.controls.email.errors.required')) {
+		if (objectPath.get(f, 'form.controls.username.errors.required')) {
 			this.errors.push(this.translate.instant('AUTH.VALIDATION.REQUIRED', {name: this.translate.instant('AUTH.INPUT.EMAIL')}));
 		}
 

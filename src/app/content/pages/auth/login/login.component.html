@@ -11,15 +11,15 @@
 	<div class="form-group">
 		<mat-form-field>
 			<mat-label>Email</mat-label>
-			<input matInput type="email" name="email" placeholder="Email address" autocomplete="off"
-				   [(ngModel)]="model.email" #email="ngModel" email="true" required>
+			<input matInput type="email" name="email" placeholder="email address" autocomplete="off"
+				   [(ngModel)]="model.email" #email="ngModel" username="true" required>
 		</mat-form-field>
 	</div>
 	<div class="form-group">
 		<mat-form-field>
 			<mat-label>Password</mat-label>
 			<input matInput minlength="4" type="password" name="password" placeholder="Password" autocomplete="off"
-				   [(ngModel)]="model.pass" #password="ngModel" required>
+				   [(ngModel)]="model.password" #password="ngModel" required>
 		</mat-form-field>
 	</div>
 </form>
