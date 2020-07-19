@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild, AfterViewInit, ChangeDetectionStrategy } from '@angular/core';
-import { MatPaginator, MatTableDataSource, MatSort } from '@angular/material';
+import { MatPaginator } from '@angular/material/paginator';
+import {  MatTableDataSource } from '@angular/material/table';
+import {  MatSort } from '@angular/material/sort';
 import { SelectionModel } from '@angular/cdk/collections';
 import { HttpClient } from '@angular/common/http';
 import {merge, Observable, of as observableOf} from 'rxjs';

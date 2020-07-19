@@ -3,8 +3,8 @@ import { FormControl } from '@angular/forms';
 import { ENTER, COMMA } from '@angular/cdk/keycodes';
 import { Observable } from 'rxjs';
 import { startWith, map } from 'rxjs/operators';
-import { MatChipInputEvent } from '@angular/material';
-import { MatSnackBar } from '@angular/material';
+import { MatChipInputEvent } from '@angular/material/chips';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 export class State {
 	constructor(public name: string, public population: string, public flag: string) { }

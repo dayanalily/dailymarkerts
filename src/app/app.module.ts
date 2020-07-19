@@ -1,7 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HammerGestureConfig } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import 'hammerjs';
 import { environment } from '../environments/environment';
@@ -28,7 +28,9 @@ import { ClassInitService } from './core/services/class-init.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
-import { GestureConfig, MatProgressSpinnerModule } from '@angular/material';
+import { GestureConfig } from 'hammerjs';
+
+import {  MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { OverlayModule } from '@angular/cdk/overlay';
 
 import { MessengerService } from './core/services/messenger.service';
@@ -48,9 +50,11 @@ import { SplashScreenService } from './core/services/splash-screen.service';
 import { DataTableService } from './core/services/datatable.service';
 import { PagesModule } from './content/pages/pages.module';
 import { PagesRoutingModule } from './content/pages/pages-routing.module';
+import { TokenInterceptor } from './core/services/token.interceptor';
+import { AuthInterceptor } from './core/services/auth.interceptor';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
-	// suppressScrollX: true
+	 suppressScrollX: true
 };
 
 @NgModule({
@@ -60,14 +64,14 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 		BrowserModule,
 		AppRoutingModule,
 		HttpClientModule,
-		environment.isMockEnabled ? HttpClientInMemoryWebApiModule.forRoot(FakeApiService) : [],
+		// environment.isMockEnabled ? HttpClientInMemoryWebApiModule.forRoot(FakeApiService) : [],
 		LayoutModule,
 		PartialsModule,
 		CoreModule,
 		OverlayModule,
 		AuthenticationModule,
 		NgxPermissionsModule.forRoot(),
-		NgbModule.forRoot(),
+		NgbModule,
 		TranslateModule.forRoot(),
 		MatProgressSpinnerModule,
 		PagesRoutingModule ,
@@ -81,29 +85,29 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 		LayoutRefService,
 		MenuConfigService,
 		PageConfigService,
-		UserService,
 		UtilsService,
 		ClassInitService,
 		MessengerService,
 		ClipboardService,
-		LogsService,
-		QuickSearchService,
-		DataTableService,
+		// LogsService,
+		// QuickSearchService,
+		// DataTableService,
 		SplashScreenService,
 		{
 			provide: PERFECT_SCROLLBAR_CONFIG,
 			useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
 		},
-
+		{ provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },
+		{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
 		// template services
 		SubheaderService,
 		HeaderService,
 		MenuHorizontalService,
-		MenuAsideService,
-		{
-			provide: HAMMER_GESTURE_CONFIG,
-			useClass: GestureConfig
-		}
+	MenuAsideService,
+		 {
+		 	provide: HAMMER_GESTURE_CONFIG,
+			 useClass: HammerGestureConfig
+		 }
 	],
 	bootstrap: [AppComponent]
 })

@@ -2,9 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CoreModule } from '../../../../../core/core.module';
 import {
-	MatProgressSpinnerModule,
+	MatProgressSpinnerModule
+	
+} from '@angular/material/progress-spinner';
+import {
 	MatProgressBarModule
-} from '@angular/material';
+} from '@angular/material/progress-bar';
 import { PortletComponent } from './portlet.component';
 
 @NgModule({

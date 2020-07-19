@@ -20,14 +20,14 @@ export class AclService implements ConfigData {
 		this.aclModel = new AclModel();
 		this.onAclUpdated$ = new BehaviorSubject(this.aclModel);
 
-		this.authService.getUserRoles().subscribe(roles => {
-			this.setCurrrentUserRoles(roles);
-		});
+		// this.authService.getUserRoles().subscribe(roles => {
+		// 	this.setCurrrentUserRoles(roles);
+		// });
 
 		// subscribe to credential changed, eg. after login response
-		this.authService.onCredentialUpdated$
-			.pipe(mergeMap(accessData => this.authService.getUserRoles()))
-			.subscribe(roles => this.setCurrrentUserRoles(roles));
+		// this.authService.onCredentialUpdated$
+		// 	.pipe(mergeMap(accessData => this.authService.getUserRoles()))
+		// 	.subscribe(roles => this.setCurrrentUserRoles(roles));
 
 		// subscribe to acl data observable
 		this.onAclUpdated$.subscribe(acl => {

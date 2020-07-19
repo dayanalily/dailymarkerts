@@ -4,46 +4,35 @@ import { RouterModule, Routes } from '@angular/router';
 import { DayanaComponent } from './dayana.component';
 import { Dayana3Component } from './dayana3/dayana3/dayana3.component';
 import { Dayana2Component } from './dayana2/dayana2/dayana2.component';
-import {
-  MatIconRegistry,
-  MatInputModule,
-  MatDatepickerModule,
-  MatFormFieldModule,
-  MatAutocompleteModule,
-  MatSliderModule,
-  MatListModule,
-  MatCardModule,
-  MatSelectModule,
-  MatButtonModule,
-  MatIconModule,
-  MatNativeDateModule,
-  MatSlideToggleModule,
-  MatCheckboxModule,
-  MatMenuModule,
-  MatTabsModule,
-  MatTooltipModule,
-  MatSidenavModule,
-  MatProgressBarModule,
-  MatProgressSpinnerModule,
-  MatSnackBarModule,
-  MatGridListModule,
-  MatTableModule,
-  MatExpansionModule,
-  MatToolbarModule,
-  MatSortModule,
-  MatDividerModule,
-  MatStepperModule,
-  MatChipsModule,
-  MatPaginatorModule,
-  MatDialogModule,
-  MatRadioModule
- } from '@angular/material';
+
 import { AccordionControlModule } from '../../../partials/content/general/accordion-control/accordion-control.module';
 import { MaterialPreviewModule } from '../../../partials/content/general/material-preview/material-preivew.module';
 import { PartialsModule } from '../../../partials/partials.module';
 import { CoreModule } from '../../../../core/core.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Dayana1Component } from './dayana1/dayana1.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconRegistry, MatIconModule } from '@angular/material/icon';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTableModule } from '@angular/material/table';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatSortModule } from '@angular/material/sort';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 const routes: Routes = [
@@ -71,7 +60,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    AccordionControlModule.forRoot(),
+    AccordionControlModule,
     MaterialPreviewModule,
     PartialsModule,
     CoreModule,
@@ -80,9 +69,7 @@ const routes: Routes = [
     MatInputModule,
     MatFormFieldModule,
     MatDatepickerModule,
-    MatAutocompleteModule,
-    MatListModule,
-    MatSliderModule,
+
     MatCardModule,
     MatSelectModule,
     MatButtonModule,
@@ -90,28 +77,32 @@ const routes: Routes = [
     MatNativeDateModule,
     MatSlideToggleModule,
     MatCheckboxModule,
-    MatMenuModule,
     MatTabsModule,
     MatTooltipModule,
-    MatSidenavModule,
     MatProgressBarModule,
     MatProgressSpinnerModule,
     MatSnackBarModule,
     MatTableModule,
-    MatGridListModule,
     MatToolbarModule,
     MatExpansionModule,
-    MatDividerModule,
     MatSortModule,
-    MatStepperModule,
     MatChipsModule,
     MatPaginatorModule,
-    MatDialogModule,
-    MatRadioModule
+    MatDialogModule
+
+    // MatStepperModule,
+    // MatRadioModule,
+    // MatAutocompleteModule,
+    // MatGridListModule
+    // MatMenuModule,
+    // MatListModule,
+    // MatDividerModule,
+    // MatSliderModule,
+    // MatSidenavModule
   ],
   providers: [MatIconRegistry],
   entryComponents: [],
   exports: [RouterModule],
-  declarations: [DayanaComponent, Dayana1Component,  Dayana2Component, Dayana3Component]
+  declarations: [DayanaComponent, Dayana1Component, Dayana2Component, Dayana3Component]
 })
 export class DayanaModule { }

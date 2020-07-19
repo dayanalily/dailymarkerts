@@ -13,41 +13,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconRegistry } from '@angular/material/icon';
-import {
-	MatAutocompleteModule,
-	MatNativeDateModule,
-	MatFormFieldModule,
-	MatInputModule,
-	MatRadioModule,
-	MatButtonModule,
-	MatCardModule,
-	MatChipsModule,
-	MatSelectModule,
-	MatProgressBarModule,
-	MatProgressSpinnerModule,
-	MatIconModule,
-	MatSliderModule,
-	MatPaginatorModule,
-	MatSortModule,
-	MatSidenavModule,
-	MatSnackBarModule,
-	MatStepperModule,
-	MatToolbarModule,
-	MatDividerModule,
-	MatTabsModule,
-	MatTableModule,
-	MatTooltipModule,
-	MatListModule,
-	MatGridListModule,
-	MatButtonToggleModule,
-	MatBottomSheetModule,
-	MatExpansionModule,
-	_MatChipListMixinBase,
-	MatMenuModule,
-	MatTreeModule,
-	MAT_BOTTOM_SHEET_DATA,
-	MatBottomSheetRef
-} from '@angular/material';
+
 import { MatCheckboxModule } from '@angular/material/checkbox';
 
 
@@ -244,42 +210,14 @@ const routes: Routes = [
 @NgModule({
 	imports: [
 		// material modules
-		MatInputModule,
-		MatFormFieldModule,
-		MatDatepickerModule,
-		MatAutocompleteModule,
-		MatListModule,
-		MatSliderModule,
-		MatCardModule,
-		MatSelectModule,
-		MatButtonModule,
-		MatIconModule,
-		MatNativeDateModule,
+		
 		MatSlideToggleModule,
 		MatCheckboxModule,
-		MatMenuModule,
-		MatTabsModule,
-		MatTooltipModule,
-		MatSidenavModule,
-		MatProgressBarModule,
-		MatProgressSpinnerModule,
-		MatSnackBarModule,
-		MatTableModule,
-		MatGridListModule,
-		MatToolbarModule,
-		MatBottomSheetModule,
-		MatExpansionModule,
-		MatDividerModule,
-		MatSortModule,
-		MatStepperModule,
-		MatChipsModule,
-		MatPaginatorModule,
+		
 		MatDialogModule,
 		CoreModule,
 		CommonModule,
-		MatRadioModule,
-		MatTreeModule,
-		MatButtonToggleModule,
+		
 		PartialsModule,
 		MaterialPreviewModule,
 		FormsModule,
@@ -300,10 +238,7 @@ const routes: Routes = [
 	],
 	providers: [
 		MatIconRegistry,
-		{ provide: MatBottomSheetRef, useValue: {} },
-		{
-			provide: MAT_BOTTOM_SHEET_DATA, useValue: {}
-		}
+	
 	],
 	declarations: [
 		MaterialComponent,

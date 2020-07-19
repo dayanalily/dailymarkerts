@@ -6,7 +6,8 @@ import {
 	ChangeDetectionStrategy
 } from '@angular/core';
 import { SelectionModel } from '@angular/cdk/collections';
-import { MatPaginator, MatSort } from '@angular/material';
+import {  MatSort } from '@angular/material/sort';
+import { MatPaginator } from '@angular/material/paginator';
 // RXJS
 import { debounceTime, distinctUntilChanged, tap } from 'rxjs/operators';
 import { fromEvent, merge, forkJoin } from 'rxjs';

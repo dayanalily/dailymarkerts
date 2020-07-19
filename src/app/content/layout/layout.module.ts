@@ -24,7 +24,10 @@ import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { MatProgressBarModule, MatTabsModule, MatButtonModule, MatTooltipModule } from '@angular/material';
+import { MatProgressBarModule} from '@angular/material/progress-bar';
+import {  MatTabsModule } from '@angular/material/tabs';
+import {  MatButtonModule, } from '@angular/material/button';
+import {  MatTooltipModule } from '@angular/material/tooltip';
 
 import { TranslateModule } from '@ngx-translate/core';
 import { LoadingBarModule } from '@ngx-loading-bar/core';
@@ -107,7 +110,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 		MatButtonModule,
 		MatTooltipModule,
 		TranslateModule.forChild(),
-		LoadingBarModule.forRoot(),
+		LoadingBarModule,
 	]
 })
 export class LayoutModule {}

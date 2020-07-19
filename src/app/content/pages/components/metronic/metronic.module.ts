@@ -11,42 +11,27 @@ import { FormsComponent } from './forms/forms.component';
 import { CoreModule } from '../../../../core/core.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PartialsModule } from '../../../partials/partials.module';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatCardModule } from '@angular/material/card';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTableModule } from '@angular/material/table';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatTabsModule } from '@angular/material/tabs';
 
-import {
-	MatIconRegistry,
-	MatIcon,
-	MatInputModule,
-	MatDatepickerModule,
-	MatFormFieldModule,
-	MatAutocompleteModule,
-	MatSliderModule,
-	MatListModule,
-	MatCardModule,
-	MatSelectModule,
-	MatButtonModule,
-	MatIconModule,
-	MatNativeDateModule,
-	MatSlideToggleModule,
-	MatCheckboxModule,
-	MatMenuModule,
-	MatTabsModule,
-	MatTooltipModule,
-	MatSidenavModule,
-	MatProgressBarModule,
-	MatProgressSpinnerModule,
-	MatSnackBarModule,
-	MatGridListModule,
-	MatTableModule,
-	MatExpansionModule,
-	MatToolbarModule,
-	MatSortModule,
-	MatDividerModule,
-	MatStepperModule,
-	MatChipsModule,
-	MatPaginatorModule,
-	MatDialogModule,
-	MatRadioModule
-} from '@angular/material';
 
 
 
@@ -75,7 +60,7 @@ const routes: Routes = [
 	imports: [
 		CommonModule,
 		RouterModule.forChild(routes),
-		AccordionControlModule.forRoot(),
+		AccordionControlModule,
 		MaterialPreviewModule,
 		PartialsModule,
 		CoreModule,
@@ -84,34 +69,24 @@ const routes: Routes = [
 		MatInputModule,
 		MatFormFieldModule,
 		MatDatepickerModule,
-		MatAutocompleteModule,
-		MatListModule,
-		MatSliderModule,
-		MatCardModule,
+		
 		MatSelectModule,
 		MatButtonModule,
 		MatIconModule,
 		MatNativeDateModule,
 		MatSlideToggleModule,
 		MatCheckboxModule,
-		MatMenuModule,
+	
 		MatTabsModule,
 		MatTooltipModule,
-		MatSidenavModule,
 		MatProgressBarModule,
 		MatProgressSpinnerModule,
-		MatSnackBarModule,
 		MatTableModule,
-		MatGridListModule,
 		MatToolbarModule,
 		MatExpansionModule,
-		MatDividerModule,
 		MatSortModule,
-		MatStepperModule,
-		MatChipsModule,
 		MatPaginatorModule,
-		MatDialogModule,
-		MatRadioModule
+		MatDialogModule
 	],
 	exports: [RouterModule],
 	entryComponents: [

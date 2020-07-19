@@ -1,9 +1,9 @@
 import { Component, OnInit, Inject, ChangeDetectionStrategy } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TypesUtilsService } from '../../_core/utils/types-utils.service';
 import { CustomersService } from '../../_core/services/index';
 import { CustomerModel } from '../../_core/models/customer.model';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
 	selector: 'm-customers-edit-dialog',

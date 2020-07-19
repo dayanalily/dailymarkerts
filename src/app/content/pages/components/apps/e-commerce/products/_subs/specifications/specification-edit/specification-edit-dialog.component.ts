@@ -1,9 +1,9 @@
 import {Component, Inject, Input, OnInit} from '@angular/core';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { FormControl, Validators } from '@angular/forms';
 import * as _ from 'lodash';
 import { SpecificationsService } from '../../../../_core/services/specification.service';
 import { SpecificationModel } from '../../../../_core/models/specification.model';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
 	selector: 'm-specification-edit-dialog',

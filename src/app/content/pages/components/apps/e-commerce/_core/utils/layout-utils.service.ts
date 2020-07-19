@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActionNotificationComponent } from '../../_shared/action-natification/action-notification.component';
-import { MatSnackBar, MatDialog } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import {  MatDialog } from '@angular/material/dialog';
 
 import { DeleteEntityDialogComponent } from '../../_shared/delete-entity-dialog/delete-entity-dialog.component';
 import { FetchEntityDialogComponent } from '../../_shared/fetch-entity-dialog/fetch-entity-dialog.component';

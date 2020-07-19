@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatBottomSheetRef, MatBottomSheet } from '@angular/material';
+import { MatBottomSheetRef, MatBottomSheet } from '@angular/material/bottom-sheet';
 import { BottomSheetExampleComponent } from './bottom-sheet-example/bottom-sheet-example.component';
 
 const basic = {

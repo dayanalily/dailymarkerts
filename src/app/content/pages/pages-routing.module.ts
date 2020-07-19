@@ -27,10 +27,10 @@ const routes: Routes = [
 				 path: 'dayana',
 				 loadChildren: './components/dayana/dayana.module#DayanaModule'
 			 },
-			 {
-				path: 'metronic',
-				loadChildren: './components/metronic/metronic.module#MetronicModule'
-			},
+			//  {
+			// 	path: 'metronic',
+			// 	loadChildren: './components/metronic/metronic.module#MetronicModule'
+			// },
 			// {
 			// 	path: 'ecommerce',
 			// 	loadChildren: './components/apps/e-commerce/e-commerce.module#ECommerceModule'

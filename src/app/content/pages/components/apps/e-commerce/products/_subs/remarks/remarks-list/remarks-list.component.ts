@@ -1,7 +1,7 @@
 import { Component, OnInit, ElementRef, ViewChild, Input, ChangeDetectionStrategy } from '@angular/core';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 // Material
-import { MatPaginator, MatSort, MatDialog } from '@angular/material';
+
 import { SelectionModel } from '@angular/cdk/collections';
 // RXJS
 import { debounceTime, distinctUntilChanged, tap } from 'rxjs/operators';
@@ -15,6 +15,9 @@ import { ProductRemarkModel } from '../../../../_core/models/product-remark.mode
 import { ProductRemarksDataSource } from '../../../../_core/models/data-sources/product-remarks.datasource';
 import { QueryParamsModel } from '../../../../_core/models/query-models/query-params.model';
 import { ListStateModel, StateActions } from '../../../../_core/utils/list-state.model';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
+import { MatDialog } from '@angular/material/dialog';
 
 // Table with EDIT item in new page
 // ARTICLE for table with sort/filter/paginator

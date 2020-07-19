@@ -1,7 +1,8 @@
 import { Component, Inject, OnInit, ChangeDetectionStrategy } from '@angular/core';
-import { MAT_SNACK_BAR_DATA, MatSnackBarRef } from '@angular/material';
+
 import { timeout, delay } from 'rxjs/operators';
 import { of } from 'rxjs';
+import { MAT_SNACK_BAR_DATA } from '@angular/material/snack-bar';
 
 
 @Component({

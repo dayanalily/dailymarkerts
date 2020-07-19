@@ -6,7 +6,7 @@ import { BuilderComponent } from './builder.component';
 import { PartialsModule } from '../../partials/partials.module';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { MatTabsModule } from '@angular/material';
+import { MatTabsModule } from '@angular/material/tabs';
 import { HighlightModule } from 'ngx-highlightjs';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 
@@ -19,7 +19,8 @@ import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 		NgbModule,
 		MatTabsModule,
 		PerfectScrollbarModule,
-		HighlightModule.forRoot({ theme: 'googlecode' }),
+		// HighlightModule.forRoot({ theme: 'googlecode' }),
+		HighlightModule,
 		RouterModule.forChild([
 			{
 				path: '',

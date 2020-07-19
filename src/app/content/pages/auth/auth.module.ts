@@ -6,15 +6,13 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { RegisterComponent } from './register/register.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
-import {
-	MatButtonModule,
-	MatFormFieldModule,
-	MatInputModule,
-	MatCheckboxModule
-} from '@angular/material';
+import { MatInputModule } from '@angular/material/input';
 import { TranslateModule } from '@ngx-translate/core';
 import { SpinnerButtonModule } from '../../partials/content/general/spinner-button/spinner-button.module';
 import { AuthNoticeComponent } from './auth-notice/auth-notice.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
 	imports: [

@@ -15,7 +15,7 @@ export class FakeApiService implements InMemoryDbService {
 	createDb(): {} | Observable<{}> {
 		return {
 			// login and account
-			login: AuthFakeDb.users,
+		login: AuthFakeDb.users,
 			refresh: AuthFakeDb.tokens,
 			register: AuthFakeDb.users,
 			// messenger

@@ -17,6 +17,7 @@ import { NgForm } from '@angular/forms';
 import * as objectPath from 'object-path';
 import { TranslateService } from '@ngx-translate/core';
 import { SpinnerButtonOptions } from '../../../partials/content/general/spinner-button/button-options.interface';
+import { Usuario } from '../../../../core/interfaces/usuario';
 
 @Component({
 	selector: 'm-login',
@@ -26,6 +27,7 @@ import { SpinnerButtonOptions } from '../../../partials/content/general/spinner-
 })
 export class LoginComponent implements OnInit, OnDestroy {
 	public model: any = { email: '', password: '' };
+	usuario: Usuario;
 	@HostBinding('class') classes: string = 'm-login__signin';
 	@Output() actionChange = new Subject<string>();
 	public loading = false;
@@ -50,7 +52,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 		public authNoticeService: AuthNoticeService,
 		private translate: TranslateService,
 		private cdr: ChangeDetectorRef
-	) {}
+	) { this.usuario = new Usuario();}
 
 	submit() {
 		this.spinner.active = true;

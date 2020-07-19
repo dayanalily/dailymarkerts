@@ -1,7 +1,6 @@
 import { Component, OnInit, ElementRef, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 // Material
 import { SelectionModel } from '@angular/cdk/collections';
-import { MatPaginator, MatSort, MatSnackBar, MatDialog } from '@angular/material';
 // RXJS
 import { debounceTime, distinctUntilChanged, tap } from 'rxjs/operators';
 import { fromEvent, merge, forkJoin } from 'rxjs';
@@ -16,6 +15,10 @@ import { CustomerModel } from '../../_core/models/customer.model';
 import { CustomersDataSource } from '../../_core/models/data-sources/customers.datasource';
 // Components
 import { CustomerEditDialogComponent } from '../customer-edit/customer-edit.dialog.component';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
+import { MatDialog } from '@angular/material/dialog';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 // Table with EDIT item in MODAL
 // ARTICLE for table with sort/filter/paginator

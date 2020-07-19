@@ -54,12 +54,12 @@ export class RegisterComponent implements OnInit {
 	submit() {
 		this.spinner.active = true;
 		if (this.validate(this.f)) {
-			this.authService.register(this.model).subscribe(response => {
-				this.action = 'login';
-				this.actionChange.next(this.action);
-				this.spinner.active = false;
-				this.authNoticeService.setNotice(this.translate.instant('AUTH.REGISTER.SUCCESS'), 'success');
-			});
+			// this.authService.register(this.model).subscribe(response => {
+			// 	this.action = 'login';
+			// 	this.actionChange.next(this.action);
+			// 	this.spinner.active = false;
+			// 	this.authNoticeService.setNotice(this.translate.instant('AUTH.REGISTER.SUCCESS'), 'success');
+			// });
 		}
 	}
 

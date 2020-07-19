@@ -40,30 +40,25 @@ import { SpecificationEditDialogComponent } from './products/_subs/specification
 import { OrdersListComponent } from './orders/orders-list/orders-list.component';
 import { OrderEditComponent } from './orders/order-edit/order-edit.component';
 // Material
-import {
-	MatInputModule,
-	MatPaginatorModule,
-	MatProgressSpinnerModule,
-	MatSortModule,
-	MatTableModule,
-	MatSelectModule,
-	MatMenuModule,
-	MatProgressBarModule,
-	MatButtonModule,
-	MatCheckboxModule,
-	MatDialogModule,
-	MatTabsModule,
-	MatNativeDateModule,
-	MatCardModule,
-	MatRadioModule,
-	MatIconModule,
-	MatDatepickerModule,
-	MatAutocompleteModule,
-	MAT_DIALOG_DEFAULT_OPTIONS,
-	MatSnackBarModule,
-	MatTooltipModule
-} from '@angular/material';
+
 import { environment } from '../../../../../../environments/environment';
+import { MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table';
+import { MatIconModule } from '@angular/material/icon';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatCardModule } from '@angular/material/card';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 const routes: Routes = [
 	{
@@ -114,12 +109,12 @@ const routes: Routes = [
 		ReactiveFormsModule,
 		TranslateModule.forChild(),
 		MatButtonModule,
-		MatMenuModule,
+		// MatMenuModule,
 		MatSelectModule,
         MatInputModule,
 		MatTableModule,
-		MatAutocompleteModule,
-		MatRadioModule,
+		// MatAutocompleteModule,
+		// MatRadioModule,
 		MatIconModule,
 		MatNativeDateModule,
 		MatProgressBarModule,

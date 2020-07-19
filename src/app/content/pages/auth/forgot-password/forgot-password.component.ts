@@ -54,16 +54,16 @@ export class ForgotPasswordComponent implements OnInit {
 	submit() {
 		this.spinner.active = true;
 		if (this.validate(this.f)) {
-			this.authService.requestPassword(this.model).subscribe(response => {
-				if (typeof response !== 'undefined') {
-					this.action = 'login';
-					this.actionChange.next(this.action);
-				} else {
-					// tslint:disable-next-line:max-line-length
-					this.authNoticeService.setNotice(this.translate.instant('AUTH.VALIDATION.NOT_FOUND', {name: this.translate.instant('AUTH.INPUT.EMAIL')}), 'error');
-				}
-				this.spinner.active = false;
-			});
+			// this.authService.requestPassword(this.model).subscribe(response => {
+			// 	if (typeof response !== 'undefined') {
+			// 		this.action = 'login';
+			// 		this.actionChange.next(this.action);
+			// 	} else {
+			// 		// tslint:disable-next-line:max-line-length
+			// 		this.authNoticeService.setNotice(this.translate.instant('AUTH.VALIDATION.NOT_FOUND', {name: this.translate.instant('AUTH.INPUT.EMAIL')}), 'error');
+			// 	}
+			// 	this.spinner.active = false;
+			// });
 		}
 	}
 

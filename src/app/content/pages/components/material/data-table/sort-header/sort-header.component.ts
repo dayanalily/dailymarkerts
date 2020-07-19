@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild, AfterViewInit, ChangeDetectionStrategy } from '@angular/core';
-import { Sort } from '@angular/material';
-import { MatTableDataSource, MatSort } from '@angular/material';
+import { Sort } from '@angular/material/sort';
+import { MatTableDataSource } from '@angular/material/table';
+import { MatSort } from '@angular/material/sort';
 
 const basic = {
 	beforeCodeTitle: 'Sorting overview',

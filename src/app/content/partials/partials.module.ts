@@ -27,17 +27,18 @@ import { DataTableComponent } from './content/widgets/general/data-table/data-ta
 import { WidgetChartsModule } from './content/widgets/charts/widget-charts.module';
 import { StatComponent } from './content/widgets/general/stat/stat.component';
 
-import { MatInputModule,
-    MatSortModule,
-    MatProgressSpinnerModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSelectModule,
-    MatProgressBarModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    MatIconModule,
-    MatTooltipModule} from '@angular/material';
+import {  MatSortModule} from '@angular/material/sort';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSelectModule } from '@angular/material/select';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
 	declarations: [
@@ -77,7 +78,7 @@ import { MatInputModule,
 		AuthorProfitComponent,
 		DataTableComponent,
 		StatComponent,
-
+		MatInputModule,
 		PortletModule,
 		SpinnerButtonModule
 	],
@@ -100,7 +101,7 @@ import { MatInputModule,
 		MatButtonModule,
 		MatCheckboxModule,
 		MatIconModule,
-		MatTooltipModule,
+		MatToolbarModule,
 		WidgetChartsModule
 	]
 })
