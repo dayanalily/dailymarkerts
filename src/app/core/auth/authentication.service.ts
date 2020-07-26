@@ -138,8 +138,7 @@ export class AuthenticationService implements AuthService {
 
 					if (payload !== undefined) {
 						result = Object.assign(result, { roles: payload.authorities });
-						console.log(result, "result");
-
+						
 						this.guardarUsuario(result.access_token);
 					}
 					return result;
@@ -279,7 +278,7 @@ export class AuthenticationService implements AuthService {
 		this._usuario.nombre = payload.nombre;
 		this._usuario.apellido = payload.apellido;
 		this._usuario.email = payload.email;
-		this._usuario.username = payload.email;
+		this._usuario.email = payload.email;
 		this._usuario.roles = payload.authorities;
 		this._usuario.foto = payload.foto;
 		sessionStorage.setItem('usuario', JSON.stringify(this._usuario));
@@ -294,7 +293,6 @@ export class AuthenticationService implements AuthService {
 	}
 
 	actualizarUsuario(event, id) {
-		console.log(event);
 
 		return this.http.put(this.API_URL_BASE + 'usuario/' + id, event)
 			.pipe(catchError(

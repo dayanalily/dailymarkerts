@@ -56,21 +56,7 @@ export class UserProfileComponent implements OnInit {
 				this.usuario.nombre = this.MaysPrimera(datosUser.nombre.toLowerCase());
 				this.usuario.apellido = this.MaysPrimera(datosUser.apellido.toLowerCase());
 				this.usuario.email = datosUser.email;
-				this.usuario.username = datosUser.email;
-				this.usuario.roles = datosUser.authorities;
-				this.usuario.ocupasion = "";// datosUser.ocupasion;
-				this.usuario.nombreEmpresa = "";//datosUser.nombreEmpresa;
-				this.usuario.telefono = "";//datosUser.telefono;
-				this.usuario.direccion = "";//datosUser.direccion;
-				this.usuario.cuidad = "";//datosUser.cuidad;
-				this.usuario.estado = "";//datosUser.estado;
-				this.usuario.codigoPostal = "";//datosUser.codigoPostal;
-				this.usuario.linkedink = "www.linkedin.com/";//datosUser.linkedink;
-				this.usuario.facebook = "www.facebook.com/";//datosUser.facebook;
-				this.usuario.twittter = "www.twitter.com/";//datosUser.facebook;
-				this.usuario.instagram = "www.instagram.com/";//datosUser.instagram;
-				this.usuario.foto = "";//datosUser.foto;
-
+				
 			} else {
 				this.usuario = this.authService._usuario
 			}

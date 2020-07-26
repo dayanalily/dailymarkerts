@@ -48,10 +48,11 @@ const routes: Routes = [
         path: 'dayana2',
         component: Dayana2Component
       },
-      {
-        path: 'dayana3',
-        component: Dayana3Component
-      }
+      // {
+      //   path: 'Animacion3',
+      //   component: Dayana3Component
+      // },
+      
     ]
   }
 ];

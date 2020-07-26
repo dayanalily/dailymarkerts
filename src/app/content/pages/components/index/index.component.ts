@@ -17,7 +17,7 @@ export interface Element {
   roles: String,
   terminos: Boolean
   tipo_documento: number,
-  username: String,
+  email: String,
   pais: String,
 
 }
@@ -31,7 +31,7 @@ export class IndexComponent implements OnInit {
   indice = 0;
   usuario: Usuario;
   ELEMENT_DATA: Element[] = [];
-  displayedColumns = ['nombre', 'apellido', 'username', 'pais', 'accion'];
+  displayedColumns = ['nombre', 'apellido', 'email', 'pais', 'accion'];
   dataSource = new MatTableDataSource<Element>(this.ELEMENT_DATA);
   lengthPage: any;
   ListaPaginados: any;
@@ -52,7 +52,6 @@ export class IndexComponent implements OnInit {
     this.usuario.nombre = datosUser.nombre;
     this.usuario.apellido = datosUser.apellido;
     this.usuario.email = datosUser.email;
-    this.usuario.username = datosUser.email;
     this.usuario.roles = datosUser.roles;
   }
 
@@ -78,14 +77,12 @@ export class IndexComponent implements OnInit {
   listarPaginacion() {
     this.indice = 0;
     this.indexService.listarPaginacion(0).subscribe(data => {
-      console.log(data);
       this.lengthPage = data.totalPages
       this.ListaPaginados = data;
     })
   }
 
   mostrarMas(event) {
-    console.log(event, this.ListaPaginados.number);
 
     if (this.ListaPaginados.number === this.indice) {
       this.indice = this.indice + 4;
@@ -103,7 +100,6 @@ export class IndexComponent implements OnInit {
         const element = data[index];
         if (index < 5) {
           data2.push(element)
-          console.log("data2", data2);
           number++
           return
         }
@@ -165,7 +161,6 @@ export class IndexComponent implements OnInit {
       confirmButtonText: 'Si, eliminar!'
     }).then((result) => {
       if (result.value) {
-        console.log(result.value);
         if (result.value === true) {
           this.indexService.eliminarUsuario(element.id).subscribe(data => {
             if (data !== undefined) {
@@ -204,7 +199,7 @@ export class IndexComponent implements OnInit {
 
         `Nombre:  ${usuario.nombre}` + '<br/>' +
         `Apellido: ${usuario.apellido}` + '<br/>' +
-        `Email: ${usuario.username}` + '<br/>',
+        `Email: ${usuario.email}` + '<br/>',
       showCancelButton: true,
       cancelButtonColor: '#fffff',
       cancelButtonText: 'volver',

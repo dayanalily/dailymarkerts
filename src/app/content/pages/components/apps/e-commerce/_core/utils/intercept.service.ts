@@ -19,14 +19,12 @@ export class InterceptService implements HttpInterceptor {
 
 		if (request.headers.has('Authorization')) {
 			// nothing to do
-			console.log('1  Authorization');
 			
 		} else if (localStorage.getItem('accessToken') === null) {
-			console.log('2  accessToken');
-			
+		
 		} else {
 			// here you can put your Authorization Barrier or overwrite
-			console.log('3  else');
+			
 			request = request.clone({
 				setHeaders: {
 					// modify request
@@ -37,7 +35,6 @@ export class InterceptService implements HttpInterceptor {
 		}
 
 
-		console.log("localestorage", localStorage.getItem('accessToken'));
 
 
 		// console.log('----request----');

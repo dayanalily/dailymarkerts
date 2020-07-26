@@ -75,7 +75,6 @@ export class ForgotPasswordComponent implements OnInit {
 				}
 				this.spinner.active = false;
 			}, err=>{
-				console.log(err);
 					this.mensaje = err.error.mensaje;
 				
 			});

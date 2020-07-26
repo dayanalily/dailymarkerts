@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { AuthenticationService } from '../../../../core/auth/authentication.service';
 import { Usuario } from '../../../../core/interfaces/usuario';
 import { ProfileService } from './profile.service';
@@ -16,11 +16,13 @@ import swal from 'sweetalert2';
 export class ProfileComponent implements OnInit {
   usuario: Usuario;
   fileToUpload: File = null;
+  nombreFoto: String;
   model: any = { direccion: '' }
   constructor(
     private auth: AuthenticationService,
     private router: Router,
-    private profile: ProfileService, ) {
+    private profile: ProfileService, 
+    private cd: ChangeDetectorRef) {
     this.usuario = new Usuario();
     const datosUser = JSON.parse(sessionStorage.usuario)
     this.usuario.id = datosUser.id
@@ -50,17 +52,19 @@ export class ProfileComponent implements OnInit {
 
   }
   seleccionarFoto(event) {
+    this.nombreFoto = null
     this.fileToUpload = event.target.files[0];
-    console.log(event, "foto", this.usuario, sessionStorage);
-    console.log(this.fileToUpload);
+    this.nombreFoto = this.fileToUpload.name;
     if (this.fileToUpload.type.indexOf('image') < 0) {
       swal.fire('Error seleccionar imagen: ', 'El archivo debe ser del tipo imagen', 'error');
       this.fileToUpload = null;
+      this.nombreFoto = null
     }
+  
   }
 
   subirFoto() {
-
+    this.nombreFoto = null
     if (!this.fileToUpload) {
       swal.fire('Error Upload: ', 'Debe seleccionar una foto', 'error');
     } else {
@@ -111,13 +115,8 @@ export class ProfileComponent implements OnInit {
       this.usuario = data;
       this.usuario.nombre = this.MaysPrimera(this.usuario.nombre.toLowerCase());
       this.usuario.apellido = this.MaysPrimera(this.usuario.apellido.toLowerCase());
+      this.cd.markForCheck(); // marks path
     
-      setTimeout(() => {
-        this.usuario = data;
-        console.log("settime");
-        
-      }, 200);
-      this.model.direccion = data.direccion;
     })
   }
 

@@ -9,46 +9,55 @@
 
 	<!--begin::Form-->
 	<form class="m-login__form m-form" name="form" (ngSubmit)="f.form.valid && submit()" #f="ngForm" novalidate>
-		<div class="form-group  mb-0">
-			<mat-form-field>
-				<mat-label>Nombre</mat-label>
-				<input matInput type="text" name="nombre" placeholder="Nombre" autocomplete="off"
-					[(ngModel)]="usuario.nombre" #nombre="ngModel" required>
-			</mat-form-field>
+		<div class="row">
+			<div class="col-6">
+				<div class="form-group  mb-0">
+					<mat-form-field>
+						<mat-label>Nombre</mat-label>
+						<input matInput type="text" name="nombre" placeholder="Nombre" autocomplete="off"
+							[(ngModel)]="usuario.nombre" #nombre="ngModel" required>
+					</mat-form-field>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="form-group mb-0">
+					<mat-form-field>
+						<mat-label>Apellido</mat-label>
+						<input matInput type="text" name="apellido" placeholder="Apellido" autocomplete="off"
+							[(ngModel)]="usuario.apellido" #apellido="ngModel" required>
+					</mat-form-field>
+				</div>
+			</div>
 		</div>
-		<div class="form-group mb-0">
-			<mat-form-field>
-				<mat-label>Apellido</mat-label>
-				<input matInput type="text" name="apellido" placeholder="Apellido" autocomplete="off"
-					[(ngModel)]="usuario.apellido" #apellido="ngModel" required>
-			</mat-form-field>
-		</div>
-		
+
+
+
 		<div class="form-group mb-0">
 			<div class="row">
 				<div class="col-6">
 					<div class="form-group ">
 						<label class="color-lablel">Tipo documento</label>
-						<div >
-							<select name="select" class="select" [(ngModel)]="usuario.tipo_documento" >
+						<div>
+							<select name="select" class="select" [(ngModel)]="usuario.tipo_documento">
 								<option value={{item.value}} *ngFor="let item of listDocumento">{{item.nombre}}</option>
-					
+
 							</select>
 						</div>
-					
+
 					</div>
 				</div>
 				<div class="col-6">
 					<mat-form-field>
 						<mat-label>Número de documento</mat-label>
-						<input matInput type="number" name="numero_documento" placeholder="Número Documento" autocomplete="off"
-							[(ngModel)]="usuario.numero_documento" #numero_documento="ngModel" required>
+						<input matInput type="number" name="numero_documento" placeholder="Número Documento"
+							autocomplete="off" [(ngModel)]="usuario.numero_documento" #numero_documento="ngModel"
+							required>
 					</mat-form-field>
 				</div>
 			</div>
-			
+
 		</div>
-		
+
 		<div class="form-group mb-0">
 			<mat-form-field>
 				<mat-label>Email</mat-label>
@@ -71,7 +80,41 @@
 			</mat-form-field>
 		</div>
 		<div class="form-group mb-0">
-			<mat-checkbox name="agree" required="true" [(ngModel)]="usuario.terminos" #terminos="ngModel">Acepto los terminos
+			<mat-form-field>
+				<mat-label>Ocupaciòn</mat-label>
+				<input matInput minlength="1" type="text" name="ocupacion" placeholder="Ocupación" autocomplete="off"
+					[(ngModel)]="usuario.ocupacion" #ocupacion="ngModel" required>
+			</mat-form-field>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<div class="form-group ">
+					<label class="color-lablel">Pais</label>
+					<div>
+						<select name="select" class="select" [(ngModel)]="usuario.pais">
+							<option value={{item.nombre}} *ngFor="let item of listPais">{{item.nombre}}</option>
+
+						</select>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="form-group mb-0">
+					<mat-form-field>
+						<mat-label>Teléfono</mat-label>
+						<input matInput minlength="4" type="tel" name="telefono" placeholder="Teléfono"
+							autocomplete="off"  [(ngModel)]="usuario.telefono"
+							#telefono="ngModel" required>
+					</mat-form-field>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="form-group mb-0">
+			<mat-checkbox name="agree" required="true" [(ngModel)]="usuario.terminos" #terminos="ngModel">Acepto los
+				terminos
 				<a>y condiciones</a>
 			</mat-checkbox>
 		</div>

@@ -1,13 +1,13 @@
 export class Usuario {
   id: number;
-  username: string;
+  email: string;
   nombre: string;
   apellido: string;
   email: string;
   roles: Array<any>;
   tipo_documento: String;
 
-  ocupasion: string;
+  ocupacion: string;
   nombreEmpresa: string;
   telefono: string;
   direccion: string;

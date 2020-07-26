@@ -15,6 +15,7 @@ import { SpinnerButtonOptions } from '../../../partials/content/general/spinner-
 import { TranslateService } from '@ngx-translate/core';
 import { Usuario } from '../../../../core/interfaces/usuario';
 import swal from 'sweetalert2';
+import { PaisesService } from '../../../../core/services/paises.service';
 
 @Component({
 	selector: 'm-register',
@@ -23,12 +24,13 @@ import swal from 'sweetalert2';
 })
 export class RegisterComponent implements OnInit {
 	public tipoDocumento: String = "";
-	public model: any = { nombre: '', apellido: '', tipo_documento: 'Tipo documento', numero_documento: '', email: '', password: '', rpassword: '', terminos: null };
+	public model: any = { nombre: '', apellido: '', tipo_documento: 'Tipo documento', numero_documento: '', email: '', password: '', rpassword: '', terminos: null, pais: '', telefono: '', ocupacion: '' };
 	@Input() action: string;
 	@Output() actionChange = new Subject<string>();
 	public loading = false;
 	documento: Boolean;
 	listDocumento: Array<any>
+	listPais: Array<any>
 	@ViewChild('f') f: NgForm;
 	errors: any = [];
 	usuario: Usuario;
@@ -44,31 +46,14 @@ export class RegisterComponent implements OnInit {
 	constructor(
 		private authService: AuthenticationService,
 		public authNoticeService: AuthNoticeService,
-		private translate: TranslateService
-	) {
+		private translate: TranslateService,
+		private pais: PaisesService) {
 		this.authService.logout();
 		this.usuario = new Usuario();
 		this.usuario.roles = [{ 'id': 1, 'nombre': 'ROLE_USER' }];
-		this.listDocumento = [];
-		this.listDocumento.push(
-			{
-				value: 1,
-				nombre: "Pasaporte"
-			},
-			{
-				value: 2,
-				nombre: "Cedula indentidad"
-			},
-			{
-				value: 3,
-				nombre: "Rut"
+		this.listarPaises();
+		this.listarDocumentos();
 
-			},
-			{
-				value: 4,
-				nombre: "Otro"
-
-			})
 	}
 
 	ngOnInit() { }
@@ -82,7 +67,6 @@ export class RegisterComponent implements OnInit {
 	submit() {
 		this.spinner.active = true;
 		if (this.validate(this.f)) {
-			this.usuario.username = this.usuario.email;
 			this.authService.register(this.usuario).subscribe(response => {
 				this.mostrarMensaje(response.mensaje);
 				this.action = 'login';
@@ -161,5 +145,37 @@ export class RegisterComponent implements OnInit {
 			title: response
 		})
 	}
+	listarPaises() {
+		this.listPais = [];
+		this.pais.listarPaises().subscribe(data => {
+			data.forEach(element => {
+				this.listPais.push(element);
 
+			});
+			
+		})
+	}
+
+	listarDocumentos() {
+		this.listDocumento = [];
+			this.listDocumento.push(
+			{
+				value: 1,
+				nombre: "Pasaporte"
+			},
+			{
+				value: 2,
+				nombre: "Cedula indentidad"
+			},
+			{
+				value: 3,
+				nombre: "Rut"
+
+			},
+			{
+				value: 4,
+				nombre: "Otro"
+
+			})
+	}
 }

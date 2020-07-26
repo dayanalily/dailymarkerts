@@ -62,7 +62,6 @@ export class RecuperarPasswordComponent implements OnInit {
       let obtenerUsuario = this.listarUsuarioIngresado();
       let obtenerFecha = this.obtenerIdFechaHora(params);
       Promise.all([obtenerUsuario, obtenerFecha]).then(response => {
-        console.log(response, "values");
         if (response[0] === true && response[1] === true) {
           this.preguntarDatos(this.usuario)
         }
@@ -74,7 +73,6 @@ export class RecuperarPasswordComponent implements OnInit {
     this.hora = +params['id'].substr(1, 6)
     this.hora = moment().format('HH:mm:ss');;
     this.fecha = +params['id'].substr(-8);
-    console.log(this.fecha);
 
     return true;
   }
@@ -179,7 +177,6 @@ export class RecuperarPasswordComponent implements OnInit {
       }
       this.spinner.active = false;
     }, err => {
-      console.log(err);
       this.mensaje = err.error.mensaje;
 
     });
@@ -198,7 +195,6 @@ export class RecuperarPasswordComponent implements OnInit {
       }
 
     }, err => {
-      console.log(err);
       this.mensaje = err.error.mensaje;
 
     });
@@ -228,8 +224,7 @@ export class RecuperarPasswordComponent implements OnInit {
       confirmButtonText: 'Enviar',
       showLoaderOnConfirm: true,
       preConfirm: (login) => {
-        console.log(login);
-        if (this.usuario.username.toLowerCase() === login.toLowerCase()) {
+        if (this.usuario.email.toLowerCase() === login.toLowerCase()) {
           return true
         } else {
           swal.fire({
@@ -356,11 +351,6 @@ export class RecuperarPasswordComponent implements OnInit {
   }
 
   actualizarPassword(event) {
-    console.log("actualizarPassword", event);
-    // this.action = 'login';
-    //this.actionChange.next(this.action);
-    //this.router.navigate(['login']);
-
     this.usuario.password = event;
 
     this.authService.actualizarUsuario(this.usuario, this.id).subscribe(response => {
@@ -386,20 +376,8 @@ export class RecuperarPasswordComponent implements OnInit {
 
         this.router.navigate(['login']);
       }
-      // this.mensaje = response.mensaje
-      // if (typeof response !== undefined) {
-      //   swal.fire(response.mensaje, "Gracias", 'info');
-
-      //   this.action = 'login';
-      //   this.actionChange.next(this.action);
-
-      // } else {
-      //   // tslint:disable-next-line:max-line-length
-      //   this.authNoticeService.setNotice(this.translate.instant('AUTH.VALIDATION.NOT_FOUND', { name: this.translate.instant('AUTH.INPUT.EMAIL') }), 'error');
-      // }
-      // this.spinner.active = false;
+   
     }, err => {
-      console.log(err);
       this.mensaje = err.error.mensaje;
 
     });
