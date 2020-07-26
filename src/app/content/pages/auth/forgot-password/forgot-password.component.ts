@@ -13,6 +13,7 @@ import * as objectPath from 'object-path';
 import { AuthNoticeService } from '../../../../core/auth/auth-notice.service';
 import { SpinnerButtonOptions } from '../../../partials/content/general/spinner-button/button-options.interface';
 import { TranslateService } from '@ngx-translate/core';
+import swal from 'sweetalert2';
 
 @Component({
 	selector: 'm-forgot-password',
@@ -20,6 +21,7 @@ import { TranslateService } from '@ngx-translate/core';
 	styleUrls: ['./forgot-password.component.scss']
 })
 export class ForgotPasswordComponent implements OnInit {
+	mensaje : String;
 	public model: any = { email: '' };
 	@Input() action: string;
 	@Output() actionChange = new Subject<string>();
@@ -41,9 +43,12 @@ export class ForgotPasswordComponent implements OnInit {
 		private authService: AuthenticationService,
 		public authNoticeService: AuthNoticeService,
 		private translate: TranslateService
-	) {}
+	) { }
 
-	ngOnInit() {}
+	ngOnInit() {
+		
+       
+	}
 
 	loginPage(event: Event) {
 		event.preventDefault();
@@ -54,16 +59,26 @@ export class ForgotPasswordComponent implements OnInit {
 	submit() {
 		this.spinner.active = true;
 		if (this.validate(this.f)) {
-			// this.authService.requestPassword(this.model).subscribe(response => {
-			// 	if (typeof response !== 'undefined') {
-			// 		this.action = 'login';
-			// 		this.actionChange.next(this.action);
-			// 	} else {
-			// 		// tslint:disable-next-line:max-line-length
-			// 		this.authNoticeService.setNotice(this.translate.instant('AUTH.VALIDATION.NOT_FOUND', {name: this.translate.instant('AUTH.INPUT.EMAIL')}), 'error');
-			// 	}
-			// 	this.spinner.active = false;
-			// });
+			
+			this.authService.requestPassword(this.model).subscribe(response => {
+
+				this.mensaje = response.mensaje
+				if (typeof response !== undefined) {
+					swal.fire(response.mensaje, "Gracias", 'info');
+
+					this.action = 'login';
+					this.actionChange.next(this.action);
+
+				} else {
+					// tslint:disable-next-line:max-line-length
+					this.authNoticeService.setNotice(this.translate.instant('AUTH.VALIDATION.NOT_FOUND', { name: this.translate.instant('AUTH.INPUT.EMAIL') }), 'error');
+				}
+				this.spinner.active = false;
+			}, err=>{
+				console.log(err);
+					this.mensaje = err.error.mensaje;
+				
+			});
 		}
 	}
 
@@ -74,10 +89,10 @@ export class ForgotPasswordComponent implements OnInit {
 
 		this.errors = [];
 		if (objectPath.get(f, 'form.controls.email.errors.email')) {
-			this.errors.push(this.translate.instant('AUTH.VALIDATION.INVALID', {name: this.translate.instant('AUTH.INPUT.EMAIL')}));
+			this.errors.push(this.translate.instant('AUTH.VALIDATION.INVALID', { name: this.translate.instant('AUTH.INPUT.EMAIL') }));
 		}
 		if (objectPath.get(f, 'form.controls.email.errors.required')) {
-			this.errors.push(this.translate.instant('AUTH.VALIDATION.REQUIRED', {name: this.translate.instant('AUTH.INPUT.EMAIL')}));
+			this.errors.push(this.translate.instant('AUTH.VALIDATION.REQUIRED', { name: this.translate.instant('AUTH.INPUT.EMAIL') }));
 		}
 
 		if (this.errors.length > 0) {

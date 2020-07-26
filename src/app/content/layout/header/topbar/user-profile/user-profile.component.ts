@@ -2,6 +2,7 @@ import { AuthenticationService } from '../../../../../core/auth/authentication.s
 import { ChangeDetectionStrategy, Component, ElementRef, HostBinding, Input, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
+import { Usuario } from '../../../../../core/interfaces/usuario';
 
 @Component({
 	selector: 'm-user-profile',
@@ -9,6 +10,7 @@ import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class UserProfileComponent implements OnInit {
+	usuario: Usuario;
 	@HostBinding('class')
 	// tslint:disable-next-line:max-line-length
 	classes = 'm-nav__item m-topbar__user-profile m-topbar__user-profile--img m-dropdown m-dropdown--medium m-dropdown--arrow m-dropdown--header-bg-fill m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light';
@@ -20,19 +22,66 @@ export class UserProfileComponent implements OnInit {
 
 	@ViewChild('mProfileDropdown') mProfileDropdown: ElementRef;
 
-	constructor (
+	constructor(
 		private router: Router,
 		private authService: AuthenticationService,
 		private sanitizer: DomSanitizer
-	) {}
+	) { 
+		if (sessionStorage.usuario === undefined) {
+			this.router.navigate(['/login']);
+		} else {
+			this.obtenerDatosUser();
 
-	ngOnInit (): void {
-		if (!this.avatarBg) {
-			this.avatarBg = this.sanitizer.bypassSecurityTrustStyle('url(./assets/app/media/img/misc/user_profile_bg.jpg)');
 		}
 	}
 
-	public logout () {
-	//	this.authService.logout(true);
+	ngOnInit(): void {
+		if (!this.avatarBg) {
+			this.avatarBg = this.sanitizer.bypassSecurityTrustStyle('url(./assets/app/media/img/misc/user_profile_bg.jpg)');
+		}
+		this.obtenerDatosUser();
+	}
+
+	public logout() {
+		this.authService.logout(true);
+		this.router.navigate(['/login']);
+		
+	}
+
+	obtenerDatosUser() {
+	
+			if (this.authService._usuario === undefined || this.authService._usuario === null) {
+				const datosUser = JSON.parse(sessionStorage.usuario)
+				this.usuario = new Usuario();
+				this.usuario.nombre = this.MaysPrimera(datosUser.nombre.toLowerCase());
+				this.usuario.apellido = this.MaysPrimera(datosUser.apellido.toLowerCase());
+				this.usuario.email = datosUser.email;
+				this.usuario.username = datosUser.email;
+				this.usuario.roles = datosUser.authorities;
+				this.usuario.ocupasion = "";// datosUser.ocupasion;
+				this.usuario.nombreEmpresa = "";//datosUser.nombreEmpresa;
+				this.usuario.telefono = "";//datosUser.telefono;
+				this.usuario.direccion = "";//datosUser.direccion;
+				this.usuario.cuidad = "";//datosUser.cuidad;
+				this.usuario.estado = "";//datosUser.estado;
+				this.usuario.codigoPostal = "";//datosUser.codigoPostal;
+				this.usuario.linkedink = "www.linkedin.com/";//datosUser.linkedink;
+				this.usuario.facebook = "www.facebook.com/";//datosUser.facebook;
+				this.usuario.twittter = "www.twitter.com/";//datosUser.facebook;
+				this.usuario.instagram = "www.instagram.com/";//datosUser.instagram;
+				this.usuario.foto = "";//datosUser.foto;
+
+			} else {
+				this.usuario = this.authService._usuario
+			}
+		
+
+	}
+
+
+
+
+	MaysPrimera(string) {
+		return string.charAt(0).toUpperCase() + string.slice(1);
 	}
 }

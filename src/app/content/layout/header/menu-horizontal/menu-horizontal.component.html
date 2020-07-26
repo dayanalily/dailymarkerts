@@ -21,7 +21,7 @@
 
 		<!-- if item has submenu -->
 		<ng-container *ngIf="item.submenu">
-			<a href="javascript:;" [ngClass]="{ 'm-menu__toggle': item.root }" class="m-menu__link">
+			<a  [ngClass]="{ 'm-menu__toggle': item.root }" class="m-menu__link">
 
 				<ng-container [ngTemplateOutlet]="m_menu_item_inner" [ngTemplateOutletContext]="{ item: item, parentItem: parentItem }"></ng-container>
 

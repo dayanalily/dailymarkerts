@@ -1,30 +1,38 @@
-import { BehaviorSubject, Observable, Subject, from, throwError } from 'rxjs';
+import { Observable, Subject, from, throwError } from 'rxjs';
 import { map, catchError, tap, switchMap } from 'rxjs/operators';
 
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { AuthService } from 'ngx-auth';
-
+import swal from 'sweetalert2';
 import { TokenStorage } from './token-storage.service';
 import { UtilsService } from '../services/utils.service';
 import { AccessData } from './access-data';
 import { Credential } from './credential';
+import { Usuario } from '../interfaces/usuario';
+import { AuthFakeDb } from '../../fake-api/fake-db/auth';
+import { Router } from '@angular/router';
 
 @Injectable()
 export class AuthenticationService implements AuthService {
-	API_URL = 'http://localhost:8081/api/';
-	API_ENDPOINT_LOGIN = 'login';
+	API_URL = 'http://localhost:8081/send/email';
+	API_URL_BASE = 'http://localhost:8081/api/';
+	API_ENDPOINT_LOGIN = 'http://localhost:8081/oauth/token';
 	API_ENDPOINT_REFRESH = '/refresh';
-	API_ENDPOINT_REGISTER = '/register';
-
+	API_ENDPOINT_REGISTER = 'usuario/registrar';
+	credential: Credential
 	public onCredentialUpdated$: Subject<AccessData>;
-	private _token: string;
+	public _usuario: Usuario;
+	public AuthFakeDb: AuthFakeDb;
+	public _token: string;
 	constructor(
+		private router: Router,
 		private http: HttpClient,
 		private tokenStorage: TokenStorage,
-		private util: UtilsService
+		private util: UtilsService,
 	) {
 		this.onCredentialUpdated$ = new Subject();
+
 	}
 
 	/**
@@ -100,37 +108,46 @@ export class AuthenticationService implements AuthService {
 	 * @returns {Observable<any>}
 	 */
 	public login(credential: Credential): Observable<any> {
-		
-		const urlEndpoint = 'http://localhost:8081/oauth/token';
+
 
 		const credenciales = btoa('angularapp' + ':' + '12345');
 
 		const httpHeaders = new HttpHeaders({
 			'Content-Type': 'application/x-www-form-urlencoded',
-			'Authorization': 'Basic' + credenciales
+			'Authorization': `Basic ${credenciales}` // 'Basic ' + credenciales
 		});
 
 		let params = new URLSearchParams();
 		params.set('grant_type', 'password');
-		params.set('username', 'dayanalily222@gmail.com');
-		params.set('password', '12345');
-		console.log(params.toString());
-
+		params.set('username', credential.email);
+		params.set('password', credential.password);
 	
-		return this.http.post<any>(urlEndpoint, params.toString(), { headers: httpHeaders }).pipe(
-			map((result: any) => {
 
-				if (result instanceof Array) {
-					return result.pop();
-				}
-				console.log('resultado', result);
+		
 
-				return result;
+		return this.http.post<any>(
+			this.API_ENDPOINT_LOGIN,
+			params.toString(), { headers: httpHeaders }).pipe(
+				map((result: any) => {
 
-			}),
-			tap(this.saveAccessData.bind(this)),
-			catchError(this.handleError('login', []))
-		);
+					if (result instanceof Array) {
+						return result.pop();
+					}
+
+					const payload = this.obtenerDatosToken(result.access_token)
+
+					if (payload !== undefined) {
+						result = Object.assign(result, { roles: payload.authorities });
+						console.log(result, "result");
+
+						this.guardarUsuario(result.access_token);
+					}
+					return result;
+
+				}),
+				tap(this.saveAccessData.bind(this)),
+				catchError(this.handleError('login', []))
+			);
 	}
 
 	/**
@@ -142,7 +159,13 @@ export class AuthenticationService implements AuthService {
 	private handleError<T>(operation = 'operation', result?: any) {
 		return (error: any): Observable<any> => {
 			// TODO: send the error to remote logging infrastructure
-			console.error(error); // log to console instead
+			if (error.error.mensaje === undefined) {
+				swal.fire(error.error.error, error.error.error_description, 'error');
+
+			} else {
+				swal.fire(error.error.mensaje, 'error');
+
+			}
 
 			// Let the app keep running by returning an empty result.
 			return from(result);
@@ -154,9 +177,13 @@ export class AuthenticationService implements AuthService {
 	 */
 	public logout(refresh?: boolean): void {
 		this.tokenStorage.clear();
+		sessionStorage.clear();
 		if (refresh) {
-			location.reload(true);
+			this.router.navigate(['login'])
+			//location.reload(true);
+			this._token = undefined
 		}
+
 	}
 
 	/**
@@ -165,12 +192,14 @@ export class AuthenticationService implements AuthService {
 	 * @param {AccessData} data
 	 */
 	private saveAccessData(accessData: AccessData) {
+
 		if (typeof accessData !== 'undefined') {
 			this.tokenStorage
 				.setAccessToken(accessData.access_token)
 				.setRefreshToken(accessData.refresh_token)
 				.setUserRoles(accessData.roles);
 			this.onCredentialUpdated$.next(accessData);
+
 		}
 	}
 
@@ -179,14 +208,18 @@ export class AuthenticationService implements AuthService {
 	 * @param {Credential} credential
 	 * @returns {Observable<any>}
 	 */
-	public register(credential: Credential): Observable<any> {
+	public register(user: Usuario): Observable<any> {
 		// dummy token creation
-		credential = Object.assign({}, credential, {
-			accessToken: 'access-token-' + Math.random(),
-			refreshToken: 'access-token-' + Math.random(),
-			roles: ['USER'],
+	
+		const credenciales = btoa('angularapp' + ':' + '12345');
+
+		const httpHeaders = new HttpHeaders({
+			'Content-Type': 'application/json',
+			'Authorization': `Basic ${credenciales}` // 'Basic ' + credenciales
 		});
-		return this.http.post(this.API_URL + this.API_ENDPOINT_REGISTER, credential)
+
+
+		return this.http.post(this.API_URL_BASE + this.API_ENDPOINT_REGISTER, user, { headers: httpHeaders})
 			.pipe(catchError(this.handleError('register', []))
 			);
 	}
@@ -197,16 +230,19 @@ export class AuthenticationService implements AuthService {
 	 * @returns {Observable<any>}
 	 */
 	public requestPassword(credential: Credential): Observable<any> {
-		return this.http.get(this.API_URL + this.API_ENDPOINT_LOGIN + '?' + this.util.urlParam(credential))
-			.pipe(catchError(this.handleError('forgot-password', []))
+		return this.http.post(this.API_URL, credential)
+			.pipe(catchError(
+				this.handleError('forgot-password', []))
+
 			);
+
 	}
 
 	public get token(): string {
-		if (this._token != null) {
+		if (this._token != undefined) {
 			return this._token;
-		} else if (this._token == null && sessionStorage.getItem('token') != null) {
-			this._token = sessionStorage.getItem('token');
+		} else if (this._token == undefined && localStorage.getItem('accessToken') != null) {
+			this._token = localStorage.getItem('accessToken');
 			return this._token;
 		}
 		return null;
@@ -214,8 +250,16 @@ export class AuthenticationService implements AuthService {
 
 
 	isAuthenticated(): boolean {
+		if (this._token != undefined) {
+			this._token;
+		} else if (this._token == undefined && localStorage.getItem('accessToken') != null) {
+			this._token = localStorage.getItem('toaccessTokenken');
+			this._token;
+		}
 		let payload = this.obtenerDatosToken(this.token);
 		if (payload != null && payload.user_name && payload.user_name.length > 0) {
+
+			this.guardarUsuario(this._token);
 			return true;
 		}
 		return false;
@@ -226,5 +270,36 @@ export class AuthenticationService implements AuthService {
 			return JSON.parse(atob(accessToken.split(".")[1]));
 		}
 		return null;
+	}
+	guardarUsuario(accessToken: string): void {
+
+		let payload = this.obtenerDatosToken(accessToken);
+		this._usuario = new Usuario();
+		this._usuario.id = payload.id
+		this._usuario.nombre = payload.nombre;
+		this._usuario.apellido = payload.apellido;
+		this._usuario.email = payload.email;
+		this._usuario.username = payload.email;
+		this._usuario.roles = payload.authorities;
+		this._usuario.foto = payload.foto;
+		sessionStorage.setItem('usuario', JSON.stringify(this._usuario));
+	}
+
+	listarUsuarioID(id) {
+		return this.http.get(this.API_URL_BASE + 'usuario/' + id)
+			.pipe(catchError(
+				this.handleError('forgot-password', []))
+
+			);
+	}
+
+	actualizarUsuario(event, id) {
+		console.log(event);
+
+		return this.http.put(this.API_URL_BASE + 'usuario/' + id, event)
+			.pipe(catchError(
+				this.handleError('forgot-password', []))
+
+			);
 	}
 }

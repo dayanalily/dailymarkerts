@@ -11,8 +11,8 @@ export class MessengerService {
 
 	constructor(private http: HttpClient) {}
 
-	public getData(): Observable<any> {
-		return this.http
-			.get(this.API_URL + this.API_ENDPOINT);
-	}
+	// public getData(): Observable<any> {
+	// 	return this.http
+	// 		.get(this.API_URL + this.API_ENDPOINT);
+	// }
 }

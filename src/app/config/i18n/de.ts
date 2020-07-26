@@ -26,12 +26,12 @@ export const locale = {
 				CONTACT: 'Kontakt',
 			},
 			LOGIN: {
-				TITLE: 'Create Account',
-				BUTTON: 'Sign In',
+				TITLE: 'Crear cuenta',
+				BUTTON: 'Iniciar sesión',
 			},
 			FORGOT: {
-				TITLE: 'Forgotten Password?',
-				DESC: 'Enter your email to reset your password',
+				TITLE: '¿Olvidó su contraseña?',
+				DESC: 'Ingrese su correo electrónico para restablecer su contraseña',
 			},
 			REGISTER: {
 				TITLE: 'Sign Up',
@@ -40,17 +40,20 @@ export const locale = {
 			},
 			INPUT: {
 				EMAIL: 'Email',
-				FULLNAME: 'Fullname',
-				PASSWORD: 'Password',
-				CONFIRM_PASSWORD: 'Confirm Password',
+				FULLNAME: 'Nombre completo',
+				PASSWORD: 'Contraseña',
+				APELLIDO: 'Apellido',
+				TIPODOC: 'Apellido',
+				DOC: 'Apellido',
+				CONFIRM_PASSWORD: 'Confirmar contraseña',
 			},
 			VALIDATION: {
-				INVALID: '{{name}} is not valid',
-				REQUIRED: '{{name}} is required',
+				INVALID: '{{name}} No es valido',
+				REQUIRED: '{{name}} es requerido',
 				MIN_LENGTH: '{{name}} minimum length is {{min}}',
-				AGREEMENT_REQUIRED: 'Accepting terms & conditions are required',
-				NOT_FOUND: 'The requested {{name}} is not found',
-				INVALID_LOGIN: 'The login detail is incorrect'
+				AGREEMENT_REQUIRED: 'Aceptar los términos y condiciones',
+				NOT_FOUND: 'El  {{name}} solicitado no se encuentra',
+				INVALID_LOGIN: 'El detalle de inicio de sesión es incorrecto'
 			}
 		},
 		ECOMMERCE: {

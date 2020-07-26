@@ -25,7 +25,7 @@
 			<ng-container [ngTemplateOutlet]="mMenuItemText" [ngTemplateOutletContext]="{ item: item, parentItem: parentItem }"></ng-container>
 		</a>
 		<!-- if menu item has sumnenu child  -->
-		<a href="javascript:;" *ngIf="item.submenu" class="m-menu__link m-menu__toggle">
+		<a  *ngIf="item.submenu" class="m-menu__link m-menu__toggle">
 			<ng-container [ngTemplateOutlet]="mMenuItemText" [ngTemplateOutletContext]="{ item: item, parentItem: parentItem }"></ng-container>
 		</a>
 

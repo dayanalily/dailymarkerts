@@ -27,7 +27,7 @@ import { locale as frLang } from './config/i18n/fr';
 	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent implements AfterViewInit, OnInit {
-	title = 'Metronic';
+	title = 'Daily';
 
 	@HostBinding('style') style: any;
 	@HostBinding('class') classes: any = '';

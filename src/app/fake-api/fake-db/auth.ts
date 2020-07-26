@@ -3,7 +3,6 @@ export class AuthFakeDb {
 		{
 			id: 1,
 			username: 'admin',
-			password: 'demo',
 			email: 'admin@demo.com',
 			accessToken: 'access-token-' + Math.random(),
 			refreshToken: 'access-token-' + Math.random(),

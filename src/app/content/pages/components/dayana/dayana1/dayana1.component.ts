@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   // styleUrls: ['./dayana1.component.scss']
 })
 export class Dayana1Component implements OnInit {
+  
 
-  constructor() { }
+  constructor() {
+   
+    
+
+  }
 
   ngOnInit() {
   }
-
+ 
 }

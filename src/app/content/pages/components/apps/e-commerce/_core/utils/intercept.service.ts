@@ -16,12 +16,30 @@ export class InterceptService implements HttpInterceptor {
 		request: HttpRequest<any>,
 		next: HttpHandler
 	): Observable<HttpEvent<any>> {
-		// modify request
-		request = request.clone({
-			setHeaders: {
-				Authorization: `Bearer ${localStorage.getItem('accessToken')}`
-			}
-		});
+
+		if (request.headers.has('Authorization')) {
+			// nothing to do
+			console.log('1  Authorization');
+			
+		} else if (localStorage.getItem('accessToken') === null) {
+			console.log('2  accessToken');
+			
+		} else {
+			// here you can put your Authorization Barrier or overwrite
+			console.log('3  else');
+			request = request.clone({
+				setHeaders: {
+					// modify request
+
+					Authorization: `Bearer ${localStorage.getItem('accessToken')}`
+				}
+			});
+		}
+
+
+		console.log("localestorage", localStorage.getItem('accessToken'));
+
+
 		// console.log('----request----');
 		console.log(request);
 		// console.log('--- end of request---');

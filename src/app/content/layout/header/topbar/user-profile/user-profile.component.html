@@ -1,23 +1,25 @@
 <!-- <li class="m-nav__item m-topbar__user-profile m-topbar__user-profile--img m-dropdown m-dropdown--medium m-dropdown--arrow m-dropdown--header-bg-fill m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light" m-dropdown-toggle="click"> -->
 <a href="#" class="m-nav__link m-dropdown__toggle">
 	<span class="m-topbar__userpic">
-		<img src="{{avatar}}" class="m--img-rounded m--marginless m--img-centered" alt="" />
-	</span>
+		<img src="http://localhost:8080/api/uploads/img/{{usuario.foto}}" alt="" *ngIf="usuario?.foto">
+		<img src="./assets/app/media/img/users/no-user.jpg" alt="" *ngIf="!usuario?.foto"> </span>
 </a>
 <div class="m-dropdown__wrapper">
 	<span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
 	<div class="m-dropdown__inner">
-		<div class="m-dropdown__header m--align-center" #mProfileDropdown style="background-size: cover;" [style.background-image]="avatarBg">
+		<div class="m-dropdown__header m--align-center" #mProfileDropdown style="background-size: cover;"
+			[style.background-image]="avatarBg">
 			<div class="m-card-user m-card-user--skin-dark">
 				<div class="m-card-user__pic">
-					<img src="{{avatar}}" class="m--img-rounded m--marginless" alt="" />
-				</div>
+					<img src="http://localhost:8080/api/uploads/img/{{usuario.foto}}" alt="" *ngIf="usuario?.foto">
+					<img src="./assets/app/media/img/users/no-user.jpg" alt="" *ngIf="!usuario?.foto"> </div>
 				<div class="m-card-user__details">
 					<span class="m-card-user__name m--font-weight-500">
-						Mark Andre
+						<label> {{usuario.nombre}} </label>
+						<label> {{usuario.apellido}} </label>
 					</span>
-					<a href="mailto:mark.andre@gmail.com" class="m-card-user__email m--font-weight-300 m-link">
-						mark.andre@gmail.com
+					<a class="m-card-user__email m--font-weight-300 m-link">
+						{{usuario.email}}
 					</a>
 				</div>
 			</div>
@@ -36,7 +38,7 @@
 							<span class="m-nav__link-title">
 								<span class="m-nav__link-wrap">
 									<span class="m-nav__link-text">
-										My Profile
+										Mi Perfil
 									</span>
 									<span class="m-nav__link-badge">
 										<span class="m-badge m-badge--success">
@@ -47,7 +49,7 @@
 							</span>
 						</a>
 					</li>
-					<li class="m-nav__item">
+					<!-- <li class="m-nav__item">
 						<a routerLink="/profile" class="m-nav__link">
 							<i class="m-nav__link-icon flaticon-share"></i>
 							<span class="m-nav__link-text">
@@ -62,8 +64,8 @@
 								Messages
 							</span>
 						</a>
-					</li>
-					<li class="m-nav__separator m-nav__separator--fit"></li>
+					</li> -->
+					<!-- <li class="m-nav__separator m-nav__separator--fit"></li>
 					<li class="m-nav__item">
 						<a routerLink="/profile" class="m-nav__link">
 							<i class="m-nav__link-icon flaticon-info"></i>
@@ -79,10 +81,10 @@
 								Support
 							</span>
 						</a>
-					</li>
+					</li> -->
 					<li class="m-nav__separator m-nav__separator--fit"></li>
 					<li class="m-nav__item">
-						<button mat-stroked-button (click)="logout()">Logout</button>
+						<button mat-stroked-button   (click)="logout()">Logout</button>
 					</li>
 				</ul>
 			</div>

@@ -4,7 +4,7 @@ import {
 } from '@angular/common/http';
 
 import { Observable, throwError } from 'rxjs';
-// import swal from 'sweetalert2';
+import swal from 'sweetalert2';
 import { catchError } from 'rxjs/operators';
 import { Router } from '@angular/router';
 import { AuthenticationService } from '../auth/authentication.service';
@@ -22,15 +22,14 @@ export class AuthInterceptor implements HttpInterceptor {
     return next.handle(req).pipe(
       catchError(e => {
         if (e.status == 401) {
-debugger
-          if (this.authService.isAuthenticated()) {
+          if (this.authService.isAuthenticated()== true) { this.router.navigate(['/dayana']);
+          }else{
             this.authService.logout();
           }
-          this.router.navigate(['/login']);
         }
 
         if (e.status == 403) {
-          // swal.fire('Acceso denegado', `Hola ${this.authService.usuario.username} no tienes acceso a este recurso!`, 'warning');
+          swal.fire('Acceso denegado', `Hola no tienes acceso a este recurso!`, 'warning');
           this.router.navigate(['/']);
         }
         return throwError(e);

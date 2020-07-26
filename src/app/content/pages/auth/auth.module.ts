@@ -13,6 +13,7 @@ import { AuthNoticeComponent } from './auth-notice/auth-notice.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { RecuperarPasswordComponent } from './recuperar-password/recuperar-password.component';
 
 @NgModule({
 	imports: [
@@ -21,6 +22,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 		MatButtonModule,
 		MatInputModule,
 		MatFormFieldModule,
+		RouterModule,
 		MatCheckboxModule,
 		TranslateModule.forChild(),
 		SpinnerButtonModule,
@@ -37,7 +39,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 		LoginComponent,
 		RegisterComponent,
 		ForgotPasswordComponent,
-		AuthNoticeComponent
+		AuthNoticeComponent,
+		RecuperarPasswordComponent
 	]
 })
 export class AuthModule {}

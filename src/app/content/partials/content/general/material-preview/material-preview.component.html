@@ -12,7 +12,7 @@
 				<div class="m-portlet__head-tools" *ngIf="hasExampleSource()">
 					<ul class="m-portlet__nav">
 						<li class="m-portlet__nav-item">
-							<a href="javascript:;" *ngIf="hasExampleSource()" (click)="changeCodeVisibility()" class="m-portlet__nav-link m-portlet__nav-link--icon" title="View Source">
+							<a  *ngIf="hasExampleSource()" (click)="changeCodeVisibility()" class="m-portlet__nav-link m-portlet__nav-link--icon" title="View Source">
 								<i class="la la-code"></i>
 							</a>
 						</li>
@@ -30,25 +30,25 @@
 					[ngClass]="{'m-portlet__code--show' : viewItem.isCodeVisible}">
 					<mat-tab-group *ngIf="viewItem.isCodeVisible">
 						<mat-tab label="HTML" *ngIf="viewItem.htmlCode">
-							<a href="javascript:;" class="m-portlet__code-copy" title="Copy example source" [clipboard]="viewItem.htmlCode">
+							<a  class="m-portlet__code-copy" title="Copy example source" [clipboard]="viewItem.htmlCode">
 								<i class="la la-copy"></i>
 							</a>
 							<pre><code highlight [textContent]="viewItem.htmlCode"></code></pre>
 						</mat-tab>
 						<mat-tab label="TS" *ngIf="viewItem.tsCode">
-							<a href="javascript:;" class="m-portlet__code-copy" title="Copy example source" [clipboard]="viewItem.tsCode">
+							<a  class="m-portlet__code-copy" title="Copy example source" [clipboard]="viewItem.tsCode">
 								<i class="la la-copy"></i>
 							</a>
 							<pre class="language-typescript"><code highlight class="language-typescript" [textContent]="viewItem.tsCode"></code></pre>
 						</mat-tab>
 						<mat-tab label="CSS" *ngIf="viewItem.cssCode">
-							<a href="javascript:;" class="m-portlet__code-copy" title="Copy example source" [clipboard]="viewItem.cssCode">
+							<a  class="m-portlet__code-copy" title="Copy example source" [clipboard]="viewItem.cssCode">
 								<i class="la la-copy"></i>
 							</a>
 							<pre class="language-css"><code highlight class="language-css" [textContent]="viewItem.cssCode"></code></pre>
 						</mat-tab>
 						<mat-tab label="SCSS" *ngIf="viewItem.scssCode">
-							<a href="javascript:;" class="m-portlet__code-copy" title="Copy example source" [clipboard]="viewItem.scssCode">
+							<a  class="m-portlet__code-copy" title="Copy example source" [clipboard]="viewItem.scssCode">
 								<i class="la la-copy"></i>
 							</a>
 							<pre class="language-scssCode"><code highlight class="language-scssCode" [textContent]="viewItem.scssCode"></code></pre>

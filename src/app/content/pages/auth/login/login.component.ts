@@ -18,7 +18,7 @@ import * as objectPath from 'object-path';
 import { TranslateService } from '@ngx-translate/core';
 import { SpinnerButtonOptions } from '../../../partials/content/general/spinner-button/button-options.interface';
 import { Usuario } from '../../../../core/interfaces/usuario';
-
+import  swal  from 'sweetalert2';
 @Component({
 	selector: 'm-login',
 	templateUrl: './login.component.html',
@@ -59,18 +59,33 @@ export class LoginComponent implements OnInit, OnDestroy {
 		
 		if (this.validate(this.f)) {
 			this.authService.login(this.model).subscribe(response => {
-				console.log(response);
 				
-				if (response !== 'undefined') {
+				if (response !== undefined) {
 					
-					this.router.navigate(['/']);
+					this.router.navigate(['/index']);
 				} else {
 					 this.authNoticeService.setNotice(this.translate.instant('AUTH.VALIDATION.INVALID_LOGIN'), 'error');
 				}
 				this.spinner.active = false;
 				this.cdr.detectChanges();
+				const Toast = swal.mixin({
+					toast: true,
+					position: 'top-end',
+					showConfirmButton: false,
+					timer: 3000,
+					timerProgressBar: true,
+					onOpen: (toast) => {
+						toast.addEventListener('mouseenter', swal.stopTimer)
+						toast.addEventListener('mouseleave', swal.resumeTimer)
+					}
+				})
+
+				Toast.fire({
+					icon: 'success',
+					title: `Hola ${response.nombre}, has iniciado sesión con éxito!`
+				})
+				// swal.fire('Login', `Hola ${response.nombre}, has iniciado sesión con éxito!`, 'success');
 			}, () => error =>{
-				console.log(error, "dayana logim");
 				
 			} );
 		}

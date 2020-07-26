@@ -461,10 +461,10 @@ export class MenuConfig implements ConfigModel {
 						root: true,
 						icon: 'flaticon-line-graph',
 						page: '/',
-						badge: {type: 'm-badge--danger', value: '2'},
+						badge: { type: 'm-badge--danger', value: '2' },
 						translate: 'MENU.DASHBOARD'
 					},
-					{section: 'Components'},
+					{ section: 'Components' },
 					// {
 					// 	title: 'Google Material',
 					// 	root: true,
@@ -729,7 +729,7 @@ export class MenuConfig implements ConfigModel {
 					// 	]
 					// },
 					{
-						title: 'dayana',
+						title: 'Animaciones',
 						root: true,
 						bullet: 'dot',
 						icon: 'flaticon-interface-8',
@@ -783,7 +783,7 @@ export class MenuConfig implements ConfigModel {
 					// 	icon: 'flaticon-interface-5',
 					// 	page: '/audit-log'
 					// },
-					{section: 'Pages'},
+					{ section: 'Pages' },
 					{
 						title: 'User',
 						root: true,
@@ -796,45 +796,45 @@ export class MenuConfig implements ConfigModel {
 							},
 						]
 					},
-					{
-						title: 'Error',
-						root: true,
-						bullet: 'dot',
-						icon: 'flaticon-interface-2',
-						submenu: [
-							{
-								title: 'Error-1',
-								page: '/error/1'
-							},
-							{
-								title: 'Error-2',
-								page: '/error/2'
-							},
-							{
-								title: 'Error-3',
-								page: '/error/3'
-							},
-							{
-								title: 'Error-4',
-								page: '/error/4'
-							},
-							{
-								title: 'Error-5',
-								page: '/error/5'
-							},
-							{
-								title: 'Error-6',
-								page: '/error/6'
-							},
-						]
-					},
-					{section: 'Tools'},
-					{
-						title: 'Layout Builder',
-						root: true,
-						icon: 'flaticon-settings',
-						page: '/builder'
-					}
+					// {
+					// 	title: 'Error',
+					// 	root: true,
+					// 	bullet: 'dot',
+					// 	icon: 'flaticon-interface-2',
+					// 	submenu: [
+					// 		{
+					// 			title: 'Error-1',
+					// 			page: '/error/1'
+					// 		},
+					// 		{
+					// 			title: 'Error-2',
+					// 			page: '/error/2'
+					// 		},
+					// 		{
+					// 			title: 'Error-3',
+					// 			page: '/error/3'
+					// 		},
+					// 		{
+					// 			title: 'Error-4',
+					// 			page: '/error/4'
+					// 		},
+					// 		{
+					// 			title: 'Error-5',
+					// 			page: '/error/5'
+					// 		},
+					// 		{
+					// 			title: 'Error-6',
+					// 			page: '/error/6'
+					// 		},
+					// 	]
+					// },
+					// {section: 'Tools'},
+					// {
+					// 	title: 'Layout Builder',
+					// 	root: true,
+					// 	icon: 'flaticon-settings',
+					// 	page: '/builder'
+					// }
 				]
 			}
 		};

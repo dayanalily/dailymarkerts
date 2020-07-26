@@ -29,7 +29,7 @@ export class TokenStorage {
 		const roles: any = localStorage.getItem('userRoles');
 		try {
 			return of(JSON.parse(roles));
-		} catch (e) {}
+		} catch (e) { }
 	}
 
 	/**
@@ -38,7 +38,7 @@ export class TokenStorage {
 	 */
 	public setAccessToken(token: string): TokenStorage {
 		if (token != null) {
-		localStorage.setItem('accessToken', token);
+			localStorage.setItem('accessToken', token);
 			return this;
 		}
 		return this;
@@ -50,7 +50,7 @@ export class TokenStorage {
 	 */
 	public setRefreshToken(token: string): TokenStorage {
 		if (token != null) {
-		localStorage.setItem('refreshToken', token);
+			localStorage.setItem('refreshToken', token);
 			return this;
 		}
 		return this;
@@ -76,5 +76,6 @@ export class TokenStorage {
 		localStorage.removeItem('accessToken');
 		localStorage.removeItem('refreshToken');
 		localStorage.removeItem('userRoles');
+		sessionStorage.removeItem('usuario');
 	}
 }

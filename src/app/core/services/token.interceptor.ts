@@ -13,15 +13,20 @@ export class TokenInterceptor implements HttpInterceptor {
 
   intercept(req: HttpRequest<any>, next: HttpHandler):
     Observable<HttpEvent<any>> {
-    let token = this.authService.token;
+    let token = this.authService._token;
 
-    if (token != null) {
+    console.log('Token interceptor call');
+    
+    
+    if (token != null && token !== undefined) {
       const authReq = req.clone({
+        
         headers: req.headers.set('Authorization', 'Bearer ' + token)
       });
 
       return next.handle(authReq);
-    }
+    } 
+
 
     return next.handle(req);
   }

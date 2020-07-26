@@ -40,7 +40,7 @@ export class LayoutConfig implements ConfigModel {
 					}
 				},
 				logo: {
-					//dark: './assets/demo/default/media/img/logo/logo_default_dark.png',
+					// dark: './assets/demo/default/media/img/logo/logo_default_dark.png',
 					dark: './assets/demo/default/media/img/logo/dasa_default.png',
 					light: './assets/demo/default/media/img/logo/logo_default_light.png'
 				}

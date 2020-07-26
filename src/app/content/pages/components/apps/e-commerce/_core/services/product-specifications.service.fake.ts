@@ -130,7 +130,6 @@ export class ProductSpecificationsService {
 
 	// UPDATE => PUT: update the product specification on the server
 	updateSpec(spec: ProductSpecificationModel): Observable<any> {
-		console.log('run u', spec);
 		return this.http.put(API_PRODUCTSPECS_URL, spec, {
 			headers: this.httpUtils.getHTTPHeaders()
 		});

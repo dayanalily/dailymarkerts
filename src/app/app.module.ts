@@ -64,7 +64,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 		BrowserModule,
 		AppRoutingModule,
 		HttpClientModule,
-		// environment.isMockEnabled ? HttpClientInMemoryWebApiModule.forRoot(FakeApiService) : [],
+	//	environment.isMockEnabled ? HttpClientInMemoryWebApiModule.forRoot(FakeApiService) : [],
 		LayoutModule,
 		PartialsModule,
 		CoreModule,
@@ -74,7 +74,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 		NgbModule,
 		TranslateModule.forRoot(),
 		MatProgressSpinnerModule,
-		PagesRoutingModule ,
+		PagesRoutingModule, 
 
 		PagesModule
 	],
@@ -89,9 +89,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 		ClassInitService,
 		MessengerService,
 		ClipboardService,
-		// LogsService,
-		// QuickSearchService,
-		// DataTableService,
+		 LogsService,
+		 QuickSearchService,
+		 DataTableService,
 		SplashScreenService,
 		{
 			provide: PERFECT_SCROLLBAR_CONFIG,

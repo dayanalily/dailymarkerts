@@ -6,6 +6,7 @@ const routes: Routes = [
 		path: '',
 		loadChildren: 'app/content/pages/pages.module#PagesModule'
 	},
+	
 	{
 		path: '**',
 		redirectTo: '404',

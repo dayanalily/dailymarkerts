@@ -26,12 +26,12 @@ export const locale = {
 				CONTACT: 'Contact',
 			},
 			LOGIN: {
-				TITLE: 'Créer un compte',
-				BUTTON: 'Sign In',
+				TITLE: 'Crear cuenta',
+				BUTTON: 'Iniciar sesión',
 			},
 			FORGOT: {
-				TITLE: 'Forgotten Password?',
-				DESC: 'Enter your email to reset your password',
+				TITLE: '¿Olvidó su contraseña?',
+				DESC: 'Ingrese su correo electrónico para restablecer su contraseña',
 			},
 			REGISTER: {
 				TITLE: 'Sign Up',
@@ -39,14 +39,17 @@ export const locale = {
 			},
 			INPUT: {
 				EMAIL: 'Email',
-				FULLNAME: 'Fullname',
-				PASSWORD: 'Mot de passe',
-				CONFIRM_PASSWORD: 'Confirm Password',
+				FULLNAME: 'Nombre completo',
+				PASSWORD: 'Contraseña',
+				APELLIDO: 'Apellido',
+				TIPODOC: 'Apellido',
+				DOC: 'Apellido',
+				CONFIRM_PASSWORD: 'Confirmar contraseña',
 			},
 			VALIDATION: {
 				INVALID: '{{name}} n\'est pas valide',
 				REQUIRED: '{{name}} est requis',
-				MIN_LENGTH: '{{name}} minimum length is {{min}}'
+				MIN_LENGTH: '{{name}} la longitud mínima es {{min}}'
 			}
 		},
 		ECOMMERCE: {
