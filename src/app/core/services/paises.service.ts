@@ -3,12 +3,14 @@ import { Router } from '@angular/router';
 import { TokenStorage } from '../auth/token-storage.service';
 import { UtilsService } from './utils.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PaisesService {
   API_URL_BASE = 'http://localhost:8081/api/';
+  
   constructor(private router: Router,
     private http: HttpClient,
     private tokenStorage: TokenStorage,
@@ -23,7 +25,7 @@ export class PaisesService {
       'Authorization': `Basic ${credenciales}` // 'Basic ' + credenciales
 
     });
-    return this.http.get<any>(this.API_URL_BASE + 'registro/pais');
+    return this.http.get<any>(environment.URL_BASE_PRODUCCION + '/api'+ 'registro/pais');
  
   }
 }

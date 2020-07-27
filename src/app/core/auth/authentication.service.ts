@@ -12,12 +12,17 @@ import { Credential } from './credential';
 import { Usuario } from '../interfaces/usuario';
 import { AuthFakeDb } from '../../fake-api/fake-db/auth';
 import { Router } from '@angular/router';
+import { environment } from '../../../environments/environment';
 
 @Injectable()
 export class AuthenticationService implements AuthService {
-	API_URL = 'http://localhost:8081/send/email';
-	API_URL_BASE = 'http://localhost:8081/api/';
-	API_ENDPOINT_LOGIN = 'http://localhost:8081/oauth/token';
+	// API_URL = 'http://localhost:8081/send/email';
+	API_URL = environment.URL_BASE_PRODUCCION + '/send/email';
+	// API_URL_BASE = 'http://localhost:8081/api/';
+	API_URL_BASE = environment.URL_BASE_PRODUCCION + '/api/';
+	// API_ENDPOINT_LOGIN = 'http://localhost:8081/oauth/token';
+	API_ENDPOINT_LOGIN = environment +'/oauth/token'; 
+
 	API_ENDPOINT_REFRESH = '/refresh';
 	API_ENDPOINT_REGISTER = 'usuario/registrar';
 	credential: Credential
@@ -121,9 +126,9 @@ export class AuthenticationService implements AuthService {
 		params.set('grant_type', 'password');
 		params.set('username', credential.email);
 		params.set('password', credential.password);
-	
 
-		
+
+
 
 		return this.http.post<any>(
 			this.API_ENDPOINT_LOGIN,
@@ -138,7 +143,7 @@ export class AuthenticationService implements AuthService {
 
 					if (payload !== undefined) {
 						result = Object.assign(result, { roles: payload.authorities });
-						
+
 						this.guardarUsuario(result.access_token);
 					}
 					return result;
@@ -209,7 +214,7 @@ export class AuthenticationService implements AuthService {
 	 */
 	public register(user: Usuario): Observable<any> {
 		// dummy token creation
-	
+
 		const credenciales = btoa('angularapp' + ':' + '12345');
 
 		const httpHeaders = new HttpHeaders({
@@ -218,7 +223,7 @@ export class AuthenticationService implements AuthService {
 		});
 
 
-		return this.http.post(this.API_URL_BASE + this.API_ENDPOINT_REGISTER, user, { headers: httpHeaders})
+		return this.http.post(this.API_URL_BASE + this.API_ENDPOINT_REGISTER, user, { headers: httpHeaders })
 			.pipe(catchError(this.handleError('register', []))
 			);
 	}

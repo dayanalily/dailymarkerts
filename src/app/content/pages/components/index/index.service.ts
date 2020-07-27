@@ -10,13 +10,15 @@ import { Usuario } from '../../../../core/interfaces/usuario';
 import { AuthFakeDb } from '../../../../fake-api/fake-db/auth';
 import { TokenStorage } from '../../../../core/auth/token-storage.service';
 import { UtilsService } from '../../../../core/services/utils.service';
-
+import { environment } from '../../../../../environments/environment';
+ 
 
 @Injectable({
   providedIn: 'root'
 })
 export class IndexService {
-  API_URL_BASE = 'http://localhost:8081/api/';
+  // API_URL_BASE = 'http://localhost:8081/api/';
+  API_URL_BASE = environment.URL_BASE_PRODUCCION  + '/api'; 
   API_ENDPOINT_LISTAR = 'usuario/listar';
   API_ENDPOINT_ELIMINAR = 'usuario/';
   API_ENDPOINT_LISTAR_PAGINACION = 'usuario/page/';
@@ -41,15 +43,15 @@ export class IndexService {
 	 * @returns {Observable<any>}
 	 */
   public listarPaginacion(id): Observable<any> {
-   // dummy token creation
-		this.credential = Object.assign({}, this.credential, {
-		 	accessToken: 'access-token-' + Math.random(),
-		 	refreshToken: 'access-token-' + Math.random(),
-	
-		});
+    // dummy token creation
+    this.credential = Object.assign({}, this.credential, {
+      accessToken: 'access-token-' + Math.random(),
+      refreshToken: 'access-token-' + Math.random(),
+
+    });
     return this.http.get<AccessData>(this.API_URL_BASE + this.API_ENDPOINT_LISTAR_PAGINACION + id);
-    
-  } 
+
+  }
   /**
 	 * Function, that should perform refresh token verifyTokenRequest
 	 * @description Should be successfully completed so interceptor
@@ -57,22 +59,22 @@ export class IndexService {
 	 * @returns {Observable<any>}
 	 */
   public listarUsuariosRegistrados(): Observable<any> {
-   // dummy token creation
-		this.credential = Object.assign({}, this.credential, {
-		 	accessToken: 'access-token-' + Math.random(),
-		 	refreshToken: 'access-token-' + Math.random(),
-	
-		});
+    // dummy token creation
+    this.credential = Object.assign({}, this.credential, {
+      accessToken: 'access-token-' + Math.random(),
+      refreshToken: 'access-token-' + Math.random(),
+
+    });
     return this.http.get<AccessData>(this.API_URL_BASE + this.API_ENDPOINT_LISTAR);
-    
+
   }
 
-  listarPrueba(){
+  listarPrueba() {
     return this.http.get<any>('https://jsonplaceholder.typicode.com/todos');
 
   }
 
-  eliminarUsuario(id){
+  eliminarUsuario(id) {
     // dummy token creation
     this.credential = Object.assign({}, this.credential, {
       accessToken: 'access-token-' + Math.random(),

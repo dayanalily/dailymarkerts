@@ -742,10 +742,10 @@ export class MenuConfig implements ConfigModel {
 								title: 'dayana2',
 								page: '/dayana/dayana2'
 							},
-							{
-								title: 'dayana3',
-								page: '/dayana/dayana3'
-							},
+							// {
+							// 	title: 'dayana3',
+							// 	page: '/dayana/dayana3'
+							// },
 							// {
 							// 	title: 'Animacion1',
 							// 	page: '/dayana/dayana3'

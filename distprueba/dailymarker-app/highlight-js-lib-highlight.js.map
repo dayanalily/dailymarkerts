@@ -1,0 +1,1 @@
+{"version":3,"sources":["./node_modules/highlight.js/lib/highlight.js"],"names":["hljs","require"],"mappings":";;;;;;;;;AAAA;AACA,IAAIA,IAAI,GAAGC,mBAAO,CAAC,uDAAD,CAAlB,C","file":"highlight-js-lib-highlight.js","sourcesContent":["// This file has been deprecated in favor of core.js\nvar hljs = require('./core');\n"],"sourceRoot":"webpack:///"}

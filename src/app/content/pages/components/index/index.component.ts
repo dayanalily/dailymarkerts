@@ -195,7 +195,7 @@ export class IndexComponent implements OnInit {
 
       html:
 
-        '<div>' + ` <img  src="http://localhost:8080/api/uploads/img/${usuario.foto}" >` + '</div>' +
+        '<div>' + ` <img  src="https://edaily-spring.herokuapp.com/api/uploads/img/${usuario.foto}" >` + '</div>' +
 
         `Nombre:  ${usuario.nombre}` + '<br/>' +
         `Apellido: ${usuario.apellido}` + '<br/>' +
