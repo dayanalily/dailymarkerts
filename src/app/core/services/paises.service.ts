@@ -25,7 +25,7 @@ export class PaisesService {
       'Authorization': `Basic ${credenciales}` // 'Basic ' + credenciales
 
     });
-    return this.http.get<any>(environment.URL_BASE_PRODUCCION + 'api/'+ 'registro/pais');
+    return this.http.get<any>(environment.URL_BASE_PRODUCCION + '/api/'+ 'registro/pais');
  
   }
 }
