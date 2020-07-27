@@ -21,7 +21,7 @@ export class AuthenticationService implements AuthService {
 	// API_URL_BASE = 'http://localhost:8081/api/';
 	API_URL_BASE = environment.URL_BASE_PRODUCCION + '/api/';
 	// API_ENDPOINT_LOGIN = 'http://localhost:8081/oauth/token';
-	API_ENDPOINT_LOGIN = environment +'/oauth/token'; 
+	API_ENDPOINT_LOGIN = environment.URL_BASE_PRODUCCION +'/oauth/token'; 
 
 	API_ENDPOINT_REFRESH = '/refresh';
 	API_ENDPOINT_REGISTER = 'usuario/registrar';

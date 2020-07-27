@@ -89,6 +89,8 @@ export class LoginComponent implements OnInit, OnDestroy {
 				
 			} );
 		}
+		this.spinner.active = false;
+
 	}
 
 	ngOnInit(): void {
