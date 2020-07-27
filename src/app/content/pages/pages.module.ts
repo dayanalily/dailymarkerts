@@ -30,7 +30,6 @@ import { ErrorPageComponent } from './snippets/error-page/error-page.component';
 		LayoutModule,
 		PartialsModule,
 		MailModule,
-		ECommerceModule,
 		AngularEditorModule,
 	],
 	providers: []

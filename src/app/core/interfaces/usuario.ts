@@ -3,7 +3,6 @@ export class Usuario {
   email: string;
   nombre: string;
   apellido: string;
-  email: string;
   roles: Array<any>;
   tipo_documento: String;
 

@@ -19,12 +19,12 @@ export class InterceptService implements HttpInterceptor {
 
 		if (request.headers.has('Authorization')) {
 			// nothing to do
-			
+
 		} else if (localStorage.getItem('accessToken') === null) {
-		
+
 		} else {
 			// here you can put your Authorization Barrier or overwrite
-			
+
 			request = request.clone({
 				setHeaders: {
 					// modify request
@@ -38,7 +38,6 @@ export class InterceptService implements HttpInterceptor {
 
 
 		// console.log('----request----');
-		console.log(request);
 		// console.log('--- end of request---');
 
 		return next.handle(request).pipe(
@@ -47,15 +46,15 @@ export class InterceptService implements HttpInterceptor {
 					if (event instanceof HttpResponse) {
 						// console.log('all looks good');
 						// http response status code
-						console.log(event.status);
+						//console.log(event.status);
 					}
 				},
 				error => {
 					// http response status code
 					// console.log('----response----');
 					// console.error('status code:');
-					console.error(error.status);
-					console.error(error.message);
+					// console.error(error.status);
+					// console.error(error.message);
 					// console.log('--- end of response---');
 				}
 			)

@@ -17,13 +17,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 import * as moment from 'moment'
 
 @Component({
-  selector: 'm-recuperar-password',
-  // templateUrl: './recuperar-password.component.html',
-  // styleUrls: ['./recuperar-password.component.scss']
+  selector: 'm-recuperar-password'
 })
 export class RecuperarPasswordComponent implements OnInit {
   mensaje: String;
-  myForm: FormGroup;
   fechaInicio: string;
   usuario: any;
   public model: any = { email: '' };
@@ -146,12 +143,7 @@ export class RecuperarPasswordComponent implements OnInit {
     }
   }
   ngOnInit(): void {
-    this.myForm = this.fb.group({
-      email: ['', [Validators.required, Validators.email]],
-    });
-
-
-
+    
   }
 
   loginPage(event: Event) {
