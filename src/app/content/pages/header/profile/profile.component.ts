@@ -15,6 +15,7 @@ import swal from 'sweetalert2';
 })
 export class ProfileComponent implements OnInit {
   usuario: Usuario;
+  urlFoto: String;
   fileToUpload: File = null;
   nombreFoto: String;
   model: any = { direccion: '' }
@@ -115,6 +116,7 @@ export class ProfileComponent implements OnInit {
       this.usuario = data;
       this.usuario.nombre = this.MaysPrimera(this.usuario.nombre.toLowerCase());
       this.usuario.apellido = this.MaysPrimera(this.usuario.apellido.toLowerCase());
+      this.urlFoto = 'https://edaily-spring.herokuapp.com/api/uploads/img/' + this.usuario.foto;
       this.cd.markForCheck(); // marks path
     
     })

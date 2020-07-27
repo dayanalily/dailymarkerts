@@ -11,6 +11,7 @@ import { Usuario } from '../../../../../core/interfaces/usuario';
 })
 export class UserProfileComponent implements OnInit {
 	usuario: Usuario;
+	urlFoto: String;
 	@HostBinding('class')
 	// tslint:disable-next-line:max-line-length
 	classes = 'm-nav__item m-topbar__user-profile m-topbar__user-profile--img m-dropdown m-dropdown--medium m-dropdown--arrow m-dropdown--header-bg-fill m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light';
@@ -53,6 +54,7 @@ export class UserProfileComponent implements OnInit {
 			if (this.authService._usuario === undefined || this.authService._usuario === null) {
 				const datosUser = JSON.parse(sessionStorage.usuario)
 				this.usuario = new Usuario();
+				this.urlFoto = 'https://edaily-spring.herokuapp.com/api/uploads/img/' + this.usuario.foto;
 				this.usuario.nombre = this.MaysPrimera(datosUser.nombre.toLowerCase());
 				this.usuario.apellido = this.MaysPrimera(datosUser.apellido.toLowerCase());
 				this.usuario.email = datosUser.email;

@@ -18,7 +18,7 @@ import { environment } from '../../../../../environments/environment';
 })
 export class IndexService {
   // API_URL_BASE = 'http://localhost:8081/api/';
-  API_URL_BASE = environment.URL_BASE_PRODUCCION  + '/api'; 
+  API_URL_BASE = environment.URL_BASE_PRODUCCION  + '/api/'; 
   API_ENDPOINT_LISTAR = 'usuario/listar';
   API_ENDPOINT_ELIMINAR = 'usuario/';
   API_ENDPOINT_LISTAR_PAGINACION = 'usuario/page/';
