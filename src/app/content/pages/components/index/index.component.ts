@@ -195,7 +195,7 @@ export class IndexComponent implements OnInit {
 
       html:
 
-        '<div>' + ` <img style="width: 149px; height: 113px;-moz-border-radius: 50%;-webkit-border-radius: 50%;border-radius: 50%;" src="https://edaily-spring.herokuapp.com/api/uploads/img/${usuario.foto}" >` + '</div>' +
+        '<div>' + ` <img style="width: 149px; height: 149px;-moz-border-radius: 50%;-webkit-border-radius: 50%;border-radius: 50%;" src="https://edaily-spring.herokuapp.com/api/uploads/img/${usuario.foto}" >` + '</div>' +
 
         `Nombre:  ${usuario.nombre}` + '<br/>' +
         `Apellido: ${usuario.apellido}` + '<br/>' +
