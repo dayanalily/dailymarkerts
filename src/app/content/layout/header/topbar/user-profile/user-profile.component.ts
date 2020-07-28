@@ -28,6 +28,7 @@ export class UserProfileComponent implements OnInit {
 		private authService: AuthenticationService,
 		private sanitizer: DomSanitizer
 	) { 
+		this.urlFoto = 'https://edaily-spring.herokuapp.com/api/uploads/img/' + this.usuario.foto;
 		if (sessionStorage.usuario === undefined) {
 			this.router.navigate(['/login']);
 		} else {

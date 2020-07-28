@@ -78,7 +78,11 @@ export class ProfileComponent implements OnInit {
           }
         });
     }
+    this.urlFoto = 'https://edaily-spring.herokuapp.com/api/uploads/img/' + this.usuario.foto;
+
   }
+
+  
   MaysPrimera(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
