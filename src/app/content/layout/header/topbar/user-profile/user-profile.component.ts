@@ -11,7 +11,7 @@ import { Usuario } from '../../../../../core/interfaces/usuario';
 })
 export class UserProfileComponent implements OnInit {
 	usuario: Usuario;
-	urlFoto: String = 'https://edaily-spring.herokuapp.com/api/uploads/img/' + this.usuario.foto;
+	 urlFoto: String //= 'https://edaily-spring.herokuapp.com/api/uploads/img/' + this.usuario.foto;
 	@HostBinding('class')
 	// tslint:disable-next-line:max-line-length
 	classes = 'm-nav__item m-topbar__user-profile m-topbar__user-profile--img m-dropdown m-dropdown--medium m-dropdown--arrow m-dropdown--header-bg-fill m-dropdown--align-right m-dropdown--mobile-full-width m-dropdown--skin-light';
@@ -28,7 +28,8 @@ export class UserProfileComponent implements OnInit {
 		private authService: AuthenticationService,
 		private sanitizer: DomSanitizer
 	) { 
-		this.usuario.foto = this.urlFoto = 'https://edaily-spring.herokuapp.com/api/uploads/img/' + this.usuario.foto;
+		this.usuario = new Usuario();
+		 this.usuario.foto = this.urlFoto = 'https://edaily-spring.herokuapp.com/api/uploads/img/' + this.usuario.foto;
 		if (sessionStorage.usuario === undefined) {
 			this.router.navigate(['/login']);
 		} else {

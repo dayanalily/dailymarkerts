@@ -40,7 +40,7 @@ import { RecuperarPasswordComponent } from './recuperar-password/recuperar-passw
 		RegisterComponent,
 		ForgotPasswordComponent,
 		AuthNoticeComponent,
-		RecuperarPasswordComponent
+		//RecuperarPasswordComponent
 	]
 })
 export class AuthModule {}

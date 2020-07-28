@@ -9,6 +9,7 @@ import { IndexComponent } from './components/index/index.component';
 import { Dayana1Component } from './components/dayana/dayana1/dayana1.component';
 import { DayanaComponent } from './components/dayana/dayana.component';
 import { RecuperarPasswordComponent } from './auth/recuperar-password/recuperar-password.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 const routes: Routes = [
 	{
@@ -34,36 +35,11 @@ const routes: Routes = [
 				component: DayanaComponent,
 				loadChildren: './components/dayana/dayana.module#DayanaModule'
 			},
-			//  {
-			// 	path: 'metronic',
-			// 	loadChildren: './components/metronic/metronic.module#MetronicModule'
-			// },
-
-			// {
-			// 	path: 'ngbootstrap',
-			// 	loadChildren: './components/ngbootstrap/ngbootstrap.module#NgbootstrapModule'
-			// },
-			// {
-			// 	path: 'material',
-			// 	loadChildren: './components/material/material.module#MaterialModule'
-			// },
-
-			// {
-			// 	path: 'user-management',
-			// 	loadChildren: './components/user-management/user-management.module#UserManagementModule'
-			// },
-			// {
-			// 	path: 'audit-log',
-			// 	loadChildren: './components/apps/audit-log/audit-log.module#AuditLogModule'
-			// },
-			// {
-			// 	path: 'builder',
-			// 	loadChildren: './builder/builder.module#BuilderModule'
-			// },
-			// {
-			// 	path: 'header/actions',
-			// 	component: ActionComponent
-			// },
+			{
+				path: 'chat',
+				component: ChatComponent
+			},
+			
 			{
 				path: 'profile',
 				component: ProfileComponent,

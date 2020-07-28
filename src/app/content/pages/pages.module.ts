@@ -7,12 +7,12 @@ import { PartialsModule } from '../partials/partials.module';
 import { ActionComponent } from './header/action/action.component';
 import { ProfileComponent } from './header/profile/profile.component';
 import { MailModule } from './components/apps/mail/mail.module';
-import { ECommerceModule } from './components/apps/e-commerce/e-commerce.module';
 import { CoreModule } from '../../core/core.module';
 import { AngularEditorModule } from '@kolkov/angular-editor';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorPageComponent } from './snippets/error-page/error-page.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 @NgModule({
 	declarations: [
@@ -20,6 +20,7 @@ import { ErrorPageComponent } from './snippets/error-page/error-page.component';
 		ActionComponent,
 		ProfileComponent,
 		ErrorPageComponent,
+		ChatComponent
 	],
 	imports: [
 	CommonModule,

@@ -742,6 +742,7 @@ export class MenuConfig implements ConfigModel {
 								title: 'dayana2',
 								page: '/dayana/dayana2'
 							},
+							
 							// {
 							// 	title: 'dayana3',
 							// 	page: '/dayana/dayana3'
@@ -797,6 +798,18 @@ export class MenuConfig implements ConfigModel {
 							{
 								title: 'Profile',
 								page: '/profile'
+							},
+						]
+					},
+					{
+						title: 'Chat',
+						root: true,
+						bullet: 'dot',
+						icon: 'flaticon-interface-1',
+						submenu: [
+							{
+								title: 'chat',
+								page: '/chat'
 							},
 						]
 					},
