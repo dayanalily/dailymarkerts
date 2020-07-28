@@ -14,7 +14,7 @@ import { TranslateService } from '@ngx-translate/core';
 import swal from 'sweetalert2';
 import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import * as moment from 'moment'
+import * as moment from 'moment';
 
 @Component({
   selector: 'm-recuperar-password'
