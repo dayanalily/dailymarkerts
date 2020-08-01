@@ -1,10 +1,7 @@
-import { Observable, Subject, from, throwError } from 'rxjs';
-import { map, catchError, tap, switchMap } from 'rxjs/operators';
+import { Observable, Subject } from 'rxjs';
 
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
-import { AuthService } from 'ngx-auth';
-import swal from 'sweetalert2';
+import { HttpClient } from '@angular/common/http';
 import { AccessData } from '../../../../core/auth/access-data';
 import { Usuario } from '../../../../core/interfaces/usuario';
 import { AuthFakeDb } from '../../../../fake-api/fake-db/auth';
@@ -29,8 +26,6 @@ export class IndexService {
   public _token: string;
   constructor(
     private http: HttpClient,
-    private tokenStorage: TokenStorage,
-    private util: UtilsService,
   ) {
     this.onCredentialUpdated$ = new Subject();
 

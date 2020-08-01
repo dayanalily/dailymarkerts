@@ -17,7 +17,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 import * as moment from 'moment';
 
 @Component({
-  selector: 'm-recuperar-password'
+  selector: 'm-recuperar-password',
+  templateUrl: './recuperar-password.component.html',
+
 })
 export class RecuperarPasswordComponent implements OnInit {
   mensaje: String;
