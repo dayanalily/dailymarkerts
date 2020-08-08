@@ -1,0 +1,936 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">default documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Clases</li>
+  <li>DataTableDataSource</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>Fichero</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/content/partials/content/widgets/general/data-table/data-table.data-source.ts</code>
+        </p>
+
+
+
+            <p class="comment">
+                <h3>Implementa</h3>
+            </p>
+            <p class="comment">
+                        <code>DataSource</code>
+            </p>
+
+
+            <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#entitySubject">entitySubject</a>
+                            </li>
+                            <li>
+                                <a href="#hasItems">hasItems</a>
+                            </li>
+                            <li>
+                                <a href="#loading$">loading$</a>
+                            </li>
+                            <li>
+                                <a href="#loadingSubject">loadingSubject</a>
+                            </li>
+                            <li>
+                                <a href="#paginatorTotal$">paginatorTotal$</a>
+                            </li>
+                            <li>
+                                <a href="#paginatorTotalSubject">paginatorTotalSubject</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#baseFilter">baseFilter</a>
+                            </li>
+                            <li>
+                                <a href="#connect">connect</a>
+                            </li>
+                            <li>
+                                <a href="#disconnect">disconnect</a>
+                            </li>
+                            <li>
+                                <a href="#loadItems">loadItems</a>
+                            </li>
+                            <li>
+                                <a href="#sortArray">sortArray</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(dataTableService: <a href="../injectables/DataTableService.html">DataTableService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="24" class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.data-source.ts:24</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dataTableService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DataTableService.html" target="_self" >DataTableService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+        <h3 id="inputs">
+            Propiedades
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="entitySubject"></a>
+                        <span class="name">
+                            <b>
+                            entitySubject</b>
+                            <a href="#entitySubject"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Valor por defecto : </i><code>new BehaviorSubject&lt;any[]&gt;([])</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="15" class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.data-source.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasItems"></a>
+                        <span class="name">
+                            <b>
+                            hasItems</b>
+                            <a href="#hasItems"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Valor por defecto : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="16" class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.data-source.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loading$"></a>
+                        <span class="name">
+                            <b>
+                            loading$</b>
+                            <a href="#loading$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Tipo : </i>    <code>Observable&lt;boolean&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="20" class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.data-source.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loadingSubject"></a>
+                        <span class="name">
+                            <b>
+                            loadingSubject</b>
+                            <a href="#loadingSubject"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Valor por defecto : </i><code>new BehaviorSubject&lt;boolean&gt;(false)</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="19" class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.data-source.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paginatorTotal$"></a>
+                        <span class="name">
+                            <b>
+                            paginatorTotal$</b>
+                            <a href="#paginatorTotal$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Tipo : </i>    <code>Observable&lt;number&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="24" class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.data-source.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paginatorTotalSubject"></a>
+                        <span class="name">
+                            <b>
+                            paginatorTotalSubject</b>
+                            <a href="#paginatorTotalSubject"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Valor por defecto : </i><code>new BehaviorSubject&lt;number&gt;(0)</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="23" class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.data-source.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="baseFilter"></a>
+                    <span class="name">
+                        <b>
+                            baseFilter
+                        </b>
+                        <a href="#baseFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>baseFilter(_entities: any[], _queryParams: <a href="../classes/QueryParamsModel.html">QueryParamsModel</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="44"
+                            class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.data-source.ts:44</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>_entities</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>_queryParams</td>
+                                    <td>
+                                                <code><a href="../classes/QueryParamsModel.html" target="_self" >QueryParamsModel</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="../classes/QueryResultsModel.html" target="_self" >QueryResultsModel</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="connect"></a>
+                    <span class="name">
+                        <b>
+                            connect
+                        </b>
+                        <a href="#connect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>connect(collectionViewer: CollectionViewer)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="32"
+                            class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.data-source.ts:32</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>collectionViewer</td>
+                                    <td>
+                                            <code>CollectionViewer</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>    <code>Observable&lt;any[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="disconnect"></a>
+                    <span class="name">
+                        <b>
+                            disconnect
+                        </b>
+                        <a href="#disconnect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>disconnect(collectionViewer: CollectionViewer)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="37"
+                            class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.data-source.ts:37</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>collectionViewer</td>
+                                    <td>
+                                            <code>CollectionViewer</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadItems"></a>
+                    <span class="name">
+                        <b>
+                            loadItems
+                        </b>
+                        <a href="#loadItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadItems(queryParams: <a href="../classes/QueryParamsModel.html">QueryParamsModel</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="67"
+                            class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.data-source.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>queryParams</td>
+                                    <td>
+                                                <code><a href="../classes/QueryParamsModel.html" target="_self" >QueryParamsModel</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortArray"></a>
+                    <span class="name">
+                        <b>
+                            sortArray
+                        </b>
+                        <a href="#sortArray"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sortArray(_incomingArray: any[], _sortField: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, _sortOrder: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="81"
+                            class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.data-source.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                    <td>Valor por defecto</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>_incomingArray</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>_sortField</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>&#x27;&#x27;</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>_sortOrder</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>&#x27;asc&#x27;</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>    <code>any[]</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { CollectionViewer, DataSource } from &#x27;@angular/cdk/collections&#x27;;
+import { Observable, BehaviorSubject, from, of} from &#x27;rxjs&#x27;;
+import { catchError, finalize, tap } from &#x27;rxjs/operators&#x27;;
+import { QueryParamsModel } from &#x27;../../../../../../core/models/query-params.model&#x27;;
+import { QueryResultsModel } from &#x27;../../../../../../core/models/query-results.model&#x27;;
+import { DataTableService } from &#x27;../../../../../../core/services/datatable.service&#x27;;
+import { DataTableItemModel } from &#x27;../../../../../../core/models/datatable-item.model&#x27;;
+
+// Why not use MatTableDataSource?
+/*  In this example, we will not be using the built-in MatTableDataSource because its designed for filtering,
+	sorting and pagination of a client - side data array.
+	Read the article: &#x27;https://blog.angular-university.io/angular-material-data-table/&#x27;
+**/
+export class DataTableDataSource implements DataSource&lt;DataTableItemModel&gt; {
+	entitySubject &#x3D; new BehaviorSubject&lt;any[]&gt;([]);
+	hasItems: boolean &#x3D; false; // Need to show message: &#x27;No records found
+
+	// Loading | Progress bar
+	loadingSubject &#x3D; new BehaviorSubject&lt;boolean&gt;(false);
+	loading$: Observable&lt;boolean&gt;;
+
+	// Paginator | Paginators count
+	paginatorTotalSubject &#x3D; new BehaviorSubject&lt;number&gt;(0);
+	paginatorTotal$: Observable&lt;number&gt;;
+
+	constructor(private dataTableService: DataTableService) {
+		this.loading$ &#x3D; this.loadingSubject.asObservable();
+		this.paginatorTotal$ &#x3D; this.paginatorTotalSubject.asObservable();
+		this.paginatorTotal$.subscribe(res &#x3D;&gt; this.hasItems &#x3D; res &gt; 0);
+	}
+
+	connect(collectionViewer: CollectionViewer): Observable&lt;any[]&gt; {
+		// Connecting data source
+        return this.entitySubject.asObservable();
+    }
+
+	disconnect(collectionViewer: CollectionViewer): void {
+		// Disonnecting data source
+        this.entitySubject.complete();
+		this.loadingSubject.complete();
+		this.paginatorTotalSubject.complete();
+	}
+
+	baseFilter(_entities: any[], _queryParams: QueryParamsModel): QueryResultsModel {
+		let entitiesResult &#x3D; _entities;
+
+		// Sorting
+		// start
+		if (_queryParams.sortField) {
+			entitiesResult &#x3D; this.sortArray(_entities, _queryParams.sortField, _queryParams.sortOrder);
+		}
+		// end
+
+		// Paginator
+		// start
+		const totalCount &#x3D; entitiesResult.length;
+		const initialPos &#x3D; _queryParams.pageNumber * _queryParams.pageSize;
+		entitiesResult &#x3D; entitiesResult.slice(initialPos, initialPos + _queryParams.pageSize);
+		// end
+
+		const queryResults &#x3D; new QueryResultsModel();
+		queryResults.items &#x3D; entitiesResult;
+		queryResults.totalCount &#x3D; totalCount;
+		return queryResults;
+    }
+
+    loadItems(queryParams: QueryParamsModel) {
+		this.loadingSubject.next(true);
+		this.dataTableService.getAllItems().pipe(
+			tap(res &#x3D;&gt; {
+				const result &#x3D; this.baseFilter(res, queryParams);
+				this.entitySubject.next(result.items);
+				this.paginatorTotalSubject.next(result.totalCount);
+
+			}),
+			catchError(err &#x3D;&gt; of(new QueryResultsModel([], err))),
+			finalize(() &#x3D;&gt; this.loadingSubject.next(false))
+		).subscribe();
+    }
+
+	sortArray(_incomingArray: any[], _sortField: string &#x3D; &#x27;&#x27;, _sortOrder: string &#x3D; &#x27;asc&#x27;): any[] {
+		if (!_sortField) {
+			return _incomingArray;
+		}
+
+		let result: any[] &#x3D; [];
+		result &#x3D; _incomingArray.sort((a, b) &#x3D;&gt; {
+			if (a[_sortField] &lt; b[_sortField]) {
+				return _sortOrder &#x3D;&#x3D;&#x3D; &#x27;asc&#x27; ? -1 : 1;
+			}
+
+			if (a[_sortField] &gt; b[_sortField]) {
+				return _sortOrder &#x3D;&#x3D;&#x3D; &#x27;asc&#x27; ? 1 : -1;
+			}
+
+			return 0;
+		});
+		return result;
+	}
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'DataTableDataSource.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

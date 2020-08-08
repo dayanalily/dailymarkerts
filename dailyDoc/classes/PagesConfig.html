@@ -1,0 +1,476 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">default documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Clases</li>
+  <li>PagesConfig</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>Fichero</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/config/pages.ts</code>
+        </p>
+
+
+
+            <p class="comment">
+                <h3>Implementa</h3>
+            </p>
+            <p class="comment">
+                            <code><a href="../interfaces/ConfigModel.html" target="_self" >ConfigModel</a></code>
+            </p>
+
+
+            <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#config">config</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="4" class="link-to-prism">src/app/config/pages.ts:4</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+        <h3 id="inputs">
+            Propiedades
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="config"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            config</b>
+                            <a href="#config"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Valor por defecto : </i><code>{}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="4" class="link-to-prism">src/app/config/pages.ts:4</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ConfigModel } from &#x27;../core/interfaces/config&#x27;;
+
+export class PagesConfig implements ConfigModel {
+	public config: any &#x3D; {};
+
+	constructor() {
+		this.config &#x3D; {
+			&#x27;/&#x27;: {
+				page: {
+					title: &#x27;Index&#x27;,
+					desc: &#x27;Latest updates and statistic charts&#x27;
+				}
+			},
+			// ngbootstrap: {
+			// 	accordion: {
+			// 		page: { title: &#x27;Accordion&#x27;, desc: &#x27;&#x27; }
+			// 	},
+			// 	alert: {
+			// 		page: { title: &#x27;Alert&#x27;, desc: &#x27;&#x27; }
+			// 	},
+			// 	buttons: {
+			// 		page: { title: &#x27;Buttons&#x27;, desc: &#x27;&#x27; }
+			// 	},
+			// 	carousel: {
+			// 		page: { title: &#x27;Carousel&#x27;, desc: &#x27;&#x27; }
+			// 	},
+			// 	collapse: {
+			// 		page: { title: &#x27;Collapse&#x27;, desc: &#x27;&#x27; }
+			// 	},
+			// 	datepicker: {
+			// 		page: { title: &#x27;Datepicker&#x27;, desc: &#x27;&#x27; }
+			// 	},
+			// 	dropdown: {
+			// 		page: { title: &#x27;Dropdown&#x27;, desc: &#x27;&#x27; }
+			// 	},
+			// 	modal: {
+			// 		page: { title: &#x27;Modal&#x27;, desc: &#x27;&#x27; }
+			// 	},
+			// 	pagination: {
+			// 		page: { title: &#x27;Pagination&#x27;, desc: &#x27;&#x27; }
+			// 	},
+			// 	popover: {
+			// 		page: { title: &#x27;Popover&#x27;, desc: &#x27;&#x27; }
+			// 	},
+			// 	progressbar: {
+			// 		page: { title: &#x27;Progressbar&#x27;, desc: &#x27;&#x27; }
+			// 	},
+			// 	rating: {
+			// 		page: { title: &#x27;Rating&#x27;, desc: &#x27;&#x27; }
+			// 	},
+			// 	tabs: {
+			// 		page: { title: &#x27;Tabs&#x27;, desc: &#x27;&#x27; }
+			// 	},
+			// 	timepicker: {
+			// 		page: { title: &#x27;Timepicker&#x27;, desc: &#x27;&#x27; }
+			// 	},
+			// 	tooltip: {
+			// 		page: { title: &#x27;Tooltip&#x27;, desc: &#x27;&#x27; }
+			// 	},
+			// 	typehead: {
+			// 		page: { title: &#x27;Typehead&#x27;, desc: &#x27;&#x27; }
+			// 	}
+			// },
+			// material: {
+			// 	// form controls
+			// 	&#x27;form-controls&#x27;: {
+			// 		autocomplete: {
+			// 			page: { title: &#x27;Auto Complete&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		checkbox: {
+			// 			page: { title: &#x27;Checkbox&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		datepicker: {
+			// 			page: { title: &#x27;Datepicker&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		radiobutton: {
+			// 			page: { title: &#x27;Radio Button&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		formfield: {
+			// 			page: { title: &#x27;Form field&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		input: {
+			// 			page: { title: &#x27;Input&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		select: {
+			// 			page: { title: &#x27;Select&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		slider: {
+			// 			page: { title: &#x27;Slider&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		slidertoggle: {
+			// 			page: { title: &#x27;Slider Toggle&#x27;, desc: &#x27;&#x27; }
+			// 		}
+			// 	},
+			// 	// navigation
+			// 	navigation: {
+			// 		menu: {
+			// 			page: { title: &#x27;Menu&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		sidenav: {
+			// 			page: { title: &#x27;Sidenav&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		toolbar: {
+			// 			page: { title: &#x27;Toolbar&#x27;, desc: &#x27;&#x27; }
+			// 		}
+			// 	},
+			// 	// layout
+			// 	layout: {
+			// 		card: {
+			// 			page: { title: &#x27;Card&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		divider: {
+			// 			page: { title: &#x27;Divider&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		&#x27;expansion-panel&#x27;: {
+			// 			page: { title: &#x27;Expansion panel&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		&#x27;grid-list&#x27;: {
+			// 			page: { title: &#x27;Grid list&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		list: {
+			// 			page: { title: &#x27;List&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		tabs: {
+			// 			page: { title: &#x27;Tabs&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		stepper: {
+			// 			page: { title: &#x27;Stepper&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		&#x27;default-forms&#x27;: {
+			// 			page: { title: &#x27;Default Forms&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		tree: {
+			// 			page: { title: &#x27;Tree&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 	},
+			// 	// buttons &amp; indicators
+			// 	&#x27;buttons-and-indicators&#x27;: {
+			// 		button: {
+			// 			page: { title: &#x27;Button&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		&#x27;button-toggle&#x27;: {
+			// 			page: { title: &#x27;Button toggle&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		chips: {
+			// 			page: { title: &#x27;Chips&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		icon: {
+			// 			page: { title: &#x27;Icon&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		&#x27;progress-bar&#x27;: {
+			// 			page: { title: &#x27;Progress bar&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		&#x27;progress-spinner&#x27;: {
+			// 			page: { title: &#x27;Progress spinner&#x27;, desc: &#x27;&#x27; }
+			// 		}
+			// 	},
+			// 	// popups &amp; models
+			// 	&#x27;popups-and-modals&#x27;: {
+			// 		&#x27;bottom-sheet&#x27;: {
+			// 			page: { title: &#x27;Bottom sheet&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		dialog: {
+			// 			page: { title: &#x27;Dialog&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		snackbar: {
+			// 			page: { title: &#x27;Snackbar&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		tooltip: {
+			// 			page: { title: &#x27;Tooltip&#x27;, desc: &#x27;&#x27; }
+			// 		}
+			// 	},
+			// 	// Data tables
+			// 	&#x27;data-table&#x27;: {
+			// 		paginator: {
+			// 			page: { title: &#x27;Paginator&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		&#x27;sort-header&#x27;: {
+			// 			page: { title: &#x27;Sort header&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		table: {
+			// 			page: { title: &#x27;Table&#x27;, desc: &#x27;&#x27; }
+			// 		}
+			// 	}
+			// },
+			// metronic: {
+			// 	accordion: {
+			// 		page: { title: &#x27;Accordion&#x27;, desc: &#x27;&#x27; }
+			// 	},
+			// 	&#x27;sticky-form-actions&#x27;: {
+			// 		page: { title: &#x27;Sticky Form Actions&#x27;, desc: &#x27;&#x27; }
+			// 	},
+			// 	forms: {
+			// 		page: { title: &#x27;Forms&#x27;, desc: &#x27;&#x27; }
+			// 	}
+			// },
+			// forms: {
+			// 	page: { title: &#x27;Forms&#x27;, desc: &#x27;&#x27; }
+			// },
+			// mail: {
+			// 	page: { title: &#x27;Mail&#x27;, desc: &#x27;Mail&#x27; }
+			// },
+			// ecommerce: {
+			// 	customers: {
+			// 		page: { title: &#x27;Customers&#x27;, desc: &#x27;&#x27; }
+			// 	},
+			// 	products: {
+			// 		edit: {
+			// 			page: { title: &#x27;Edit product&#x27;, desc: &#x27;&#x27; }
+			// 		},
+			// 		add: {
+			// 			page: { title: &#x27;Create product&#x27;, desc: &#x27;&#x27; }
+			// 		}
+			// 	},
+			// 	orders: {
+			// 		page: { title: &#x27;Orders&#x27;, desc: &#x27;&#x27; }
+			// 	}
+			// },
+			// &#x27;user-management&#x27;: {
+			// 	page: { title: &#x27;User Management&#x27;, desc: &#x27;&#x27; }
+			// },
+			// &#x27;audit-log&#x27;: {
+			// 	page: { title: &#x27;Audit Log&#x27;, desc: &#x27;&#x27; }
+			// },
+			// builder: {
+			// 	page: { title: &#x27;Layout Builder&#x27;, desc: &#x27;Layout builder&#x27; }
+			// },
+			header: {
+				actions: {
+					page: { title: &#x27;Actions&#x27;, desc: &#x27;actions example page&#x27; }
+				}
+			},
+			profile: {
+				page: { title: &#x27;User Profile&#x27;, desc: &#x27;&#x27; }
+			},
+			404: {
+				page: { title: &#x27;404 Not Found&#x27;, desc: &#x27;&#x27;, subheader: false }
+			}
+		};
+	}
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'PagesConfig.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

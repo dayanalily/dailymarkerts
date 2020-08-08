@@ -1,0 +1,1088 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">default documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>ClassInitService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/core/services/class-init.service.ts</code>
+        </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#classes">classes</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#config">config</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onClassesUpdated$">onClassesUpdated$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#initAsideLeft">initAsideLeft</a>
+                            </li>
+                            <li>
+                                <a href="#initAsideMenu">initAsideMenu</a>
+                            </li>
+                            <li>
+                                <a href="#initAsideRight">initAsideRight</a>
+                            </li>
+                            <li>
+                                <a href="#initContent">initContent</a>
+                            </li>
+                            <li>
+                                <a href="#initFooter">initFooter</a>
+                            </li>
+                            <li>
+                                <a href="#initHeader">initHeader</a>
+                            </li>
+                            <li>
+                                <a href="#initHeaderMenuDesktop">initHeaderMenuDesktop</a>
+                            </li>
+                            <li>
+                                <a href="#initHeaderMenuMobile">initHeaderMenuMobile</a>
+                            </li>
+                            <li>
+                                <a href="#initLayout">initLayout</a>
+                            </li>
+                            <li>
+                                <a href="#initLoader">initLoader</a>
+                            </li>
+                            <li>
+                                <a href="#initQuickSidebar">initQuickSidebar</a>
+                            </li>
+                            <li>
+                                <a href="#setConfig">setConfig</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(layoutConfigService: <a href="../injectables/LayoutConfigService.html">LayoutConfigService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/core/services/class-init.service.ts:11</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>layoutConfigService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LayoutConfigService.html" target="_self" >LayoutConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initAsideLeft"></a>
+                    <span class="name">
+                        <b>
+                            initAsideLeft
+                        </b>
+                        <a href="#initAsideLeft"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initAsideLeft()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/app/core/services/class-init.service.ts:154</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initAsideMenu"></a>
+                    <span class="name">
+                        <b>
+                            initAsideMenu
+                        </b>
+                        <a href="#initAsideMenu"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initAsideMenu()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="122"
+                            class="link-to-prism">src/app/core/services/class-init.service.ts:122</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initAsideRight"></a>
+                    <span class="name">
+                        <b>
+                            initAsideRight
+                        </b>
+                        <a href="#initAsideRight"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initAsideRight()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="193"
+                            class="link-to-prism">src/app/core/services/class-init.service.ts:193</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initContent"></a>
+                    <span class="name">
+                        <b>
+                            initContent
+                        </b>
+                        <a href="#initContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initContent()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="200"
+                            class="link-to-prism">src/app/core/services/class-init.service.ts:200</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initFooter"></a>
+                    <span class="name">
+                        <b>
+                            initFooter
+                        </b>
+                        <a href="#initFooter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initFooter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="206"
+                            class="link-to-prism">src/app/core/services/class-init.service.ts:206</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initHeader"></a>
+                    <span class="name">
+                        <b>
+                            initHeader
+                        </b>
+                        <a href="#initHeader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initHeader()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">src/app/core/services/class-init.service.ts:89</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initHeaderMenuDesktop"></a>
+                    <span class="name">
+                        <b>
+                            initHeaderMenuDesktop
+                        </b>
+                        <a href="#initHeaderMenuDesktop"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initHeaderMenuDesktop()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="106"
+                            class="link-to-prism">src/app/core/services/class-init.service.ts:106</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initHeaderMenuMobile"></a>
+                    <span class="name">
+                        <b>
+                            initHeaderMenuMobile
+                        </b>
+                        <a href="#initHeaderMenuMobile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initHeaderMenuMobile()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="115"
+                            class="link-to-prism">src/app/core/services/class-init.service.ts:115</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initLayout"></a>
+                    <span class="name">
+                        <b>
+                            initLayout
+                        </b>
+                        <a href="#initLayout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initLayout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="73"
+                            class="link-to-prism">src/app/core/services/class-init.service.ts:73</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initLoader"></a>
+                    <span class="name">
+                        <b>
+                            initLoader
+                        </b>
+                        <a href="#initLoader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initLoader()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/core/services/class-init.service.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initQuickSidebar"></a>
+                    <span class="name">
+                        <b>
+                            initQuickSidebar
+                        </b>
+                        <a href="#initQuickSidebar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initQuickSidebar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="215"
+                            class="link-to-prism">src/app/core/services/class-init.service.ts:215</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setConfig"></a>
+                    <span class="name">
+                        <b>
+                            setConfig
+                        </b>
+                        <a href="#setConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setConfig(model: <a href="../interfaces/ConfigModel.html">ConfigModel</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="30"
+                            class="link-to-prism">src/app/core/services/class-init.service.ts:30</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>model</td>
+                                    <td>
+                                                <code><a href="../interfaces/ConfigModel.html" target="_self" >ConfigModel</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="classes"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            classes</b>
+                            <a href="#classes"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/core/services/class-init.service.ts:10</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="config"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            config</b>
+                            <a href="#config"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/core/services/class-init.service.ts:9</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onClassesUpdated$"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            onClassesUpdated$</b>
+                            <a href="#onClassesUpdated$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>BehaviorSubject&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/core/services/class-init.service.ts:11</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { BehaviorSubject } from &#x27;rxjs&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+import * as objectPath from &#x27;object-path&#x27;;
+import { LayoutConfigService } from &#x27;./layout-config.service&#x27;;
+import { ConfigModel } from &#x27;../interfaces/config&#x27;;
+
+@Injectable()
+export class ClassInitService {
+	public config: any;
+	public classes: any &#x3D; {};
+	public onClassesUpdated$: BehaviorSubject&lt;any&gt;;
+
+	constructor(private layoutConfigService: LayoutConfigService) {
+		// scope list of classes
+		this.classes &#x3D; {
+			body: [],
+			brand: [],
+			header: [],
+			header_menu: [],
+			header_menu_nav: [],
+			header_menu_close: [],
+			aside_menu: [],
+			aside_menu_nav: [],
+			aside_left: [],
+			aside_left_close: []
+		};
+		this.onClassesUpdated$ &#x3D; new BehaviorSubject(this.classes);
+	}
+
+	setConfig(model: ConfigModel): void {
+		this.config &#x3D; model.config;
+
+		// scope list of classes
+		this.classes &#x3D; {
+			body: [],
+			brand: [],
+			header: [],
+			header_menu: [],
+			header_menu_nav: [],
+			header_menu_close: [],
+			aside_menu: [],
+			aside_menu_nav: [],
+			aside_left: [],
+			aside_left_close: []
+		};
+
+		// init base layout
+		this.initLayout();
+		this.initLoader();
+		this.initContent();
+
+		// init header and header menu
+		this.initHeader();
+		this.initHeaderMenuDesktop();
+		this.initHeaderMenuMobile();
+
+		// init aside and aside menu
+		this.initAsideLeft();
+		this.initAsideMenu();
+
+		// init other asides
+		this.initAsideRight();
+
+		// init footer
+		this.initFooter();
+
+		// init quick sidebar
+		this.initQuickSidebar();
+
+		this.onClassesUpdated$.next(this.classes);
+	}
+
+	initLayout(): void {
+		const layout &#x3D; objectPath.get(this.config, &#x27;self.layout&#x27;);
+		if (layout) {
+			this.classes.body.push(&#x27;m-page--&#x27; + layout);
+		}
+
+		if (objectPath.has(this.config, &#x27;self.skin&#x27;)) {
+			this.classes.body.push(&#x27;m--skin-&#x27; + objectPath.get(this.config, &#x27;self.skin&#x27;));
+		}
+	}
+
+	initLoader(): void {
+		// this.classes.body.push(&#x27;m-page--loading-enabled&#x27;);
+		// this.classes.body.push(&#x27;m-page--loading-non-block&#x27;);
+	}
+
+	initHeader(): void {
+		if (objectPath.get(this.config, &#x27;header.self.fixed.desktop&#x27;)) {
+			this.classes.body.push(&#x27;m-header--fixed&#x27;);
+		} else {
+			this.classes.body.push(&#x27;m-header--static&#x27;);
+		}
+
+		if (objectPath.get(this.config, &#x27;header.self.fixed.mobile&#x27;)) {
+			this.classes.body.push(&#x27;m-header--fixed-mobile&#x27;);
+		}
+
+		const skin &#x3D; objectPath.get(this.config, &#x27;aside.left.skin&#x27;);
+		if (skin) {
+			this.classes.brand.push(&#x27;m-brand--skin-&#x27; + skin);
+		}
+	}
+
+	initHeaderMenuDesktop(): void {
+		this.classes.header_menu.push(&#x27;m-header-menu--skin-&#x27; + objectPath.get(this.config, &#x27;menu.header.desktop.skin&#x27;));
+		this.classes.header_menu.push(&#x27;m-header-menu--submenu-skin-&#x27; + objectPath.get(this.config, &#x27;menu.header.desktop.submenu.skin&#x27;));
+
+		if (objectPath.get(this.config, &#x27;menu.header.desktop.arrow&#x27;)) {
+			this.classes.header_menu_nav.push(&#x27;m-menu__nav--submenu-arrow&#x27;);
+		}
+	}
+
+	initHeaderMenuMobile(): void {
+		const skin &#x3D; objectPath.get(this.config, &#x27;aside.left.skin&#x27;);
+		this.classes.header_menu.push(&#x27;m-aside-header-menu-mobile--skin-&#x27; + skin);
+		this.classes.header_menu_close.push(&#x27;m-aside-header-menu-mobile-close--skin-&#x27; + skin);
+		this.classes.header_menu.push(&#x27;m-aside-header-menu-mobile--submenu-skin-&#x27; + skin);
+	}
+
+	initAsideMenu(): void {
+		// skin
+		const skin &#x3D; objectPath.get(this.config, &#x27;aside.left.skin&#x27;);
+		if (skin) {
+			this.classes.aside_menu.push(&#x27;m-aside-menu--skin-&#x27; + skin);
+		}
+
+		if (objectPath.get(this.config, &#x27;menu.aside.desktop_and_mobile.submenu.skin&#x27;) &#x3D;&#x3D;&#x3D; &#x27;inherit&#x27;) {
+			this.classes.aside_menu.push(&#x27;m-aside-menu--submenu-skin-&#x27; + skin);
+		} else {
+			this.classes.aside_menu.push(&#x27;m-aside-menu--submenu-skin-&#x27; + objectPath.get(this.config, &#x27;menu.aside.desktop_and_mobile.submenu.skin&#x27;));
+		}
+
+		if (!objectPath.get(this.config, &#x27;aside.left.fixed&#x27;) &amp;&amp; !objectPath.get(this.config, &#x27;menu.aside.desktop_and_mobile.submenu.accordion&#x27;)) {
+			this.classes.aside_menu.push(&#x27;m-aside-menu--dropdown&#x27;);
+		}
+
+		// menu root level item highlight type
+		// option not found
+		// if (objectPath.get(this.config, &#x27;menu.aside.root-active-style&#x27;)) {
+		// 	this.classes.aside_menu.push(&#x27;m-aside-menu--active-item-border&#x27;);
+		// }
+
+		if (objectPath.get(this.config, &#x27;menu.aside.desktop_and_mobile.minimize.submenu_type&#x27;)) {
+			this.classes.aside_menu.push(&#x27;m-aside-menu--minimize-submenu-compact&#x27;);
+		}
+
+		if (objectPath.get(this.config, &#x27;menu.aside.desktop_and_mobile.submenu.dropdown.arrow&#x27;)) {
+			this.classes.aside_menu_nav.push(&#x27;m-menu__nav--dropdown-submenu-arrow&#x27;);
+		}
+	}
+
+	initAsideLeft(): void {
+		// if aside left display is disabled, do exit
+		if (!objectPath.get(this.config, &#x27;aside.left.display&#x27;)) {
+			return;
+		}
+
+		this.classes.body.push(&#x27;m-aside-left--enabled&#x27;);
+
+		const skin &#x3D; objectPath.get(this.config, &#x27;aside.left.skin&#x27;);
+		if (skin) {
+			this.classes.aside_left.push(&#x27;m-aside-left--skin-&#x27; + skin);
+			this.classes.aside_left_close.push(&#x27;m-aside-left-close--skin-&#x27; + skin);
+			this.classes.body.push(&#x27;m-aside-left--skin-&#x27; + skin);
+		}
+
+		// fixed aside
+		if (objectPath.get(this.config, &#x27;aside.left.fixed&#x27;)) {
+			this.classes.body.push(&#x27;m-aside-left--fixed&#x27;);
+		}
+
+		// offcanvas aside
+		if (objectPath.get(this.config, &#x27;aside.left.offcanvas.default&#x27;)) {
+			this.classes.aside_left.push(&#x27;m-aside-left--offcanvas-default&#x27;);
+		} else {
+			this.classes.body.push(&#x27;m-aside-left--offcanvas&#x27;);
+		}
+
+		// minimized aside for desktop mode
+		if (objectPath.get(this.config, &#x27;aside.left.minimize.default&#x27;)) {
+			this.classes.body.push(&#x27;m-aside-left--minimize&#x27;);
+			this.classes.body.push(&#x27;m-brand--minimize&#x27;);
+		}
+
+		// hidable aside
+		if (objectPath.get(this.config, &#x27;aside.left.hide.default&#x27;)) {
+			this.classes.body.push(&#x27;m-aside-left--hide&#x27;);
+		}
+	}
+
+	initAsideRight(): void {
+		if (!objectPath.get(this.config, &#x27;aside.right.display&#x27;)) {
+			return;
+		}
+		this.classes.body.push(&#x27;m-aside-right--enabled&#x27;);
+	}
+
+	initContent(): void {
+		if (objectPath.get(this.config, &#x27;self.layout&#x27;) !&#x3D;&#x3D; &#x27;blank&#x27;) {
+			this.classes.body.push(&#x27;m-content--skin-&#x27; + objectPath.get(this.config, &#x27;content.skin&#x27;));
+		}
+	}
+
+	initFooter(): void {
+		if (objectPath.get(this.config, &#x27;footer.fixed&#x27;) &amp;&amp; objectPath.get(this.config, &#x27;self.layout&#x27;) !&#x3D;&#x3D; &#x27;boxed&#x27;) {
+			this.classes.body.push(&#x27;m-footer--fixed&#x27;);
+		}
+		if (objectPath.get(this.config, &#x27;aside.left.push_footer&#x27;) || objectPath.get(this.config, &#x27;aside.left.fixed&#x27;)) {
+			this.classes.body.push(&#x27;m-footer--push&#x27;);
+		}
+	}
+
+	initQuickSidebar(): void {
+		if (objectPath.get(this.config, &#x27;quicksidebar.display&#x27;)) {
+			this.classes.body.push(&#x27;m-aside--offcanvas-default&#x27;);
+		}
+	}
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'ClassInitService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

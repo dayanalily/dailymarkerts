@@ -1,0 +1,1502 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">default documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>ProfileComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/content/pages/header/profile/profile.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+            <tr>
+                <td class="col-md-3">changeDetection</td>
+                <td class="col-md-9"><code>ChangeDetectionStrategy.OnPush</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>m-profile</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./profile.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./profile.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#fileToUpload">fileToUpload</a>
+                            </li>
+                            <li>
+                                <a href="#model">model</a>
+                            </li>
+                            <li>
+                                <a href="#nombreFoto">nombreFoto</a>
+                            </li>
+                            <li>
+                                <a href="#urlFoto">urlFoto</a>
+                            </li>
+                            <li>
+                                <a href="#usuario">usuario</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cancelar">cancelar</a>
+                            </li>
+                            <li>
+                                <a href="#guardar">guardar</a>
+                            </li>
+                            <li>
+                                <a href="#handleFileInput">handleFileInput</a>
+                            </li>
+                            <li>
+                                <a href="#listarUsuario">listarUsuario</a>
+                            </li>
+                            <li>
+                                <a href="#MaysPrimera">MaysPrimera</a>
+                            </li>
+                            <li>
+                                <a href="#mostrarMensaje">mostrarMensaje</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#seleccionarFoto">seleccionarFoto</a>
+                            </li>
+                            <li>
+                                <a href="#subirFoto">subirFoto</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(auth: <a href="../injectables/AuthenticationService.html">AuthenticationService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, profile: <a href="../injectables/ProfileService.html">ProfileService</a>, cd: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/content/pages/header/profile/profile.component.ts:21</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>auth</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthenticationService.html" target="_self" >AuthenticationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>profile</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ProfileService.html" target="_self" >ProfileService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>cd</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cancelar"></a>
+                    <span class="name">
+                        <b>
+                            cancelar
+                        </b>
+                        <a href="#cancelar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>cancelar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="129"
+                            class="link-to-prism">src/app/content/pages/header/profile/profile.component.ts:129</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="guardar"></a>
+                    <span class="name">
+                        <b>
+                            guardar
+                        </b>
+                        <a href="#guardar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>guardar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="90"
+                            class="link-to-prism">src/app/content/pages/header/profile/profile.component.ts:90</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleFileInput"></a>
+                    <span class="name">
+                        <b>
+                            handleFileInput
+                        </b>
+                        <a href="#handleFileInput"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleFileInput(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="41"
+                            class="link-to-prism">src/app/content/pages/header/profile/profile.component.ts:41</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listarUsuario"></a>
+                    <span class="name">
+                        <b>
+                            listarUsuario
+                        </b>
+                        <a href="#listarUsuario"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listarUsuario()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="116"
+                            class="link-to-prism">src/app/content/pages/header/profile/profile.component.ts:116</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="MaysPrimera"></a>
+                    <span class="name">
+                        <b>
+                            MaysPrimera
+                        </b>
+                        <a href="#MaysPrimera"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>MaysPrimera(string)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="86"
+                            class="link-to-prism">src/app/content/pages/header/profile/profile.component.ts:86</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>string</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mostrarMensaje"></a>
+                    <span class="name">
+                        <b>
+                            mostrarMensaje
+                        </b>
+                        <a href="#mostrarMensaje"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>mostrarMensaje(response)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="97"
+                            class="link-to-prism">src/app/content/pages/header/profile/profile.component.ts:97</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>response</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/app/content/pages/header/profile/profile.component.ts:36</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="seleccionarFoto"></a>
+                    <span class="name">
+                        <b>
+                            seleccionarFoto
+                        </b>
+                        <a href="#seleccionarFoto"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>seleccionarFoto(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/content/pages/header/profile/profile.component.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="subirFoto"></a>
+                    <span class="name">
+                        <b>
+                            subirFoto
+                        </b>
+                        <a href="#subirFoto"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>subirFoto()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/app/content/pages/header/profile/profile.component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fileToUpload"></a>
+                        <span class="name">
+                            <b>
+                            fileToUpload</b>
+                            <a href="#fileToUpload"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>File</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>null</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/content/pages/header/profile/profile.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="model"></a>
+                        <span class="name">
+                            <b>
+                            model</b>
+                            <a href="#model"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{ direccion: &#x27;&#x27; }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/content/pages/header/profile/profile.component.ts:21</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="nombreFoto"></a>
+                        <span class="name">
+                            <b>
+                            nombreFoto</b>
+                            <a href="#nombreFoto"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/content/pages/header/profile/profile.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="urlFoto"></a>
+                        <span class="name">
+                            <b>
+                            urlFoto</b>
+                            <a href="#urlFoto"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/content/pages/header/profile/profile.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="usuario"></a>
+                        <span class="name">
+                            <b>
+                            usuario</b>
+                            <a href="#usuario"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Usuario.html" target="_self" >Usuario</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/content/pages/header/profile/profile.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from &#x27;@angular/core&#x27;;
+import { AuthenticationService } from &#x27;../../../../core/auth/authentication.service&#x27;;
+import { Usuario } from &#x27;../../../../core/interfaces/usuario&#x27;;
+import { ProfileService } from &#x27;./profile.service&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { HttpEventType } from &#x27;@angular/common/http&#x27;;
+import swal from &#x27;sweetalert2&#x27;;
+
+
+@Component({
+  selector: &#x27;m-profile&#x27;,
+  templateUrl: &#x27;./profile.component.html&#x27;,
+  styleUrls: [&#x27;./profile.component.scss&#x27;],
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class ProfileComponent implements OnInit {
+  usuario: Usuario;
+  urlFoto: String;
+  fileToUpload: File &#x3D; null;
+  nombreFoto: String;
+  model: any &#x3D; { direccion: &#x27;&#x27; }
+  constructor(
+    private auth: AuthenticationService,
+    private router: Router,
+    private profile: ProfileService, 
+    private cd: ChangeDetectorRef) {
+    this.usuario &#x3D; new Usuario();
+    const datosUser &#x3D; JSON.parse(sessionStorage.usuario)
+    this.usuario.id &#x3D; datosUser.id
+ 
+    
+    this.listarUsuario();
+
+  }
+
+  ngOnInit() {
+
+  }
+
+
+  handleFileInput(event) {
+
+    this.fileToUpload &#x3D; event.target.files[0];
+
+
+    this.profile.postFile(this.fileToUpload, this.usuario.id)
+      .subscribe(event &#x3D;&gt; {
+        if (event.type &#x3D;&#x3D;&#x3D; HttpEventType.UploadProgress) {
+        } else if (event.type &#x3D;&#x3D;&#x3D; HttpEventType.Response) {
+          let response: any &#x3D; event.body;
+        }
+      });
+
+  }
+  seleccionarFoto(event) {
+    this.nombreFoto &#x3D; null
+    this.fileToUpload &#x3D; event.target.files[0];
+    this.nombreFoto &#x3D; this.fileToUpload.name;
+    if (this.fileToUpload.type.indexOf(&#x27;image&#x27;) &lt; 0) {
+      swal.fire(&#x27;Error seleccionar imagen: &#x27;, &#x27;El archivo debe ser del tipo imagen&#x27;, &#x27;error&#x27;);
+      this.fileToUpload &#x3D; null;
+      this.nombreFoto &#x3D; null
+    }
+  
+  }
+
+  subirFoto() {
+    this.nombreFoto &#x3D; null
+    if (!this.fileToUpload) {
+      swal.fire(&#x27;Error Upload: &#x27;, &#x27;Debe seleccionar una foto&#x27;, &#x27;error&#x27;);
+    } else {
+      this.profile.postFile(this.fileToUpload, this.usuario.id)
+        .subscribe(event &#x3D;&gt; {
+          if (event.type &#x3D;&#x3D;&#x3D; HttpEventType.UploadProgress) {
+          } else if (event.type &#x3D;&#x3D;&#x3D; HttpEventType.Response) {
+            let response: any &#x3D; event.body;
+            swal.fire(&#x27;La foto se ha subido completamente!&#x27;, response.mensaje, &#x27;success&#x27;);
+          }
+        });
+    }
+    this.urlFoto &#x3D; &#x27;https://edaily-spring.herokuapp.com/api/uploads/img/&#x27; + this.usuario.foto;
+
+  }
+
+  
+  MaysPrimera(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
+  guardar() {
+    this.profile.completarRegistro(this.usuario).subscribe(response &#x3D;&gt; {
+      this.mostrarMensaje(response);
+      this.listarUsuario();
+    });
+  }
+
+  mostrarMensaje(response) {
+    const Toast &#x3D; swal.mixin({
+      toast: true,
+      position: &#x27;top-end&#x27;,
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      onOpen: (toast) &#x3D;&gt; {
+        toast.addEventListener(&#x27;mouseenter&#x27;, swal.stopTimer)
+        toast.addEventListener(&#x27;mouseleave&#x27;, swal.resumeTimer)
+      }
+    })
+
+    Toast.fire({
+      icon: &#x27;success&#x27;,
+      title: response.mensaje
+    })
+  }
+
+  listarUsuario() {
+
+    this.profile.listarUsuarioID(this.usuario.id).subscribe(data &#x3D;&gt; {
+     
+      this.usuario &#x3D; data;
+      this.usuario.nombre &#x3D; this.MaysPrimera(this.usuario.nombre.toLowerCase());
+      this.usuario.apellido &#x3D; this.MaysPrimera(this.usuario.apellido.toLowerCase());
+      this.urlFoto &#x3D; &#x27;https://edaily-spring.herokuapp.com/api/uploads/img/&#x27; + this.usuario.foto;
+      this.cd.markForCheck(); // marks path
+    
+    })
+  }
+
+  cancelar(){
+    this.router.navigate([&#x27;/index&#x27;])
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row&quot;&gt;
+  &lt;div class&#x3D;&quot;col-xl-4 col-lg-5&quot;&gt;
+    &lt;div class&#x3D;&quot;m-portlet m-portlet--full-height&quot;&gt;
+      &lt;div class&#x3D;&quot;m-portlet__body&quot;&gt;
+        &lt;div class&#x3D;&quot;m-card-profile&quot;&gt;
+          &lt;div class&#x3D;&quot;m-card-profile__title m--hide&quot;&gt;
+            Tu perfil
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;form-group m-form__group row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-12 ml-auto&quot;&gt;
+              &lt;h3 class&#x3D;&quot;m-form__section&quot;&gt;Datos personales&lt;/h3&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;m-card-profile__pic&quot;&gt;
+            &lt;div class&#x3D;&quot;m-card-profile__pic-wrapper&quot;&gt;
+              &lt;img src&#x3D;{{urlFoto}} alt&#x3D;&quot;{{usuario.foto}}&quot;
+                *ngIf&#x3D;&quot;usuario?.foto&quot;&gt;
+              &lt;img src&#x3D;&quot;./assets/app/media/img/users/no-user.jpg&quot; alt&#x3D;&quot;&quot; *ngIf&#x3D;&quot;!usuario?.foto&quot;&gt;
+            &lt;/div&gt;
+
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;input-group mb-3 row&quot;&gt;
+            &lt;div class&#x3D;&quot;custom-file col-7 p-0 &quot;&gt;
+              &lt;label for&#x3D;&quot;inputGroupFile04&quot; style&#x3D;&quot;cursor:pointer&quot;&gt;Seleccionar foto&lt;/label&gt;
+
+              &lt;input (change)&#x3D;&quot;seleccionarFoto($event)&quot; type&#x3D;&quot;file&quot; class&#x3D;&quot;custom-file-input&quot; id&#x3D;&quot;inputGroupFile04&quot;
+                aria-describedby&#x3D;&quot;inputGroupFileAddon04&quot; name&#x3D;&quot;inputGroupFile04&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;input-group-append col-5 p-0 mt-2&quot; *ngIf&#x3D;&quot;nombreFoto&quot;&gt;
+              {{nombreFoto}}
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;input-group-append col-9&quot; *ngIf&#x3D;&quot;nombreFoto&quot;&gt;
+
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;input-group-append col-3&quot;&gt;
+              &lt;button (click)&#x3D;&quot;subirFoto()&quot; [disabled]&#x3D;&quot;!fileToUpload&quot;
+                class&#x3D;&quot;btn-primary m-btn m-btn--air m-btn--custom&quot; type&#x3D;&quot;button&quot;
+                id&#x3D;&quot;inputGroupFileAddon04&quot;&gt;Subir&lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;m-card-profile__details&quot;&gt;
+            &lt;span class&#x3D;&quot;m-card-profile__name&quot;&gt;&lt;/span&gt;
+            &lt;span class&#x3D;&quot;m-card-profile__email m-link&quot;&gt;&lt;/span&gt;
+            {{usuario.email}}
+          &lt;/div&gt;
+
+          &lt;div class&#x3D;&quot;form-group m-form__group row ml-1 mt-3&quot;&gt;
+            &lt;label&gt;&lt;strong&gt;Nombre completo&lt;/strong&gt; &lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-6&quot;&gt;
+              &lt;span&gt;{{usuario.nombre}}&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-6&quot;&gt;
+              &lt;span&gt;{{usuario.apellido}}&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class&#x3D;&quot;form-group m-form__group row mt-3&quot;&gt;
+
+            &lt;div class&#x3D;&quot;col-5&quot;&gt;
+              &lt;label&gt;&lt;strong&gt;Ocupaciòn&lt;/strong&gt; &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-7&quot;&gt;
+              &lt;label&gt;{{usuario.ocupacion}}&lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div class&#x3D;&quot;form-group m-form__group row mt-2&quot;&gt;
+
+            &lt;div class&#x3D;&quot;col-5&quot;&gt;
+              &lt;label&gt;&lt;strong&gt;Telèfono&lt;/strong&gt; &lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col-7&quot;&gt;
+              &lt;label&gt;{{usuario.telefono}}&lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- &lt;ul class&#x3D;&quot;m-nav m-nav--hover-bg m-portlet-fit--sides&quot;&gt;
+          &lt;li class&#x3D;&quot;m-nav__separator m-nav__separator--fit&quot;&gt;&lt;/li&gt;
+          &lt;li class&#x3D;&quot;m-nav__section m--hide&quot;&gt;
+            &lt;span class&#x3D;&quot;m-nav__section-text&quot;&gt;Section&lt;/span&gt;
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;m-nav__item&quot;&gt;
+            &lt;a href&#x3D;&quot;?page&#x3D;header/profile&amp;amp;demo&#x3D;default&quot; class&#x3D;&quot;m-nav__link&quot;&gt;
+              &lt;i class&#x3D;&quot;m-nav__link-icon flaticon-profile-1&quot;&gt;&lt;/i&gt;
+              &lt;span class&#x3D;&quot;m-nav__link-title&quot;&gt;
+                  &lt;span class&#x3D;&quot;m-nav__link-wrap&quot;&gt;
+                      &lt;span class&#x3D;&quot;m-nav__link-text&quot;&gt;My Profile&lt;/span&gt;
+                      &lt;span class&#x3D;&quot;m-nav__link-badge&quot;&gt;
+                          &lt;span class&#x3D;&quot;m-badge m-badge--success&quot;&gt;2&lt;/span&gt;
+                      &lt;/span&gt;
+                  &lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;m-nav__item&quot;&gt;
+            &lt;a href&#x3D;&quot;?page&#x3D;header/profile&amp;amp;demo&#x3D;default&quot; class&#x3D;&quot;m-nav__link&quot;&gt;
+              &lt;i class&#x3D;&quot;m-nav__link-icon flaticon-share&quot;&gt;&lt;/i&gt;
+              &lt;span class&#x3D;&quot;m-nav__link-text&quot;&gt;Activity&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;m-nav__item&quot;&gt;
+            &lt;a href&#x3D;&quot;?page&#x3D;header/profile&amp;amp;demo&#x3D;default&quot; class&#x3D;&quot;m-nav__link&quot;&gt;
+              &lt;i class&#x3D;&quot;m-nav__link-icon flaticon-chat-1&quot;&gt;&lt;/i&gt;
+              &lt;span class&#x3D;&quot;m-nav__link-text&quot;&gt;Messages&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt; 
+        &lt;li class&#x3D;&quot;m-nav__item&quot;&gt;
+            &lt;a href&#x3D;&quot;?page&#x3D;header/profile&amp;amp;demo&#x3D;default&quot; class&#x3D;&quot;m-nav__link&quot;&gt;
+              &lt;i class&#x3D;&quot;m-nav__link-icon flaticon-graphic-2&quot;&gt;&lt;/i&gt;
+              &lt;span class&#x3D;&quot;m-nav__link-text&quot;&gt;Sales&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;m-nav__item&quot;&gt;
+            &lt;a href&#x3D;&quot;?page&#x3D;header/profile&amp;amp;demo&#x3D;default&quot; class&#x3D;&quot;m-nav__link&quot;&gt;
+              &lt;i class&#x3D;&quot;m-nav__link-icon flaticon-time-3&quot;&gt;&lt;/i&gt;
+              &lt;span class&#x3D;&quot;m-nav__link-text&quot;&gt;Events&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;m-nav__item&quot;&gt;
+            &lt;a href&#x3D;&quot;?page&#x3D;header/profile&amp;amp;demo&#x3D;default&quot; class&#x3D;&quot;m-nav__link&quot;&gt;
+              &lt;i class&#x3D;&quot;m-nav__link-icon flaticon-lifebuoy&quot;&gt;&lt;/i&gt;
+              &lt;span class&#x3D;&quot;m-nav__link-text&quot;&gt;Support&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt; 
+        &lt;/ul&gt;
+        &lt;div class&#x3D;&quot;m-portlet__body-separator&quot;&gt;&lt;/div&gt;--&gt;
+        &lt;!-- &lt;div class&#x3D;&quot;m-widget1 m-widget1--paddingless&quot;&gt;
+          &lt;div class&#x3D;&quot;m-widget1__item&quot;&gt;
+            &lt;div class&#x3D;&quot;row m-row--no-padding align-items-center&quot;&gt;
+              &lt;div class&#x3D;&quot;col&quot;&gt;
+                &lt;h3 class&#x3D;&quot;m-widget1__title&quot;&gt;Member Profit&lt;/h3&gt;
+                &lt;span class&#x3D;&quot;m-widget1__desc&quot;&gt;Awerage Weekly Profit&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col m--align-right&quot;&gt;
+                &lt;span class&#x3D;&quot;m-widget1__number m--font-brand&quot;&gt;+$17,800&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;m-widget1__item&quot;&gt;
+            &lt;div class&#x3D;&quot;row m-row--no-padding align-items-center&quot;&gt;
+              &lt;div class&#x3D;&quot;col&quot;&gt;
+                &lt;h3 class&#x3D;&quot;m-widget1__title&quot;&gt;Orders&lt;/h3&gt;
+                &lt;span class&#x3D;&quot;m-widget1__desc&quot;&gt;Weekly Customer Orders&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col m--align-right&quot;&gt;
+                &lt;span class&#x3D;&quot;m-widget1__number m--font-danger&quot;&gt;+1,800&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;m-widget1__item&quot;&gt;
+            &lt;div class&#x3D;&quot;row m-row--no-padding align-items-center&quot;&gt;
+              &lt;div class&#x3D;&quot;col&quot;&gt;
+                &lt;h3 class&#x3D;&quot;m-widget1__title&quot;&gt;Issue Reports&lt;/h3&gt;
+                &lt;span class&#x3D;&quot;m-widget1__desc&quot;&gt;System bugs and issues&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col m--align-right&quot;&gt;
+                &lt;span class&#x3D;&quot;m-widget1__number m--font-success&quot;&gt;-27,49%&lt;/span&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt; --&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;col-xl-8 col-lg-7&quot;&gt;
+    &lt;div class&#x3D;&quot;m-portlet m-portlet--full-height m-portlet--tabs  &quot;&gt;
+      &lt;!-- &lt;div class&#x3D;&quot;m-portlet__head&quot;&gt;
+        &lt;div class&#x3D;&quot;m-portlet__head-tools&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;m-portlet__head-tools&quot;&gt;
+          &lt;ul class&#x3D;&quot;m-portlet__nav&quot;&gt;
+            &lt;li class&#x3D;&quot;m-portlet__nav-item m-portlet__nav-item--last&quot;&gt;
+              &lt;div class&#x3D;&quot;m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push&quot; m-dropdown-toggle&#x3D;&quot;hover&quot; aria-expanded&#x3D;&quot;true&quot;&gt;
+                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle&quot;&gt;
+                  &lt;i class&#x3D;&quot;la la-gear&quot;&gt;&lt;/i&gt;
+                &lt;/a&gt;
+                &lt;div class&#x3D;&quot;m-dropdown__wrapper&quot; style&#x3D;&quot;z-index: 101;&quot;&gt;
+                  &lt;span class&#x3D;&quot;m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust&quot; style&#x3D;&quot;left: auto; right: 21.5px;&quot;&gt;&lt;/span&gt;
+                  &lt;div class&#x3D;&quot;m-dropdown__inner&quot;&gt;
+                    &lt;div class&#x3D;&quot;m-dropdown__body&quot;&gt;
+                      &lt;div class&#x3D;&quot;m-dropdown__content&quot;&gt;
+                        &lt;ul class&#x3D;&quot;m-nav&quot;&gt;
+                          &lt;li class&#x3D;&quot;m-nav__section m-nav__section--first&quot;&gt;
+                            &lt;span class&#x3D;&quot;m-nav__section-text&quot;&gt;Quick Actions&lt;/span&gt;
+                          &lt;/li&gt;
+                          &lt;li class&#x3D;&quot;m-nav__item&quot;&gt;
+                            &lt;a href&#x3D;&quot;&quot; class&#x3D;&quot;m-nav__link&quot;&gt;
+                              &lt;i class&#x3D;&quot;m-nav__link-icon flaticon-share&quot;&gt;&lt;/i&gt;
+                              &lt;span class&#x3D;&quot;m-nav__link-text&quot;&gt;Create Post&lt;/span&gt;
+                            &lt;/a&gt;
+                          &lt;/li&gt;
+                          &lt;li class&#x3D;&quot;m-nav__item&quot;&gt;
+                            &lt;a href&#x3D;&quot;&quot; class&#x3D;&quot;m-nav__link&quot;&gt;
+                              &lt;i class&#x3D;&quot;m-nav__link-icon flaticon-chat-1&quot;&gt;&lt;/i&gt;
+                              &lt;span class&#x3D;&quot;m-nav__link-text&quot;&gt;Send Messages&lt;/span&gt;
+                            &lt;/a&gt;
+                          &lt;/li&gt;
+                          &lt;li class&#x3D;&quot;m-nav__item&quot;&gt;
+                            &lt;a href&#x3D;&quot;&quot; class&#x3D;&quot;m-nav__link&quot;&gt;
+                              &lt;i class&#x3D;&quot;m-nav__link-icon flaticon-multimedia-2&quot;&gt;&lt;/i&gt;
+                              &lt;span class&#x3D;&quot;m-nav__link-text&quot;&gt;Upload File&lt;/span&gt;
+                            &lt;/a&gt;
+                          &lt;/li&gt;
+                          &lt;li class&#x3D;&quot;m-nav__section&quot;&gt;
+                            &lt;span class&#x3D;&quot;m-nav__section-text&quot;&gt;Useful Links&lt;/span&gt;
+                          &lt;/li&gt;
+                          &lt;li class&#x3D;&quot;m-nav__item&quot;&gt;
+                            &lt;a href&#x3D;&quot;&quot; class&#x3D;&quot;m-nav__link&quot;&gt;
+                              &lt;i class&#x3D;&quot;m-nav__link-icon flaticon-info&quot;&gt;&lt;/i&gt;
+                              &lt;span class&#x3D;&quot;m-nav__link-text&quot;&gt;FAQ&lt;/span&gt;
+                            &lt;/a&gt;
+                          &lt;/li&gt;
+                          &lt;li class&#x3D;&quot;m-nav__item&quot;&gt;
+                            &lt;a href&#x3D;&quot;&quot; class&#x3D;&quot;m-nav__link&quot;&gt;
+                              &lt;i class&#x3D;&quot;m-nav__link-icon flaticon-lifebuoy&quot;&gt;&lt;/i&gt;
+                              &lt;span class&#x3D;&quot;m-nav__link-text&quot;&gt;Support&lt;/span&gt;
+                            &lt;/a&gt;
+                          &lt;/li&gt;
+                          &lt;li class&#x3D;&quot;m-nav__separator m-nav__separator--fit m--hide&quot;&gt;&lt;/li&gt;
+                          &lt;li class&#x3D;&quot;m-nav__item m--hide&quot;&gt;
+                            &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm&quot;&gt;Submit&lt;/a&gt;
+                          &lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt; --&gt;
+      &lt;div class&#x3D;&quot;m-portlet__body&quot;&gt;
+        &lt;form class&#x3D;&quot;m-form m-form--fit m-form--label-align-right&quot;&gt;
+          &lt;div&gt;
+            &lt;div class&#x3D;&quot;form-group m-form__group row&quot;&gt;
+              &lt;div class&#x3D;&quot;col-10 ml-auto&quot;&gt;
+                &lt;h3 class&#x3D;&quot;m-form__section&quot;&gt;Dirección&lt;/h3&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;form-group m-form__group row&quot;&gt;
+              &lt;div class&#x3D;&quot;col-4&quot;&gt;
+                &lt;label for&#x3D;&quot;example-text-input&quot; class&#x3D;&quot;scol-form-label&quot;&gt;&lt;strong&gt;Direcciòn&lt;/strong&gt;&lt;/label&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-8&quot;&gt;
+                &lt;input class&#x3D;&quot;form-control m-input&quot; name&#x3D;&quot;direccion&quot; [(ngModel)]&#x3D;&quot;usuario.direccion&quot; type&#x3D;&quot;text&quot;&gt;
+
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;form-group m-form__group row&quot;&gt;
+              &lt;div class&#x3D;&quot;col-4&quot;&gt;
+                &lt;label for&#x3D;&quot;example-text-input&quot; class&#x3D;&quot;col-form-label&quot;&gt;&lt;strong&gt;Ciudad&lt;/strong&gt;&lt;/label&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-8&quot;&gt;
+                &lt;input class&#x3D;&quot;form-control m-input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;ciudad&quot; [(ngModel)]&#x3D;&quot;usuario.cuidad&quot;&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;form-group m-form__group row&quot;&gt;
+              &lt;div class&#x3D;&quot;col-4&quot;&gt;
+                &lt;label for&#x3D;&quot;example-text-input&quot; class&#x3D;&quot;col-form-label&quot;&gt;&lt;strong&gt;Estado/region&lt;/strong&gt;&lt;/label&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-8&quot;&gt;
+                &lt;input class&#x3D;&quot;form-control m-input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;estado&quot; [(ngModel)]&#x3D;&quot;usuario.estado&quot;&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;form-group m-form__group row&quot;&gt;
+              &lt;div class&#x3D;&quot;col-4&quot;&gt;
+                &lt;label for&#x3D;&quot;example-text-input&quot; class&#x3D;&quot; col-form-label&quot;&gt;&lt;strong&gt;Codigo Postal&lt;/strong&gt;&lt;/label&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-8&quot;&gt;
+                &lt;input class&#x3D;&quot;form-control m-input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;codigoPostal&quot; [(ngModel)]&#x3D;&quot;usuario.codigoPostal&quot;&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;m-form__seperator m-form__seperator--dashed m-form__seperator--space-2x&quot;&gt;&lt;/div&gt;
+            &lt;div class&#x3D;&quot;form-group m-form__group row&quot;&gt;
+              &lt;div class&#x3D;&quot;col-10 ml-auto&quot;&gt;
+                &lt;h3 class&#x3D;&quot;m-form__section&quot;&gt;Social Links&lt;/h3&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;form-group m-form__group row&quot;&gt;
+              &lt;div class&#x3D;&quot;col-4&quot;&gt;
+                &lt;label for&#x3D;&quot;example-text-input&quot; class&#x3D;&quot;col-2 col-form-label&quot;&gt;&lt;strong&gt;Linkedin&lt;/strong&gt;&lt;/label&gt;
+              &lt;/div&gt;
+
+              &lt;div class&#x3D;&quot;col-8&quot;&gt;
+                &lt;input class&#x3D;&quot;form-control m-input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;linkedink&quot; [(ngModel)]&#x3D;&quot;usuario.linkedink&quot;&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;form-group m-form__group row&quot;&gt;
+              &lt;div class&#x3D;&quot;col-4&quot;&gt;
+                &lt;label for&#x3D;&quot;example-text-input&quot; class&#x3D;&quot;col-2 col-form-label&quot;&gt;&lt;strong&gt;Facebook&lt;/strong&gt;&lt;/label&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-8&quot;&gt;
+                &lt;input class&#x3D;&quot;form-control m-input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;facebook&quot; [(ngModel)]&#x3D;&quot;usuario.facebook&quot;&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;form-group m-form__group row&quot;&gt;
+              &lt;div class&#x3D;&quot;col-4&quot;&gt;
+                &lt;label for&#x3D;&quot;example-text-input&quot; class&#x3D;&quot;col-2 col-form-label&quot;&gt;&lt;strong&gt;Twitter&lt;/strong&gt;&lt;/label&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-8&quot;&gt;
+                &lt;input class&#x3D;&quot;form-control m-input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;twittter&quot; [(ngModel)]&#x3D;&quot;usuario.twittter&quot;&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;form-group m-form__group row&quot;&gt;
+
+              &lt;div class&#x3D;&quot;col-4&quot;&gt;
+                &lt;label for&#x3D;&quot;example-text-input&quot; class&#x3D;&quot;col-2 col-form-label&quot;&gt;&lt;strong&gt;Instagram&lt;/strong&gt;&lt;/label&gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;col-8&quot;&gt;
+                &lt;input class&#x3D;&quot;form-control m-input&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;instagram&quot; [(ngModel)]&#x3D;&quot;usuario.instagram&quot;&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class&#x3D;&quot;m-portlet__foot m-portlet__foot--fit&quot;&gt;
+            &lt;div class&#x3D;&quot;m-form__actions&quot;&gt;
+              &lt;div class&#x3D;&quot;row&quot;&gt;
+                &lt;div class&#x3D;&quot;col-6&quot;&gt;
+                  &lt;button type&#x3D;&quot;reset&quot; class&#x3D;&quot;btn btn-primary  m-btn m-btn--air m-btn--custom&quot;
+                    (click)&#x3D;&quot;guardar()&quot;&gt;Guardar
+                    Cambios&lt;/button&gt;&amp;nbsp;&amp;nbsp;
+
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;col-6&quot;&gt;
+
+                  &lt;button type&#x3D;&quot;reset&quot; class&#x3D;&quot;btn btn-accent m-btn m-btn--air m-btn--custom&quot;
+                    (click)&#x3D;&quot;cancelar()&quot;&gt;Cancelar&lt;/button&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./profile.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">input[type&#x3D;&quot;file&quot;] {
+     display: none;
+}
+
+.upload{
+    color: #5649ff;
+    font-size: x-large;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 36px;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row">  <div class="col-xl-4 col-lg-5">    <div class="m-portlet m-portlet--full-height">      <div class="m-portlet__body">        <div class="m-card-profile">          <div class="m-card-profile__title m--hide">            Tu perfil          </div>          <div class="form-group m-form__group row">            <div class="col-12 ml-auto">              <h3 class="m-form__section">Datos personales</h3>            </div>          </div>          <div class="m-card-profile__pic">            <div class="m-card-profile__pic-wrapper">              <img src={{urlFoto}} alt="{{usuario.foto}}"                *ngIf="usuario?.foto">              <img src="./assets/app/media/img/users/no-user.jpg" alt="" *ngIf="!usuario?.foto">            </div>          </div>          <div class="input-group mb-3 row">            <div class="custom-file col-7 p-0 ">              <label for="inputGroupFile04" style="cursor:pointer">Seleccionar foto</label>              <input (change)="seleccionarFoto($event)" type="file" class="custom-file-input" id="inputGroupFile04"                aria-describedby="inputGroupFileAddon04" name="inputGroupFile04">            </div>            <div class="input-group-append col-5 p-0 mt-2" *ngIf="nombreFoto">              {{nombreFoto}}            </div>            <div class="input-group-append col-9" *ngIf="nombreFoto">            </div>            <div class="input-group-append col-3">              <button (click)="subirFoto()" [disabled]="!fileToUpload"                class="btn-primary m-btn m-btn--air m-btn--custom" type="button"                id="inputGroupFileAddon04">Subir</button>            </div>          </div>          <div class="m-card-profile__details">            <span class="m-card-profile__name"></span>            <span class="m-card-profile__email m-link"></span>            {{usuario.email}}          </div>          <div class="form-group m-form__group row ml-1 mt-3">            <label><strong>Nombre completo</strong> </label>          </div>          <div class="row">            <div class="col-6">              <span>{{usuario.nombre}}</span>            </div>            <div class="col-6">              <span>{{usuario.apellido}}</span>            </div>          </div>          <div class="form-group m-form__group row mt-3">            <div class="col-5">              <label><strong>Ocupaciòn</strong> </label>            </div>            <div class="col-7">              <label>{{usuario.ocupacion}}</label>            </div>          </div>          <div class="form-group m-form__group row mt-2">            <div class="col-5">              <label><strong>Telèfono</strong> </label>            </div>            <div class="col-7">              <label>{{usuario.telefono}}</label>            </div>          </div>        </div>        <!-- <ul class="m-nav m-nav--hover-bg m-portlet-fit--sides">          <li class="m-nav__separator m-nav__separator--fit"></li>          <li class="m-nav__section m--hide">            <span class="m-nav__section-text">Section</span>          </li>          <li class="m-nav__item">            <a href="?page=header/profile&amp;demo=default" class="m-nav__link">              <i class="m-nav__link-icon flaticon-profile-1"></i>              <span class="m-nav__link-title">                  <span class="m-nav__link-wrap">                      <span class="m-nav__link-text">My Profile</span>                      <span class="m-nav__link-badge">                          <span class="m-badge m-badge--success">2</span>                      </span>                  </span>              </span>            </a>          </li>          <li class="m-nav__item">            <a href="?page=header/profile&amp;demo=default" class="m-nav__link">              <i class="m-nav__link-icon flaticon-share"></i>              <span class="m-nav__link-text">Activity</span>            </a>          </li>          <li class="m-nav__item">            <a href="?page=header/profile&amp;demo=default" class="m-nav__link">              <i class="m-nav__link-icon flaticon-chat-1"></i>              <span class="m-nav__link-text">Messages</span>            </a>          </li>         <li class="m-nav__item">            <a href="?page=header/profile&amp;demo=default" class="m-nav__link">              <i class="m-nav__link-icon flaticon-graphic-2"></i>              <span class="m-nav__link-text">Sales</span>            </a>          </li>          <li class="m-nav__item">            <a href="?page=header/profile&amp;demo=default" class="m-nav__link">              <i class="m-nav__link-icon flaticon-time-3"></i>              <span class="m-nav__link-text">Events</span>            </a>          </li>          <li class="m-nav__item">            <a href="?page=header/profile&amp;demo=default" class="m-nav__link">              <i class="m-nav__link-icon flaticon-lifebuoy"></i>              <span class="m-nav__link-text">Support</span>            </a>          </li>         </ul>        <div class="m-portlet__body-separator"></div>-->        <!-- <div class="m-widget1 m-widget1--paddingless">          <div class="m-widget1__item">            <div class="row m-row--no-padding align-items-center">              <div class="col">                <h3 class="m-widget1__title">Member Profit</h3>                <span class="m-widget1__desc">Awerage Weekly Profit</span>              </div>              <div class="col m--align-right">                <span class="m-widget1__number m--font-brand">+$17,800</span>              </div>            </div>          </div>          <div class="m-widget1__item">            <div class="row m-row--no-padding align-items-center">              <div class="col">                <h3 class="m-widget1__title">Orders</h3>                <span class="m-widget1__desc">Weekly Customer Orders</span>              </div>              <div class="col m--align-right">                <span class="m-widget1__number m--font-danger">+1,800</span>              </div>            </div>          </div>          <div class="m-widget1__item">            <div class="row m-row--no-padding align-items-center">              <div class="col">                <h3 class="m-widget1__title">Issue Reports</h3>                <span class="m-widget1__desc">System bugs and issues</span>              </div>              <div class="col m--align-right">                <span class="m-widget1__number m--font-success">-27,49%</span>              </div>            </div>          </div>        </div> -->      </div>    </div>  </div>  <div class="col-xl-8 col-lg-7">    <div class="m-portlet m-portlet--full-height m-portlet--tabs  ">      <!-- <div class="m-portlet__head">        <div class="m-portlet__head-tools">        </div>        <div class="m-portlet__head-tools">          <ul class="m-portlet__nav">            <li class="m-portlet__nav-item m-portlet__nav-item--last">              <div class="m-dropdown m-dropdown--inline m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push" m-dropdown-toggle="hover" aria-expanded="true">                <a href="#" class="m-portlet__nav-link btn btn-lg btn-secondary  m-btn m-btn--icon m-btn--icon-only m-btn--pill  m-dropdown__toggle">                  <i class="la la-gear"></i>                </a>                <div class="m-dropdown__wrapper" style="z-index: 101;">                  <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust" style="left: auto; right: 21.5px;"></span>                  <div class="m-dropdown__inner">                    <div class="m-dropdown__body">                      <div class="m-dropdown__content">                        <ul class="m-nav">                          <li class="m-nav__section m-nav__section--first">                            <span class="m-nav__section-text">Quick Actions</span>                          </li>                          <li class="m-nav__item">                            <a href="" class="m-nav__link">                              <i class="m-nav__link-icon flaticon-share"></i>                              <span class="m-nav__link-text">Create Post</span>                            </a>                          </li>                          <li class="m-nav__item">                            <a href="" class="m-nav__link">                              <i class="m-nav__link-icon flaticon-chat-1"></i>                              <span class="m-nav__link-text">Send Messages</span>                            </a>                          </li>                          <li class="m-nav__item">                            <a href="" class="m-nav__link">                              <i class="m-nav__link-icon flaticon-multimedia-2"></i>                              <span class="m-nav__link-text">Upload File</span>                            </a>                          </li>                          <li class="m-nav__section">                            <span class="m-nav__section-text">Useful Links</span>                          </li>                          <li class="m-nav__item">                            <a href="" class="m-nav__link">                              <i class="m-nav__link-icon flaticon-info"></i>                              <span class="m-nav__link-text">FAQ</span>                            </a>                          </li>                          <li class="m-nav__item">                            <a href="" class="m-nav__link">                              <i class="m-nav__link-icon flaticon-lifebuoy"></i>                              <span class="m-nav__link-text">Support</span>                            </a>                          </li>                          <li class="m-nav__separator m-nav__separator--fit m--hide"></li>                          <li class="m-nav__item m--hide">                            <a href="#" class="btn btn-outline-danger m-btn m-btn--pill m-btn--wide btn-sm">Submit</a>                          </li>                        </ul>                      </div>                    </div>                  </div>                </div>              </div>            </li>          </ul>        </div>      </div> -->      <div class="m-portlet__body">        <form class="m-form m-form--fit m-form--label-align-right">          <div>            <div class="form-group m-form__group row">              <div class="col-10 ml-auto">                <h3 class="m-form__section">Dirección</h3>              </div>            </div>            <div class="form-group m-form__group row">              <div class="col-4">                <label for="example-text-input" class="scol-form-label"><strong>Direcciòn</strong></label>              </div>              <div class="col-8">                <input class="form-control m-input" name="direccion" [(ngModel)]="usuario.direccion" type="text">              </div>            </div>            <div class="form-group m-form__group row">              <div class="col-4">                <label for="example-text-input" class="col-form-label"><strong>Ciudad</strong></label>              </div>              <div class="col-8">                <input class="form-control m-input" type="text" name="ciudad" [(ngModel)]="usuario.cuidad">              </div>            </div>            <div class="form-group m-form__group row">              <div class="col-4">                <label for="example-text-input" class="col-form-label"><strong>Estado/region</strong></label>              </div>              <div class="col-8">                <input class="form-control m-input" type="text" name="estado" [(ngModel)]="usuario.estado">              </div>            </div>            <div class="form-group m-form__group row">              <div class="col-4">                <label for="example-text-input" class=" col-form-label"><strong>Codigo Postal</strong></label>              </div>              <div class="col-8">                <input class="form-control m-input" type="text" name="codigoPostal" [(ngModel)]="usuario.codigoPostal">              </div>            </div>            <div class="m-form__seperator m-form__seperator--dashed m-form__seperator--space-2x"></div>            <div class="form-group m-form__group row">              <div class="col-10 ml-auto">                <h3 class="m-form__section">Social Links</h3>              </div>            </div>            <div class="form-group m-form__group row">              <div class="col-4">                <label for="example-text-input" class="col-2 col-form-label"><strong>Linkedin</strong></label>              </div>              <div class="col-8">                <input class="form-control m-input" type="text" name="linkedink" [(ngModel)]="usuario.linkedink">              </div>            </div>            <div class="form-group m-form__group row">              <div class="col-4">                <label for="example-text-input" class="col-2 col-form-label"><strong>Facebook</strong></label>              </div>              <div class="col-8">                <input class="form-control m-input" type="text" name="facebook" [(ngModel)]="usuario.facebook">              </div>            </div>            <div class="form-group m-form__group row">              <div class="col-4">                <label for="example-text-input" class="col-2 col-form-label"><strong>Twitter</strong></label>              </div>              <div class="col-8">                <input class="form-control m-input" type="text" name="twittter" [(ngModel)]="usuario.twittter">              </div>            </div>            <div class="form-group m-form__group row">              <div class="col-4">                <label for="example-text-input" class="col-2 col-form-label"><strong>Instagram</strong></label>              </div>              <div class="col-8">                <input class="form-control m-input" type="text" name="instagram" [(ngModel)]="usuario.instagram">              </div>            </div>          </div>          <div class="m-portlet__foot m-portlet__foot--fit">            <div class="m-form__actions">              <div class="row">                <div class="col-6">                  <button type="reset" class="btn btn-primary  m-btn m-btn--air m-btn--custom"                    (click)="guardar()">Guardar                    Cambios</button>&nbsp;&nbsp;                </div>                <div class="col-6">                  <button type="reset" class="btn btn-accent m-btn m-btn--air m-btn--custom"                    (click)="cancelar()">Cancelar</button>                </div>              </div>            </div>          </div>        </form>      </div>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AccordionControlComponent', 'selector': 'm-accordion-control'},{'name': 'ActionComponent', 'selector': 'm-action'},{'name': 'AppComponent', 'selector': 'body[m-root]'},{'name': 'AsideLeftComponent', 'selector': 'm-aside-left'},{'name': 'AsideRightComponent', 'selector': 'm-aside-right'},{'name': 'AuditLogComponent', 'selector': 'm-audit-log'},{'name': 'AuditLogComponent', 'selector': 'm-audit-log'},{'name': 'AuthComponent', 'selector': 'm-auth'},{'name': 'AuthNoticeComponent', 'selector': 'm-auth-notice'},{'name': 'AuthorProfitComponent', 'selector': 'm-author-profit'},{'name': 'BarChartComponent', 'selector': 'm-bar-chart'},{'name': 'BestSellerComponent', 'selector': 'm-best-seller'},{'name': 'BlogComponent', 'selector': 'm-blog'},{'name': 'BrandComponent', 'selector': 'm-brand'},{'name': 'BuilderComponent', 'selector': 'm-builder'},{'name': 'ChatComponent', 'selector': 'app-chat'},{'name': 'CodePreviewComponent', 'selector': 'm-code-preview'},{'name': 'CodePreviewInnerComponent', 'selector': 'm-code-preview-inner'},{'name': 'DashboardComponent', 'selector': 'm-dashboard'},{'name': 'DataTableComponent', 'selector': 'm-data-table'},{'name': 'Dayana1Component', 'selector': 'm-dayana1'},{'name': 'Dayana2Component', 'selector': 'm-dayana2'},{'name': 'Dayana3Component', 'selector': 'm-dayana3'},{'name': 'DayanaComponent', 'selector': 'm-dayana'},{'name': 'DoughnutChartComponent', 'selector': 'm-doughnut-chart'},{'name': 'ErrorPageComponent', 'selector': 'm-error-page'},{'name': 'FinanceStatsComponent', 'selector': 'm-finance-stats'},{'name': 'FooterComponent', 'selector': 'm-footer'},{'name': 'ForgotPasswordComponent', 'selector': 'm-forgot-password'},{'name': 'HeaderComponent', 'selector': 'm-header'},{'name': 'HeaderSearchComponent', 'selector': 'm-header-search'},{'name': 'IndexComponent', 'selector': 'm-index'},{'name': 'LanguageSelectorComponent', 'selector': 'm-language-selector'},{'name': 'ListSettingsComponent', 'selector': 'm-list-settings'},{'name': 'ListTimelineComponent', 'selector': 'm-list-timeline'},{'name': 'LoginComponent', 'selector': 'm-login'},{'name': 'MailComponent', 'selector': 'm-mail'},{'name': 'MaterialPreviewComponent', 'selector': 'm-material-preview'},{'name': 'MenuHorizontalComponent', 'selector': 'm-menu-horizontal'},{'name': 'MenuSectionComponent', 'selector': 'm-menu-section'},{'name': 'MessengerComponent', 'selector': 'm-messenger'},{'name': 'MessengerInComponent', 'selector': 'm-messenger-in'},{'name': 'MessengerOutComponent', 'selector': 'm-messenger-out'},{'name': 'NoticeComponent', 'selector': 'm-notice'},{'name': 'NotificationComponent', 'selector': 'm-notification'},{'name': 'PackagesComponent', 'selector': 'm-packages'},{'name': 'PagesComponent', 'selector': 'm-pages'},{'name': 'PortletComponent', 'selector': 'm-portlet'},{'name': 'ProfileComponent', 'selector': 'm-profile'},{'name': 'QuickActionComponent', 'selector': 'm-quick-action'},{'name': 'QuickSidebarComponent', 'selector': 'm-quick-sidebar'},{'name': 'RecentActivitiesComponent', 'selector': 'm-recent-activities'},{'name': 'RecentNotificationsComponent', 'selector': 'm-recent-notifications'},{'name': 'RecuperarPasswordComponent', 'selector': 'm-recuperar-password'},{'name': 'RegisterComponent', 'selector': 'm-register'},{'name': 'ScrollTopComponent', 'selector': 'm-scroll-top'},{'name': 'SearchDefaultComponent', 'selector': 'm-search-default'},{'name': 'SearchDropdownComponent', 'selector': 'm-search-dropdown'},{'name': 'SpinnerButtonComponent', 'selector': 'm-spinner-button'},{'name': 'StatComponent', 'selector': 'm-stat'},{'name': 'SubheaderComponent', 'selector': 'm-subheader'},{'name': 'SupportTicketsComponent', 'selector': 'm-support-tickets'},{'name': 'TasksComponent', 'selector': 'm-tasks'},{'name': 'TimelineItemComponent', 'selector': 'm-timeline-item'},{'name': 'TooltipsComponent', 'selector': 'm-tooltips'},{'name': 'TopbarComponent', 'selector': 'm-topbar'},{'name': 'UserManagementComponent', 'selector': 'm-user-management'},{'name': 'UserProfileComponent', 'selector': 'm-user-profile'}];
+    var DIRECTIVES = [{'name': 'AccordionControlPanelContentDirective', 'selector': 'ng-template[AccordionControlPanelContent]'},{'name': 'AccordionControlPanelDirective', 'selector': 'm-accordion-control-panel'},{'name': 'AccordionControlPanelTitleDirective', 'selector': 'ng-template[AccordionControlPanelTitle]'},{'name': 'ClipboardDirective', 'selector': '[clipboard]'},{'name': 'HeaderDirective', 'selector': '[mHeader]'},{'name': 'MenuAsideDirective', 'selector': '[mMenuAside]'},{'name': 'MenuAsideOffcanvasDirective', 'selector': '[mMenuAsideOffcanvas]'},{'name': 'MenuAsideToggleDirective', 'selector': '[mMenuAsideToggle]'},{'name': 'MenuHorizontalDirective', 'selector': '[mMenuHorizontal]'},{'name': 'MenuHorizontalOffcanvasDirective', 'selector': '[mMenuHorizontalOffcanvas]'},{'name': 'PortletDirective', 'selector': '[mPortlet]'},{'name': 'QuickSearchDirective', 'selector': '[mQuickSearch]'},{'name': 'QuickSidebarOffcanvasDirective', 'selector': '[mQuickSidebarOffcanvas]'},{'name': 'ScrollTopDirective', 'selector': '[mScrollTop]'}];
+    var ACTUAL_COMPONENT = {'name': 'ProfileComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ProfileComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

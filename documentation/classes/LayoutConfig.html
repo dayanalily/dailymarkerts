@@ -1,0 +1,571 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">default documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li>LayoutConfig</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/config/layout.ts</code>
+        </p>
+
+
+
+            <p class="comment">
+                <h3>Implements</h3>
+            </p>
+            <p class="comment">
+                            <code><a href="../interfaces/ConfigModel.html" target="_self" >ConfigModel</a></code>
+            </p>
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#config">config</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(config?: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="152" class="link-to-prism">src/app/config/layout.ts:152</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>config</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            Yes
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="config"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            config</b>
+                            <a href="#config"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+		demo: &#x27;default&#x27;,
+
+		// &#x3D;&#x3D; Base Layout
+		self: {
+			layout: &#x27;fluid&#x27;, // Page width type from available options: fluid|boxed
+			background: &#x27;./assets/app/media/img/bg/bg-4.jpg&#x27; // boxed layout background
+		},
+
+		// &#x3D;&#x3D; Page Loader(splash)
+		loader: {
+			enabled: true, // Enable page loader
+			image: &#x27;./assets/demo/default/media/img/logo/logo_compact.png&#x27;
+		},
+
+		// &#x3D;&#x3D; Header
+		header: {
+			// Header itself
+			self: {
+				// Fixed header(sticky) mode
+				fixed: {
+					desktop: true, // Enable fixed mode for desktop
+					mobile: true, // Enable fixed mode for mobile
+
+					// Minimize header on scroll
+					minimize: {
+						// Desktop mode
+						desktop: {
+							enabled: false, // Enable header minimize for desktop mode
+							offset: 200 // Offset(in px) to start header minimization
+						},
+						// Mobile mode
+						mobile: {
+							enabled: false, // Enable header minimize for mobile mode
+							offset: 200 // Offset(in px) to start header minimization
+						}
+					}
+				},
+				logo: {
+					// dark: &#x27;./assets/demo/default/media/img/logo/logo_default_dark.png&#x27;,
+					dark: &#x27;./assets/demo/default/media/img/logo/dasa_default.png&#x27;,
+					light: &#x27;./assets/demo/default/media/img/logo/logo_default_light.png&#x27;
+				}
+			},
+
+			// Header search(quicksearch)
+			search: {
+				type: &#x27;search-dropdown&#x27;, //  Select header search type from available options: search-default|search-dropdown
+				// Header search results dropdown
+				dropdown: {
+					skin: &#x27;light&#x27; // Select results dropdown skin from available options:  light|dark
+				}
+			}
+		},
+
+		// &#x3D;&#x3D; Asides(left, right and mobile asides)
+		aside: {
+			// Left aside(used for left aside menu)
+			left: {
+				display: true, //  Display or hide  left aside
+				fixed: true, //  Set fixed left aside mode
+				skin: &#x27;dark&#x27;, //  Select left aside skin from available options:  light|dark
+				push_footer: true, //  Pull left aside to the bottom and push the footer to the right
+
+				//  Left aside minimize toggle
+				minimize: {
+					toggle: true, //  Allow minimize toggle(supported for desktop mode only)
+					default: false // Set left aside minimized by default
+				}
+			},
+
+			// Right aside(used for blank right aside)
+			right: {
+				display: false //  Display or hide right aside
+			}
+		},
+
+		// &#x3D;&#x3D; Menus
+		menu: {
+			header: {
+				// Display or hide header menu
+				display: true,
+
+				//  header menu desktop mode
+				desktop: {
+					skin: &#x27;light&#x27;,
+					arrow: true,
+					toggle: &#x27;click&#x27;,
+					submenu: {
+						skin: &#x27;light&#x27;, // Select header menu submenu skin from available options:  light|dark
+						arrow: true // Enable header menu submenu arrow
+					}
+				},
+
+				//  header menu mobile mode
+				mobile: {
+					skin: &#x27;dark&#x27; // Select header menu skin from available options:  light|dark
+				}
+			},
+
+			// Left aside menu
+			aside: {
+				// Display or hide header menu
+				display: true,
+
+				// left aside menu desktop and mobile modes
+				desktop_and_mobile: {
+					// Left aside menu submenu settings
+					submenu: {
+						skin: &#x27;inherit&#x27;, // Select left aside menu skin from available options: light|dark|inherit(from aside left skin)
+
+						accordion: true, // Set accordion submenu toggle mode(set to fasle to enable submenu dropdown mode)
+
+						dropdown: {
+							// Set submenu dropdown mode(for minimized left aside mode and or submenu dropdown mode activated when accordion: false set)
+							arrow: true, // Display arrows for dropdown submenu
+							hover_timeout: 500 // Timeout to auto hide the opened submenu dropdown
+						}
+					},
+					// Minimized left aside menu
+					minimize: {
+						submenu_type: &#x27;default&#x27; // Select submenu type for minimized left aside mode from available options: default/compact
+					}
+				}
+			}
+		},
+
+		// &#x3D;&#x3D; Content
+		content: {
+			skin: &#x27;light2&#x27; // Select main content skin from available options: light|light2,
+		},
+
+		// &#x3D;&#x3D; Footer
+		footer: {
+			fixed: false // Set fixed footer layout
+		},
+
+		// &#x3D;&#x3D; Quick Sidebar
+		quicksidebar: {
+			display: true // Display or hide quicksidebar
+		},
+
+		// &#x3D;&#x3D; Portlet Plugin
+		portlet: {
+			sticky: {
+				offset: 50
+			}
+		}
+	}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="4" class="link-to-prism">src/app/config/layout.ts:4</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ConfigModel } from &#x27;../core/interfaces/config&#x27;;
+
+export class LayoutConfig implements ConfigModel {
+	public config: any &#x3D; {
+		demo: &#x27;default&#x27;,
+
+		// &#x3D;&#x3D; Base Layout
+		self: {
+			layout: &#x27;fluid&#x27;, // Page width type from available options: fluid|boxed
+			background: &#x27;./assets/app/media/img/bg/bg-4.jpg&#x27; // boxed layout background
+		},
+
+		// &#x3D;&#x3D; Page Loader(splash)
+		loader: {
+			enabled: true, // Enable page loader
+			image: &#x27;./assets/demo/default/media/img/logo/logo_compact.png&#x27;
+		},
+
+		// &#x3D;&#x3D; Header
+		header: {
+			// Header itself
+			self: {
+				// Fixed header(sticky) mode
+				fixed: {
+					desktop: true, // Enable fixed mode for desktop
+					mobile: true, // Enable fixed mode for mobile
+
+					// Minimize header on scroll
+					minimize: {
+						// Desktop mode
+						desktop: {
+							enabled: false, // Enable header minimize for desktop mode
+							offset: 200 // Offset(in px) to start header minimization
+						},
+						// Mobile mode
+						mobile: {
+							enabled: false, // Enable header minimize for mobile mode
+							offset: 200 // Offset(in px) to start header minimization
+						}
+					}
+				},
+				logo: {
+					// dark: &#x27;./assets/demo/default/media/img/logo/logo_default_dark.png&#x27;,
+					dark: &#x27;./assets/demo/default/media/img/logo/dasa_default.png&#x27;,
+					light: &#x27;./assets/demo/default/media/img/logo/logo_default_light.png&#x27;
+				}
+			},
+
+			// Header search(quicksearch)
+			search: {
+				type: &#x27;search-dropdown&#x27;, //  Select header search type from available options: search-default|search-dropdown
+				// Header search results dropdown
+				dropdown: {
+					skin: &#x27;light&#x27; // Select results dropdown skin from available options:  light|dark
+				}
+			}
+		},
+
+		// &#x3D;&#x3D; Asides(left, right and mobile asides)
+		aside: {
+			// Left aside(used for left aside menu)
+			left: {
+				display: true, //  Display or hide  left aside
+				fixed: true, //  Set fixed left aside mode
+				skin: &#x27;dark&#x27;, //  Select left aside skin from available options:  light|dark
+				push_footer: true, //  Pull left aside to the bottom and push the footer to the right
+
+				//  Left aside minimize toggle
+				minimize: {
+					toggle: true, //  Allow minimize toggle(supported for desktop mode only)
+					default: false // Set left aside minimized by default
+				}
+			},
+
+			// Right aside(used for blank right aside)
+			right: {
+				display: false //  Display or hide right aside
+			}
+		},
+
+		// &#x3D;&#x3D; Menus
+		menu: {
+			header: {
+				// Display or hide header menu
+				display: true,
+
+				//  header menu desktop mode
+				desktop: {
+					skin: &#x27;light&#x27;,
+					arrow: true,
+					toggle: &#x27;click&#x27;,
+					submenu: {
+						skin: &#x27;light&#x27;, // Select header menu submenu skin from available options:  light|dark
+						arrow: true // Enable header menu submenu arrow
+					}
+				},
+
+				//  header menu mobile mode
+				mobile: {
+					skin: &#x27;dark&#x27; // Select header menu skin from available options:  light|dark
+				}
+			},
+
+			// Left aside menu
+			aside: {
+				// Display or hide header menu
+				display: true,
+
+				// left aside menu desktop and mobile modes
+				desktop_and_mobile: {
+					// Left aside menu submenu settings
+					submenu: {
+						skin: &#x27;inherit&#x27;, // Select left aside menu skin from available options: light|dark|inherit(from aside left skin)
+
+						accordion: true, // Set accordion submenu toggle mode(set to fasle to enable submenu dropdown mode)
+
+						dropdown: {
+							// Set submenu dropdown mode(for minimized left aside mode and or submenu dropdown mode activated when accordion: false set)
+							arrow: true, // Display arrows for dropdown submenu
+							hover_timeout: 500 // Timeout to auto hide the opened submenu dropdown
+						}
+					},
+					// Minimized left aside menu
+					minimize: {
+						submenu_type: &#x27;default&#x27; // Select submenu type for minimized left aside mode from available options: default/compact
+					}
+				}
+			}
+		},
+
+		// &#x3D;&#x3D; Content
+		content: {
+			skin: &#x27;light2&#x27; // Select main content skin from available options: light|light2,
+		},
+
+		// &#x3D;&#x3D; Footer
+		footer: {
+			fixed: false // Set fixed footer layout
+		},
+
+		// &#x3D;&#x3D; Quick Sidebar
+		quicksidebar: {
+			display: true // Display or hide quicksidebar
+		},
+
+		// &#x3D;&#x3D; Portlet Plugin
+		portlet: {
+			sticky: {
+				offset: 50
+			}
+		}
+	};
+
+	constructor(config?: any) {
+		if (config) {
+			this.config &#x3D; config;
+		}
+	}
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'LayoutConfig.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

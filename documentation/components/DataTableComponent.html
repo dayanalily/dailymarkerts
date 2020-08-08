@@ -1,0 +1,1129 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">default documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>DataTableComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/content/partials/content/widgets/general/data-table/data-table.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>m-data-table</code></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./data-table.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#dataSource">dataSource</a>
+                            </li>
+                            <li>
+                                <a href="#displayedColumns">displayedColumns</a>
+                            </li>
+                            <li>
+                                <a href="#paginator">paginator</a>
+                            </li>
+                            <li>
+                                <a href="#selection">selection</a>
+                            </li>
+                            <li>
+                                <a href="#sort">sort</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getItemConditionString">getItemConditionString</a>
+                            </li>
+                            <li>
+                                <a href="#getItemCssClassByCondition">getItemCssClassByCondition</a>
+                            </li>
+                            <li>
+                                <a href="#getItemCssClassByStatus">getItemCssClassByStatus</a>
+                            </li>
+                            <li>
+                                <a href="#getItemStatusString">getItemStatusString</a>
+                            </li>
+                            <li>
+                                <a href="#loadItems">loadItems</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(dataTableService: <a href="../injectables/DataTableService.html">DataTableService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dataTableService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DataTableService.html" target="_self" >DataTableService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getItemConditionString"></a>
+                    <span class="name">
+                        <b>
+                            getItemConditionString
+                        </b>
+                        <a href="#getItemConditionString"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getItemConditionString(condition: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="93"
+                            class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.component.ts:93</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>condition</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>0</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getItemCssClassByCondition"></a>
+                    <span class="name">
+                        <b>
+                            getItemCssClassByCondition
+                        </b>
+                        <a href="#getItemCssClassByCondition"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getItemCssClassByCondition(condition: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="103"
+                            class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.component.ts:103</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>condition</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>0</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getItemCssClassByStatus"></a>
+                    <span class="name">
+                        <b>
+                            getItemCssClassByStatus
+                        </b>
+                        <a href="#getItemCssClassByStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getItemCssClassByStatus(status: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="83"
+                            class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.component.ts:83</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>status</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>0</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getItemStatusString"></a>
+                    <span class="name">
+                        <b>
+                            getItemStatusString
+                        </b>
+                        <a href="#getItemStatusString"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getItemStatusString(status: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="73"
+                            class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.component.ts:73</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>status</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>0</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadItems"></a>
+                    <span class="name">
+                        <b>
+                            loadItems
+                        </b>
+                        <a href="#loadItems"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadItems(firstLoad: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="58"
+                            class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.component.ts:58</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>firstLoad</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.component.ts:36</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dataSource"></a>
+                        <span class="name">
+                            <b>
+                            dataSource</b>
+                            <a href="#dataSource"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/DataTableDataSource.html" target="_self" >DataTableDataSource</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="displayedColumns"></a>
+                        <span class="name">
+                            <b>
+                            displayedColumns</b>
+                            <a href="#displayedColumns"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[&#x27;id&#x27;, &#x27;cManufacture&#x27;,
+		&#x27;cModel&#x27;, &#x27;cModelYear&#x27;, &#x27;cMileage&#x27;, &#x27;cColor&#x27;, &#x27;cPrice&#x27;, &#x27;cCondition&#x27;, &#x27;cStatus&#x27;, &#x27;actions&#x27;]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paginator"></a>
+                        <span class="name">
+                            <b>
+                            paginator</b>
+                            <a href="#paginator"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatPaginator</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(MatPaginator)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selection"></a>
+                        <span class="name">
+                            <b>
+                            selection</b>
+                            <a href="#selection"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new SelectionModel&lt;DataTableItemModel&gt;(true, [])</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sort"></a>
+                        <span class="name">
+                            <b>
+                            sort</b>
+                            <a href="#sort"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatSort</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(MatSort)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/content/partials/content/widgets/general/data-table/data-table.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+	Component,
+	OnInit,
+	ElementRef,
+	ViewChild,
+	ChangeDetectionStrategy
+} from &#x27;@angular/core&#x27;;
+import { SelectionModel } from &#x27;@angular/cdk/collections&#x27;;
+import {  MatSort } from &#x27;@angular/material/sort&#x27;;
+import { MatPaginator } from &#x27;@angular/material/paginator&#x27;;
+// RXJS
+import { debounceTime, distinctUntilChanged, tap } from &#x27;rxjs/operators&#x27;;
+import { fromEvent, merge, forkJoin } from &#x27;rxjs&#x27;;
+// Models
+import { QueryParamsModel } from &#x27;../../../../../../core/models/query-params.model&#x27;;
+import { DataTableItemModel } from &#x27;../../../../../../core/models/datatable-item.model&#x27;;
+import { DataTableDataSource } from &#x27;./data-table.data-source&#x27;;
+// Services
+import { DataTableService } from &#x27;../../../../../../core/services/datatable.service&#x27;;
+
+@Component({
+	selector: &#x27;m-data-table&#x27;,
+	templateUrl: &#x27;./data-table.component.html&#x27;
+})
+export class DataTableComponent implements OnInit {
+	dataSource: DataTableDataSource;
+	displayedColumns &#x3D; [&#x27;id&#x27;, &#x27;cManufacture&#x27;,
+		&#x27;cModel&#x27;, &#x27;cModelYear&#x27;, &#x27;cMileage&#x27;, &#x27;cColor&#x27;, &#x27;cPrice&#x27;, &#x27;cCondition&#x27;, &#x27;cStatus&#x27;, &#x27;actions&#x27;];
+
+	@ViewChild(MatPaginator) paginator: MatPaginator;
+	@ViewChild(MatSort) sort: MatSort;
+	selection &#x3D; new SelectionModel&lt;DataTableItemModel&gt;(true, []);
+
+	constructor(private dataTableService: DataTableService) {}
+
+	ngOnInit() {
+		// If the user changes the sort order, reset back to the first page.
+		this.sort.sortChange.subscribe(() &#x3D;&gt; (this.paginator.pageIndex &#x3D; 0));
+
+		/* Data load will be triggered in two cases:
+		- when a pagination event occurs &#x3D;&gt; this.paginator.page
+		- when a sort event occurs &#x3D;&gt; this.sort.sortChange
+		**/
+		merge(this.sort.sortChange, this.paginator.page)
+			.pipe(
+				tap(() &#x3D;&gt; {
+					this.loadItems();
+				})
+			)
+			.subscribe();
+
+		// Init DataSource
+		this.dataSource &#x3D; new DataTableDataSource(this.dataTableService);
+		// First load
+		this.loadItems(true);
+  }
+
+  loadItems(firstLoad: boolean &#x3D; false) {
+		const queryParams &#x3D; new QueryParamsModel(
+			{},
+			this.sort.direction,
+			this.sort.active,
+			this.paginator.pageIndex,
+			firstLoad ? 6 : this.paginator.pageSize
+		);
+		this.dataSource.loadItems(queryParams);
+		this.selection.clear();
+  }
+
+
+
+  /* UI */
+	getItemStatusString(status: number &#x3D; 0): string {
+		switch (status) {
+			case 0:
+				return &#x27;Selling&#x27;;
+			case 1:
+				return &#x27;Sold&#x27;;
+		}
+		return &#x27;&#x27;;
+	}
+
+	getItemCssClassByStatus(status: number &#x3D; 0): string {
+		switch (status) {
+			case 0:
+				return &#x27;success&#x27;;
+			case 1:
+				return &#x27;metal&#x27;;
+		}
+		return &#x27;&#x27;;
+	}
+
+	getItemConditionString(condition: number &#x3D; 0): string {
+		switch (condition) {
+			case 0:
+				return &#x27;New&#x27;;
+			case 1:
+				return &#x27;Used&#x27;;
+		}
+		return &#x27;&#x27;;
+	}
+
+	getItemCssClassByCondition(condition: number &#x3D; 0): string {
+		switch (condition) {
+			case 0:
+				return &#x27;primary&#x27;;
+			case 1:
+				return &#x27;accent&#x27;;
+		}
+		return &#x27;&#x27;;
+	}
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;m-portlet [loading$]&#x3D;&quot;dataSource.loading$&quot;&gt;
+	&lt;!-- use ng-container[mPortletHeadTitle] for the title --&gt;
+	&lt;ng-container mPortletHeadTitle&gt;
+		&lt;div class&#x3D;&quot;m-portlet__head-title&quot;&gt;
+			&lt;h3 class&#x3D;&quot;m-portlet__head-text&quot;&gt;
+				Recent Products
+			&lt;/h3&gt;
+		&lt;/div&gt;
+	&lt;/ng-container&gt;
+
+	&lt;!-- use ng-container[mPortletBody] for the body content --&gt;
+	&lt;ng-container mPortletBody&gt;
+		&lt;!-- See off.documentations &#x27;https://material.angular.io/components/table/overview&#x27; --&gt;
+		&lt;div perfectScrollbar style&#x3D;&quot;max-height: 40vh;&quot; class&#x3D;&quot;mat-table__wrapper mat-table__wrapper--dashboard&quot;&gt;
+			&lt;!-- Checkbox Column --&gt;
+			&lt;!-- Table with selection --&gt;
+			&lt;!-- https://run.stackblitz.com/api/angular/v1?file&#x3D;app%2Ftable-selection-example.ts --&gt;
+			&lt;table mat-table class&#x3D;&quot;lmat-elevation-z8&quot; [dataSource]&#x3D;&quot;dataSource&quot; matSort matSortActive&#x3D;&quot;id&quot; matSortDirection&#x3D;&quot;asc&quot; matSortDisableClear&gt;
+				&lt;ng-container matColumnDef&#x3D;&quot;id&quot;&gt;
+					&lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt;Id&lt;/th&gt;
+					&lt;td mat-cell *matCellDef&#x3D;&quot;let product&quot; class&#x3D;&quot;mat-column-vinCode&quot;&gt;{{product.id}}&lt;/td&gt;
+				&lt;/ng-container&gt;
+
+				&lt;ng-container matColumnDef&#x3D;&quot;cManufacture&quot;&gt;
+					&lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt;Manufacture&lt;/th&gt;
+					&lt;td mat-cell *matCellDef&#x3D;&quot;let product&quot;&gt;{{product.cManufacture}}&lt;/td&gt;
+				&lt;/ng-container&gt;
+
+				&lt;ng-container matColumnDef&#x3D;&quot;cModel&quot;&gt;
+					&lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt;Model&lt;/th&gt;
+					&lt;td mat-cell *matCellDef&#x3D;&quot;let product&quot;&gt;{{product.cModel}}&lt;/td&gt;
+				&lt;/ng-container&gt;
+
+				&lt;ng-container matColumnDef&#x3D;&quot;cModelYear&quot;&gt;
+					&lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt;Model Year&lt;/th&gt;
+					&lt;td mat-cell *matCellDef&#x3D;&quot;let product&quot;&gt;{{product.cModelYear}}&lt;/td&gt;
+				&lt;/ng-container&gt;
+
+				&lt;ng-container matColumnDef&#x3D;&quot;cMileage&quot;&gt;
+					&lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt;Mileage&lt;/th&gt;
+					&lt;td mat-cell *matCellDef&#x3D;&quot;let product&quot;&gt;{{product.cMileage}}&lt;/td&gt;
+				&lt;/ng-container&gt;
+
+				&lt;ng-container matColumnDef&#x3D;&quot;cColor&quot;&gt;
+					&lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt;Color&lt;/th&gt;
+					&lt;td mat-cell *matCellDef&#x3D;&quot;let product&quot; [ngStyle]&#x3D;&quot;{ &#x27;color&#x27; : product.cColor }&quot;&gt;{{product.cColor}}&lt;/td&gt;
+				&lt;/ng-container&gt;
+
+				&lt;ng-container matColumnDef&#x3D;&quot;cPrice&quot;&gt;
+					&lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt;Price&lt;/th&gt;
+					&lt;td mat-cell *matCellDef&#x3D;&quot;let product&quot;&gt;${{product.cPrice}}&lt;/td&gt;
+				&lt;/ng-container&gt;
+
+				&lt;ng-container matColumnDef&#x3D;&quot;cStatus&quot;&gt;
+					&lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt;Status&lt;/th&gt;
+					&lt;td mat-cell *matCellDef&#x3D;&quot;let product&quot;&gt;
+						&lt;span class&#x3D;&quot;m-badge m-badge--{{ getItemCssClassByStatus(product.cStatus) }} m-badge--wide&quot;&gt;{{ getItemStatusString(product.cStatus) }}&lt;/span&gt;
+					&lt;/td&gt;
+				&lt;/ng-container&gt;
+
+				&lt;ng-container matColumnDef&#x3D;&quot;cCondition&quot;&gt;
+					&lt;th mat-header-cell *matHeaderCellDef mat-sort-header&gt;Condition&lt;/th&gt;
+					&lt;td mat-cell *matCellDef&#x3D;&quot;let product&quot;&gt;
+						&lt;span class&#x3D;&quot;m-badge m-badge--{{ getItemCssClassByCondition(product.cCondition) }} m-badge--dot&quot;&gt;&lt;/span&gt;&amp;nbsp;
+						&lt;span class&#x3D;&quot;m--font-bold m--font-{{ getItemCssClassByCondition(product.cCondition) }}&quot;&gt;{{ getItemConditionString(product.cCondition) }}&lt;/span&gt;
+					&lt;/td&gt;
+				&lt;/ng-container&gt;
+
+				&lt;ng-container matColumnDef&#x3D;&quot;actions&quot;&gt;
+					&lt;th mat-header-cell *matHeaderCellDef&gt;
+						Actions
+					&lt;/th&gt;
+					&lt;td mat-cell *matCellDef&#x3D;&quot;let product&quot;&gt;
+						&lt;button mat-icon-button color&#x3D;&quot;primary&quot; matTooltip&#x3D;&quot;Edit item&quot;&gt;
+							&lt;mat-icon&gt;create&lt;/mat-icon&gt;
+						&lt;/button&gt;&amp;nbsp;
+						&lt;button mat-icon-button color&#x3D;&quot;warn&quot; type&#x3D;&quot;button&quot; matTooltip&#x3D;&quot;Delete item&quot;&gt;
+							&lt;mat-icon&gt;delete&lt;/mat-icon&gt;
+						&lt;/button&gt;
+					&lt;/td&gt;
+				&lt;/ng-container&gt;
+
+				&lt;tr mat-header-row *matHeaderRowDef&#x3D;&quot;displayedColumns; sticky: true&quot;&gt;&lt;/tr&gt;
+				&lt;tr mat-row *matRowDef&#x3D;&quot;let row; columns: displayedColumns&quot;&gt;&lt;/tr&gt;
+			&lt;/table&gt;
+
+			&lt;div class&#x3D;&quot;mat-table__message&quot; *ngIf&#x3D;&quot;!dataSource.hasItems&quot;&gt;No records found&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;!-- start: BOTTOM --&gt;
+		&lt;div class&#x3D;&quot;mat-table__bottom&quot;&gt;
+			&lt;mat-spinner [diameter]&#x3D;&quot;20&quot; *ngIf&#x3D;&quot;dataSource.loading$ | async&quot;&gt;&lt;/mat-spinner&gt;
+			&lt;mat-paginator [pageSize]&#x3D;&quot;6&quot; [pageSizeOptions]&#x3D;&quot;[3, 6, 15]&quot; [length]&#x3D;&quot;dataSource.paginatorTotal$ | async&quot; [showFirstLastButtons]&#x3D;&quot;true&quot;&gt;&lt;/mat-paginator&gt;
+		&lt;/div&gt;
+		&lt;!-- end: BOTTOM --&gt;
+	&lt;/ng-container&gt;
+&lt;/m-portlet&gt;</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><m-portlet [loading$]="dataSource.loading$">	<!-- use ng-container[mPortletHeadTitle] for the title -->	<ng-container mPortletHeadTitle>		<div class="m-portlet__head-title">			<h3 class="m-portlet__head-text">				Recent Products			</h3>		</div>	</ng-container>	<!-- use ng-container[mPortletBody] for the body content -->	<ng-container mPortletBody>		<!-- See off.documentations \'https://material.angular.io/components/table/overview\' -->		<div perfectScrollbar style="max-height: 40vh;" class="mat-table__wrapper mat-table__wrapper--dashboard">			<!-- Checkbox Column -->			<!-- Table with selection -->			<!-- https://run.stackblitz.com/api/angular/v1?file=app%2Ftable-selection-example.ts -->			<table mat-table class="lmat-elevation-z8" [dataSource]="dataSource" matSort matSortActive="id" matSortDirection="asc" matSortDisableClear>				<ng-container matColumnDef="id">					<th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>					<td mat-cell *matCellDef="let product" class="mat-column-vinCode">{{product.id}}</td>				</ng-container>				<ng-container matColumnDef="cManufacture">					<th mat-header-cell *matHeaderCellDef mat-sort-header>Manufacture</th>					<td mat-cell *matCellDef="let product">{{product.cManufacture}}</td>				</ng-container>				<ng-container matColumnDef="cModel">					<th mat-header-cell *matHeaderCellDef mat-sort-header>Model</th>					<td mat-cell *matCellDef="let product">{{product.cModel}}</td>				</ng-container>				<ng-container matColumnDef="cModelYear">					<th mat-header-cell *matHeaderCellDef mat-sort-header>Model Year</th>					<td mat-cell *matCellDef="let product">{{product.cModelYear}}</td>				</ng-container>				<ng-container matColumnDef="cMileage">					<th mat-header-cell *matHeaderCellDef mat-sort-header>Mileage</th>					<td mat-cell *matCellDef="let product">{{product.cMileage}}</td>				</ng-container>				<ng-container matColumnDef="cColor">					<th mat-header-cell *matHeaderCellDef mat-sort-header>Color</th>					<td mat-cell *matCellDef="let product" [ngStyle]="{ \'color\' : product.cColor }">{{product.cColor}}</td>				</ng-container>				<ng-container matColumnDef="cPrice">					<th mat-header-cell *matHeaderCellDef mat-sort-header>Price</th>					<td mat-cell *matCellDef="let product">${{product.cPrice}}</td>				</ng-container>				<ng-container matColumnDef="cStatus">					<th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>					<td mat-cell *matCellDef="let product">						<span class="m-badge m-badge--{{ getItemCssClassByStatus(product.cStatus) }} m-badge--wide">{{ getItemStatusString(product.cStatus) }}</span>					</td>				</ng-container>				<ng-container matColumnDef="cCondition">					<th mat-header-cell *matHeaderCellDef mat-sort-header>Condition</th>					<td mat-cell *matCellDef="let product">						<span class="m-badge m-badge--{{ getItemCssClassByCondition(product.cCondition) }} m-badge--dot"></span>&nbsp;						<span class="m--font-bold m--font-{{ getItemCssClassByCondition(product.cCondition) }}">{{ getItemConditionString(product.cCondition) }}</span>					</td>				</ng-container>				<ng-container matColumnDef="actions">					<th mat-header-cell *matHeaderCellDef>						Actions					</th>					<td mat-cell *matCellDef="let product">						<button mat-icon-button color="primary" matTooltip="Edit item">							<mat-icon>create</mat-icon>						</button>&nbsp;						<button mat-icon-button color="warn" type="button" matTooltip="Delete item">							<mat-icon>delete</mat-icon>						</button>					</td>				</ng-container>				<tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>				<tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>			</table>			<div class="mat-table__message" *ngIf="!dataSource.hasItems">No records found</div>		</div>		<!-- start: BOTTOM -->		<div class="mat-table__bottom">			<mat-spinner [diameter]="20" *ngIf="dataSource.loading$ | async"></mat-spinner>			<mat-paginator [pageSize]="6" [pageSizeOptions]="[3, 6, 15]" [length]="dataSource.paginatorTotal$ | async" [showFirstLastButtons]="true"></mat-paginator>		</div>		<!-- end: BOTTOM -->	</ng-container></m-portlet></div>'
+    var COMPONENTS = [{'name': 'AccordionControlComponent', 'selector': 'm-accordion-control'},{'name': 'ActionComponent', 'selector': 'm-action'},{'name': 'AppComponent', 'selector': 'body[m-root]'},{'name': 'AsideLeftComponent', 'selector': 'm-aside-left'},{'name': 'AsideRightComponent', 'selector': 'm-aside-right'},{'name': 'AuditLogComponent', 'selector': 'm-audit-log'},{'name': 'AuditLogComponent', 'selector': 'm-audit-log'},{'name': 'AuthComponent', 'selector': 'm-auth'},{'name': 'AuthNoticeComponent', 'selector': 'm-auth-notice'},{'name': 'AuthorProfitComponent', 'selector': 'm-author-profit'},{'name': 'BarChartComponent', 'selector': 'm-bar-chart'},{'name': 'BestSellerComponent', 'selector': 'm-best-seller'},{'name': 'BlogComponent', 'selector': 'm-blog'},{'name': 'BrandComponent', 'selector': 'm-brand'},{'name': 'BuilderComponent', 'selector': 'm-builder'},{'name': 'ChatComponent', 'selector': 'app-chat'},{'name': 'CodePreviewComponent', 'selector': 'm-code-preview'},{'name': 'CodePreviewInnerComponent', 'selector': 'm-code-preview-inner'},{'name': 'DashboardComponent', 'selector': 'm-dashboard'},{'name': 'DataTableComponent', 'selector': 'm-data-table'},{'name': 'Dayana1Component', 'selector': 'm-dayana1'},{'name': 'Dayana2Component', 'selector': 'm-dayana2'},{'name': 'Dayana3Component', 'selector': 'm-dayana3'},{'name': 'DayanaComponent', 'selector': 'm-dayana'},{'name': 'DoughnutChartComponent', 'selector': 'm-doughnut-chart'},{'name': 'ErrorPageComponent', 'selector': 'm-error-page'},{'name': 'FinanceStatsComponent', 'selector': 'm-finance-stats'},{'name': 'FooterComponent', 'selector': 'm-footer'},{'name': 'ForgotPasswordComponent', 'selector': 'm-forgot-password'},{'name': 'HeaderComponent', 'selector': 'm-header'},{'name': 'HeaderSearchComponent', 'selector': 'm-header-search'},{'name': 'IndexComponent', 'selector': 'm-index'},{'name': 'LanguageSelectorComponent', 'selector': 'm-language-selector'},{'name': 'ListSettingsComponent', 'selector': 'm-list-settings'},{'name': 'ListTimelineComponent', 'selector': 'm-list-timeline'},{'name': 'LoginComponent', 'selector': 'm-login'},{'name': 'MailComponent', 'selector': 'm-mail'},{'name': 'MaterialPreviewComponent', 'selector': 'm-material-preview'},{'name': 'MenuHorizontalComponent', 'selector': 'm-menu-horizontal'},{'name': 'MenuSectionComponent', 'selector': 'm-menu-section'},{'name': 'MessengerComponent', 'selector': 'm-messenger'},{'name': 'MessengerInComponent', 'selector': 'm-messenger-in'},{'name': 'MessengerOutComponent', 'selector': 'm-messenger-out'},{'name': 'NoticeComponent', 'selector': 'm-notice'},{'name': 'NotificationComponent', 'selector': 'm-notification'},{'name': 'PackagesComponent', 'selector': 'm-packages'},{'name': 'PagesComponent', 'selector': 'm-pages'},{'name': 'PortletComponent', 'selector': 'm-portlet'},{'name': 'ProfileComponent', 'selector': 'm-profile'},{'name': 'QuickActionComponent', 'selector': 'm-quick-action'},{'name': 'QuickSidebarComponent', 'selector': 'm-quick-sidebar'},{'name': 'RecentActivitiesComponent', 'selector': 'm-recent-activities'},{'name': 'RecentNotificationsComponent', 'selector': 'm-recent-notifications'},{'name': 'RecuperarPasswordComponent', 'selector': 'm-recuperar-password'},{'name': 'RegisterComponent', 'selector': 'm-register'},{'name': 'ScrollTopComponent', 'selector': 'm-scroll-top'},{'name': 'SearchDefaultComponent', 'selector': 'm-search-default'},{'name': 'SearchDropdownComponent', 'selector': 'm-search-dropdown'},{'name': 'SpinnerButtonComponent', 'selector': 'm-spinner-button'},{'name': 'StatComponent', 'selector': 'm-stat'},{'name': 'SubheaderComponent', 'selector': 'm-subheader'},{'name': 'SupportTicketsComponent', 'selector': 'm-support-tickets'},{'name': 'TasksComponent', 'selector': 'm-tasks'},{'name': 'TimelineItemComponent', 'selector': 'm-timeline-item'},{'name': 'TooltipsComponent', 'selector': 'm-tooltips'},{'name': 'TopbarComponent', 'selector': 'm-topbar'},{'name': 'UserManagementComponent', 'selector': 'm-user-management'},{'name': 'UserProfileComponent', 'selector': 'm-user-profile'}];
+    var DIRECTIVES = [{'name': 'AccordionControlPanelContentDirective', 'selector': 'ng-template[AccordionControlPanelContent]'},{'name': 'AccordionControlPanelDirective', 'selector': 'm-accordion-control-panel'},{'name': 'AccordionControlPanelTitleDirective', 'selector': 'ng-template[AccordionControlPanelTitle]'},{'name': 'ClipboardDirective', 'selector': '[clipboard]'},{'name': 'HeaderDirective', 'selector': '[mHeader]'},{'name': 'MenuAsideDirective', 'selector': '[mMenuAside]'},{'name': 'MenuAsideOffcanvasDirective', 'selector': '[mMenuAsideOffcanvas]'},{'name': 'MenuAsideToggleDirective', 'selector': '[mMenuAsideToggle]'},{'name': 'MenuHorizontalDirective', 'selector': '[mMenuHorizontal]'},{'name': 'MenuHorizontalOffcanvasDirective', 'selector': '[mMenuHorizontalOffcanvas]'},{'name': 'PortletDirective', 'selector': '[mPortlet]'},{'name': 'QuickSearchDirective', 'selector': '[mQuickSearch]'},{'name': 'QuickSidebarOffcanvasDirective', 'selector': '[mQuickSidebarOffcanvas]'},{'name': 'ScrollTopDirective', 'selector': '[mScrollTop]'}];
+    var ACTUAL_COMPONENT = {'name': 'DataTableComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DataTableComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

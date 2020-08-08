@@ -1,0 +1,1527 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/material.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">default documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Escribe para buscar"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Componentes</li>
+  <li>RegisterComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>Fichero</h3>
+</p>
+<p class="comment">
+    <code>src/app/content/pages/auth/register/register.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implementa</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Meta datos</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>m-register</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./register.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./register.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Índice</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Propiedades</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#authNoticeService">authNoticeService</a>
+                            </li>
+                            <li>
+                                <a href="#documento">documento</a>
+                            </li>
+                            <li>
+                                <a href="#errors">errors</a>
+                            </li>
+                            <li>
+                                <a href="#f">f</a>
+                            </li>
+                            <li>
+                                <a href="#listDocumento">listDocumento</a>
+                            </li>
+                            <li>
+                                <a href="#listPais">listPais</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#loading">loading</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#model">model</a>
+                            </li>
+                            <li>
+                                <a href="#spinner">spinner</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#tipoDocumento">tipoDocumento</a>
+                            </li>
+                            <li>
+                                <a href="#usuario">usuario</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Métodos</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#listarDocumentos">listarDocumentos</a>
+                            </li>
+                            <li>
+                                <a href="#listarPaises">listarPaises</a>
+                            </li>
+                            <li>
+                                <a href="#loginPage">loginPage</a>
+                            </li>
+                            <li>
+                                <a href="#mostrarMensaje">mostrarMensaje</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#submit">submit</a>
+                            </li>
+                            <li>
+                                <a href="#validate">validate</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Entradas</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#action">action</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Salidas</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#actionChange">actionChange</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(authService: <a href="../injectables/AuthenticationService.html">AuthenticationService</a>, authNoticeService: <a href="../injectables/AuthNoticeService.html">AuthNoticeService</a>, translate: TranslateService, pais: <a href="../injectables/PaisesService.html">PaisesService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Definido en <a href="" data-line="44" class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parámetros :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Nombre</td>
+                                                    <td>Tipo</td>
+                                                <td>Opcional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthenticationService.html" target="_self" >AuthenticationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authNoticeService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthNoticeService.html" target="_self" >AuthNoticeService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>pais</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PaisesService.html" target="_self" >PaisesService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Entradas</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="action"></a>
+                        <b>action</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="28" class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:28</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Salidas</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="actionChange"></a>
+                        <b>actionChange</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Tipo : </i>    <code>Subject</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Definido en <a href="" data-line="29" class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:29</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Métodos
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listarDocumentos"></a>
+                    <span class="name">
+                        <b>
+                            listarDocumentos
+                        </b>
+                        <a href="#listarDocumentos"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listarDocumentos()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="159"
+                            class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:159</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listarPaises"></a>
+                    <span class="name">
+                        <b>
+                            listarPaises
+                        </b>
+                        <a href="#listarPaises"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listarPaises()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="148"
+                            class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:148</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loginPage"></a>
+                    <span class="name">
+                        <b>
+                            loginPage
+                        </b>
+                        <a href="#loginPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loginPage(event: <a href="https://angular.io/api/router/Event" target="_blank">Event</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="61"
+                            class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:61</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/router/Event" target="_blank" >Event</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mostrarMensaje"></a>
+                    <span class="name">
+                        <b>
+                            mostrarMensaje
+                        </b>
+                        <a href="#mostrarMensaje"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>mostrarMensaje(response)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="130"
+                            class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:130</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>response</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="59"
+                            class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:59</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="submit"></a>
+                    <span class="name">
+                        <b>
+                            submit
+                        </b>
+                        <a href="#submit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>submit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="67"
+                            class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="validate"></a>
+                    <span class="name">
+                        <b>
+                            validate
+                        </b>
+                        <a href="#validate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>validate(f: <a href="https://angular.io/api/forms/NgForm" target="_blank">NgForm</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Definido en <a href="" data-line="81"
+                            class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parámetros :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td>Tipo</td>
+                                    <td>Opcional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>f</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/NgForm" target="_blank" >NgForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Devuelve : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Propiedades
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="authNoticeService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            authNoticeService</b>
+                            <a href="#authNoticeService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Tipo : </i>        <code><a href="../injectables/AuthNoticeService.html" target="_self" >AuthNoticeService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="48" class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="documento"></a>
+                        <span class="name">
+                            <b>
+                            documento</b>
+                            <a href="#documento"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" >Boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="31" class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="errors"></a>
+                        <span class="name">
+                            <b>
+                            errors</b>
+                            <a href="#errors"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Valor por defecto : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="35" class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="f"></a>
+                        <span class="name">
+                            <b>
+                            f</b>
+                            <a href="#f"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Tipo : </i>        <code><a href="https://angular.io/api/forms/NgForm" target="_blank" >NgForm</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decoradores : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;f&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="34" class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="listDocumento"></a>
+                        <span class="name">
+                            <b>
+                            listDocumento</b>
+                            <a href="#listDocumento"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Tipo : </i>    <code>Array&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="32" class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="listPais"></a>
+                        <span class="name">
+                            <b>
+                            listPais</b>
+                            <a href="#listPais"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Tipo : </i>    <code>Array&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="33" class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loading"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            loading</b>
+                            <a href="#loading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Valor por defecto : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="30" class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="model"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            model</b>
+                            <a href="#model"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Tipo : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Valor por defecto : </i><code>{ nombre: &#x27;&#x27;, apellido: &#x27;&#x27;, tipo_documento: &#x27;Tipo documento&#x27;, numero_documento: &#x27;&#x27;, email: &#x27;&#x27;, password: &#x27;&#x27;, rpassword: &#x27;&#x27;, terminos: null, pais: &#x27;&#x27;, telefono: &#x27;&#x27;, ocupacion: &#x27;&#x27; }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="27" class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="spinner"></a>
+                        <span class="name">
+                            <b>
+                            spinner</b>
+                            <a href="#spinner"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Tipo : </i>        <code><a href="../interfaces/SpinnerButtonOptions.html" target="_self" >SpinnerButtonOptions</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Valor por defecto : </i><code>{
+		active: false,
+		spinnerSize: 18,
+		raised: true,
+		buttonColor: &#x27;primary&#x27;,
+		spinnerColor: &#x27;accent&#x27;,
+		fullWidth: false
+	}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="37" class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tipoDocumento"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            tipoDocumento</b>
+                            <a href="#tipoDocumento"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Tipo : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Valor por defecto : </i><code>&quot;&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="26" class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="usuario"></a>
+                        <span class="name">
+                            <b>
+                            usuario</b>
+                            <a href="#usuario"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Tipo : </i>        <code><a href="../classes/Usuario.html" target="_self" >Usuario</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Definido en <a href="" data-line="36" class="link-to-prism">src/app/content/pages/auth/register/register.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+	Component,
+	OnInit,
+	Input,
+	Output,
+	ViewChild,
+	ElementRef
+} from &#x27;@angular/core&#x27;;
+import { Subject } from &#x27;rxjs&#x27;;
+import { AuthenticationService } from &#x27;../../../../core/auth/authentication.service&#x27;;
+import { NgForm } from &#x27;@angular/forms&#x27;;
+import * as objectPath from &#x27;object-path&#x27;;
+import { AuthNoticeService } from &#x27;../../../../core/auth/auth-notice.service&#x27;;
+import { SpinnerButtonOptions } from &#x27;../../../partials/content/general/spinner-button/button-options.interface&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import { Usuario } from &#x27;../../../../core/interfaces/usuario&#x27;;
+import swal from &#x27;sweetalert2&#x27;;
+import { PaisesService } from &#x27;../../../../core/services/paises.service&#x27;;
+
+@Component({
+	selector: &#x27;m-register&#x27;,
+	templateUrl: &#x27;./register.component.html&#x27;,
+	styleUrls: [&#x27;./register.component.scss&#x27;]
+})
+export class RegisterComponent implements OnInit {
+	public tipoDocumento: String &#x3D; &quot;&quot;;
+	public model: any &#x3D; { nombre: &#x27;&#x27;, apellido: &#x27;&#x27;, tipo_documento: &#x27;Tipo documento&#x27;, numero_documento: &#x27;&#x27;, email: &#x27;&#x27;, password: &#x27;&#x27;, rpassword: &#x27;&#x27;, terminos: null, pais: &#x27;&#x27;, telefono: &#x27;&#x27;, ocupacion: &#x27;&#x27; };
+	@Input() action: string;
+	@Output() actionChange &#x3D; new Subject&lt;string&gt;();
+	public loading &#x3D; false;
+	documento: Boolean;
+	listDocumento: Array&lt;any&gt;
+	listPais: Array&lt;any&gt;
+	@ViewChild(&#x27;f&#x27;) f: NgForm;
+	errors: any &#x3D; [];
+	usuario: Usuario;
+	spinner: SpinnerButtonOptions &#x3D; {
+		active: false,
+		spinnerSize: 18,
+		raised: true,
+		buttonColor: &#x27;primary&#x27;,
+		spinnerColor: &#x27;accent&#x27;,
+		fullWidth: false
+	};
+
+	constructor(
+		private authService: AuthenticationService,
+		public authNoticeService: AuthNoticeService,
+		private translate: TranslateService,
+		private pais: PaisesService) {
+		this.authService.logout();
+		this.usuario &#x3D; new Usuario();
+		this.usuario.roles &#x3D; [{ &#x27;id&#x27;: 1, &#x27;nombre&#x27;: &#x27;ROLE_USER&#x27; }];
+		this.listarPaises();
+		this.listarDocumentos();
+
+	}
+
+	ngOnInit() { }
+
+	loginPage(event: Event) {
+		event.preventDefault();
+		this.action &#x3D; &#x27;login&#x27;;
+		this.actionChange.next(this.action);
+	}
+
+	submit() {
+		this.spinner.active &#x3D; true;
+		if (this.validate(this.f)) {
+			this.authService.register(this.usuario).subscribe(response &#x3D;&gt; {
+				this.mostrarMensaje(response.mensaje);
+				this.action &#x3D; &#x27;login&#x27;;
+				this.actionChange.next(this.action);
+				this.spinner.active &#x3D; false;
+				this.authNoticeService.setNotice(this.translate.instant(&#x27;AUTH.REGISTER.SUCCESS&#x27;), &#x27;success&#x27;);
+			});
+		}
+		this.spinner.active &#x3D; false;
+	}
+
+	validate(f: NgForm) {
+		if (f.form.status &#x3D;&#x3D;&#x3D; &#x27;VALID&#x27;) {
+			return true;
+		}
+
+		this.errors &#x3D; [];
+		if (objectPath.get(f, &#x27;form.controls.nombre.errors.required&#x27;)) {
+			this.errors.push(this.translate.instant(&#x27;AUTH.VALIDATION.REQUIRED&#x27;, { name: this.translate.instant(&#x27;AUTH.INPUT.FULLNAME&#x27;) }));
+		}
+		if (objectPath.get(f, &#x27;form.controls.apellido.errors.required&#x27;)) {
+			this.errors.push(this.translate.instant(&#x27;AUTH.VALIDATION.REQUIRED&#x27;, { name: this.translate.instant(&#x27;AUTH.INPUT.APELLIDO&#x27;) }));
+		}
+		if (objectPath.get(f, &#x27;form.controls.tipo_documento.errors.required&#x27;)) {
+			this.errors.push(this.translate.instant(&#x27;AUTH.VALIDATION.REQUIRED&#x27;, { name: this.translate.instant(&#x27;AUTH.INPUT.TIPODOC&#x27;) }));
+		}
+		if (objectPath.get(f, &#x27;form.controls.numero_documento.errors.required&#x27;)) {
+			this.errors.push(this.translate.instant(&#x27;AUTH.VALIDATION.REQUIRED&#x27;, { name: this.translate.instant(&#x27;AUTH.INPUT.DOC&#x27;) }));
+		}
+
+		if (objectPath.get(f, &#x27;form.controls.email.errors.email&#x27;)) {
+			this.errors.push(this.translate.instant(&#x27;AUTH.VALIDATION.INVALID&#x27;, { name: this.translate.instant(&#x27;AUTH.INPUT.EMAIL&#x27;) }));
+		}
+		if (objectPath.get(f, &#x27;form.controls.email.errors.required&#x27;)) {
+			this.errors.push(this.translate.instant(&#x27;AUTH.VALIDATION.REQUIRED&#x27;, { name: this.translate.instant(&#x27;AUTH.INPUT.EMAIL&#x27;) }));
+		}
+
+		if (objectPath.get(f, &#x27;form.controls.password.errors.required&#x27;)) {
+			this.errors.push(this.translate.instant(&#x27;AUTH.VALIDATION.REQUIRED&#x27;, { name: this.translate.instant(&#x27;AUTH.INPUT.PASSWORD&#x27;) }));
+		}
+		if (objectPath.get(f, &#x27;form.controls.password.errors.minlength&#x27;)) {
+			this.errors.push(this.translate.instant(&#x27;AUTH.VALIDATION.MIN_LENGTH&#x27;, { name: this.translate.instant(&#x27;AUTH.INPUT.PASSWORD&#x27;), min: 4 }));
+		}
+
+		if (objectPath.get(f, &#x27;form.controls.rpassword.errors.required&#x27;)) {
+			this.errors.push(this.translate.instant(&#x27;AUTH.VALIDATION.REQUIRED&#x27;, { name: this.translate.instant(&#x27;AUTH.INPUT.CONFIRM_PASSWORD&#x27;) }));
+		}
+
+		if (objectPath.get(f, &#x27;form.controls.terminos.errors.required&#x27;)) {
+			this.errors.push(this.translate.instant(&#x27;AUTH.VALIDATION.AGREEMENT_REQUIRED&#x27;));
+		}
+
+		if (this.errors.length &gt; 0) {
+			this.authNoticeService.setNotice(this.errors.join(&#x27;&lt;br/&gt;&#x27;), &#x27;error&#x27;);
+			this.spinner.active &#x3D; false;
+		}
+
+		return false;
+	}
+
+	mostrarMensaje(response) {
+		const Toast &#x3D; swal.mixin({
+			toast: true,
+			position: &#x27;top-end&#x27;,
+			showConfirmButton: false,
+			timer: 3000,
+			timerProgressBar: true,
+			onOpen: (toast) &#x3D;&gt; {
+				toast.addEventListener(&#x27;mouseenter&#x27;, swal.stopTimer)
+				toast.addEventListener(&#x27;mouseleave&#x27;, swal.resumeTimer)
+			}
+		})
+
+		Toast.fire({
+			icon: &#x27;success&#x27;,
+			title: response
+		})
+	}
+	listarPaises() {
+		this.listPais &#x3D; [];
+		this.pais.listarPaises().subscribe(data &#x3D;&gt; {
+			data.forEach(element &#x3D;&gt; {
+				this.listPais.push(element);
+
+			});
+			
+		})
+	}
+
+	listarDocumentos() {
+		this.listDocumento &#x3D; [];
+			this.listDocumento.push(
+			{
+				value: 1,
+				nombre: &quot;Pasaporte&quot;
+			},
+			{
+				value: 2,
+				nombre: &quot;Cedula indentidad&quot;
+			},
+			{
+				value: 3,
+				nombre: &quot;Rut&quot;
+
+			},
+			{
+				value: 4,
+				nombre: &quot;Otro&quot;
+
+			})
+	}
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!--begin::Signin--&gt;
+&lt;div class&#x3D;&quot;m-login__signin&quot;&gt;
+	&lt;div class&#x3D;&quot;m-login__title&quot;&gt;
+		&lt;h3 class&#x3D;&quot;m-login__title mb-0&quot;&gt;Regístrate&lt;/h3&gt;
+		&lt;div class&#x3D;&quot;m-login__desc  mb-0&quot;&gt;Ingrese sus datos para crear su cuenta:&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;m-auth-notice&gt;&lt;/m-auth-notice&gt;
+
+	&lt;!--begin::Form--&gt;
+	&lt;form class&#x3D;&quot;m-login__form m-form&quot; name&#x3D;&quot;form&quot; (ngSubmit)&#x3D;&quot;f.form.valid &amp;&amp; submit()&quot; #f&#x3D;&quot;ngForm&quot; novalidate&gt;
+		&lt;div class&#x3D;&quot;row&quot;&gt;
+			&lt;div class&#x3D;&quot;col-6&quot;&gt;
+				&lt;div class&#x3D;&quot;form-group  mb-0&quot;&gt;
+					&lt;mat-form-field&gt;
+						&lt;mat-label&gt;Nombre&lt;/mat-label&gt;
+						&lt;input matInput type&#x3D;&quot;text&quot; name&#x3D;&quot;nombre&quot; placeholder&#x3D;&quot;Nombre&quot; autocomplete&#x3D;&quot;off&quot;
+							[(ngModel)]&#x3D;&quot;usuario.nombre&quot; #nombre&#x3D;&quot;ngModel&quot; required&gt;
+					&lt;/mat-form-field&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;col-6&quot;&gt;
+				&lt;div class&#x3D;&quot;form-group mb-0&quot;&gt;
+					&lt;mat-form-field&gt;
+						&lt;mat-label&gt;Apellido&lt;/mat-label&gt;
+						&lt;input matInput type&#x3D;&quot;text&quot; name&#x3D;&quot;apellido&quot; placeholder&#x3D;&quot;Apellido&quot; autocomplete&#x3D;&quot;off&quot;
+							[(ngModel)]&#x3D;&quot;usuario.apellido&quot; #apellido&#x3D;&quot;ngModel&quot; required&gt;
+					&lt;/mat-form-field&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+
+
+		&lt;div class&#x3D;&quot;form-group mb-0&quot;&gt;
+			&lt;div class&#x3D;&quot;row&quot;&gt;
+				&lt;div class&#x3D;&quot;col-6&quot;&gt;
+					&lt;div class&#x3D;&quot;form-group &quot;&gt;
+						&lt;label class&#x3D;&quot;color-lablel&quot;&gt;Tipo documento&lt;/label&gt;
+						&lt;div&gt;
+							&lt;select name&#x3D;&quot;select&quot; class&#x3D;&quot;select&quot; [(ngModel)]&#x3D;&quot;usuario.tipo_documento&quot;&gt;
+								&lt;option value&#x3D;{{item.value}} *ngFor&#x3D;&quot;let item of listDocumento&quot;&gt;{{item.nombre}}&lt;/option&gt;
+
+							&lt;/select&gt;
+						&lt;/div&gt;
+
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;col-6&quot;&gt;
+					&lt;mat-form-field&gt;
+						&lt;mat-label&gt;Número de documento&lt;/mat-label&gt;
+						&lt;input matInput type&#x3D;&quot;number&quot; name&#x3D;&quot;numero_documento&quot; placeholder&#x3D;&quot;Número Documento&quot;
+							autocomplete&#x3D;&quot;off&quot; [(ngModel)]&#x3D;&quot;usuario.numero_documento&quot; #numero_documento&#x3D;&quot;ngModel&quot;
+							required&gt;
+					&lt;/mat-form-field&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+
+		&lt;/div&gt;
+
+		&lt;div class&#x3D;&quot;form-group mb-0&quot;&gt;
+			&lt;mat-form-field&gt;
+				&lt;mat-label&gt;Email&lt;/mat-label&gt;
+				&lt;input matInput type&#x3D;&quot;email&quot; name&#x3D;&quot;email&quot; placeholder&#x3D;&quot;Email address&quot; autocomplete&#x3D;&quot;off&quot;
+					[(ngModel)]&#x3D;&quot;usuario.email&quot; #email&#x3D;&quot;ngModel&quot; email&#x3D;&quot;true&quot; required&gt;
+			&lt;/mat-form-field&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;form-group mb-0&quot;&gt;
+			&lt;mat-form-field&gt;
+				&lt;mat-label&gt;Contraseña&lt;/mat-label&gt;
+				&lt;input matInput minlength&#x3D;&quot;4&quot; type&#x3D;&quot;password&quot; name&#x3D;&quot;password&quot; placeholder&#x3D;&quot;Contraseña&quot;
+					autocomplete&#x3D;&quot;off&quot; [(ngModel)]&#x3D;&quot;usuario.password&quot; #password&#x3D;&quot;ngModel&quot; required&gt;
+			&lt;/mat-form-field&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;form-group mb-0&quot;&gt;
+			&lt;mat-form-field&gt;
+				&lt;mat-label&gt;Confirmar Contraseña&lt;/mat-label&gt;
+				&lt;input matInput minlength&#x3D;&quot;4&quot; type&#x3D;&quot;password&quot; name&#x3D;&quot;rpassword&quot; placeholder&#x3D;&quot;Confirmar contraseña&quot;
+					autocomplete&#x3D;&quot;off&quot; [(ngModel)]&#x3D;&quot;usuario.rpassword&quot; #rpassword&#x3D;&quot;ngModel&quot; required&gt;
+			&lt;/mat-form-field&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;form-group mb-0&quot;&gt;
+			&lt;mat-form-field&gt;
+				&lt;mat-label&gt;Ocupaciòn&lt;/mat-label&gt;
+				&lt;input matInput minlength&#x3D;&quot;1&quot; type&#x3D;&quot;text&quot; name&#x3D;&quot;ocupacion&quot; placeholder&#x3D;&quot;Ocupación&quot; autocomplete&#x3D;&quot;off&quot;
+					[(ngModel)]&#x3D;&quot;usuario.ocupacion&quot; #ocupacion&#x3D;&quot;ngModel&quot; required&gt;
+			&lt;/mat-form-field&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;row&quot;&gt;
+			&lt;div class&#x3D;&quot;col-6&quot;&gt;
+				&lt;div class&#x3D;&quot;form-group &quot;&gt;
+					&lt;label class&#x3D;&quot;color-lablel&quot;&gt;Pais&lt;/label&gt;
+					&lt;div&gt;
+						&lt;select name&#x3D;&quot;select&quot; class&#x3D;&quot;select&quot; [(ngModel)]&#x3D;&quot;usuario.pais&quot;&gt;
+							&lt;option value&#x3D;{{item.nombre}} *ngFor&#x3D;&quot;let item of listPais&quot;&gt;{{item.nombre}}&lt;/option&gt;
+
+						&lt;/select&gt;
+					&lt;/div&gt;
+
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;col-6&quot;&gt;
+				&lt;div class&#x3D;&quot;form-group mb-0&quot;&gt;
+					&lt;mat-form-field&gt;
+						&lt;mat-label&gt;Teléfono&lt;/mat-label&gt;
+						&lt;input matInput minlength&#x3D;&quot;4&quot; type&#x3D;&quot;tel&quot; name&#x3D;&quot;telefono&quot; placeholder&#x3D;&quot;Teléfono&quot;
+							autocomplete&#x3D;&quot;off&quot;  [(ngModel)]&#x3D;&quot;usuario.telefono&quot;
+							#telefono&#x3D;&quot;ngModel&quot; required&gt;
+					&lt;/mat-form-field&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+
+		&lt;div class&#x3D;&quot;form-group mb-0&quot;&gt;
+			&lt;mat-checkbox name&#x3D;&quot;agree&quot; required&#x3D;&quot;true&quot; [(ngModel)]&#x3D;&quot;usuario.terminos&quot; #terminos&#x3D;&quot;ngModel&quot;&gt;Acepto los
+				terminos
+				&lt;a&gt;y condiciones&lt;/a&gt;
+			&lt;/mat-checkbox&gt;
+		&lt;/div&gt;
+	&lt;/form&gt;
+	&lt;!--end::Form--&gt;
+
+	&lt;!--begin::Action--&gt;
+	&lt;div class&#x3D;&quot;m-login__action m-login__action--fit&quot;&gt;
+		&lt;button mat-button (click)&#x3D;&quot;loginPage($event)&quot; [disabled]&#x3D;&quot;loading&quot;&gt;Atrás&lt;/button&gt;
+		&lt;m-spinner-button [options]&#x3D;&quot;spinner&quot; (click)&#x3D;&quot;submit()&quot;&gt;Enviar&lt;/m-spinner-button&gt;
+	&lt;/div&gt;
+	&lt;!--end::Action--&gt;
+&lt;/div&gt;
+&lt;!--end::Signin--&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./register.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">:host {
+	.mat-form-field {
+		width: 100%;
+	}
+}
+
+.select{
+    outline: none;
+    border: none;
+}
+
+.color-lablel{
+	    color: grey;
+
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Leyenda</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Elemento Html</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Componente</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Elemento Html con directiva</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!--begin::Signin--><div class="m-login__signin">	<div class="m-login__title">		<h3 class="m-login__title mb-0">Regístrate</h3>		<div class="m-login__desc  mb-0">Ingrese sus datos para crear su cuenta:</div>	</div>	<m-auth-notice></m-auth-notice>	<!--begin::Form-->	<form class="m-login__form m-form" name="form" (ngSubmit)="f.form.valid && submit()" #f="ngForm" novalidate>		<div class="row">			<div class="col-6">				<div class="form-group  mb-0">					<mat-form-field>						<mat-label>Nombre</mat-label>						<input matInput type="text" name="nombre" placeholder="Nombre" autocomplete="off"							[(ngModel)]="usuario.nombre" #nombre="ngModel" required>					</mat-form-field>				</div>			</div>			<div class="col-6">				<div class="form-group mb-0">					<mat-form-field>						<mat-label>Apellido</mat-label>						<input matInput type="text" name="apellido" placeholder="Apellido" autocomplete="off"							[(ngModel)]="usuario.apellido" #apellido="ngModel" required>					</mat-form-field>				</div>			</div>		</div>		<div class="form-group mb-0">			<div class="row">				<div class="col-6">					<div class="form-group ">						<label class="color-lablel">Tipo documento</label>						<div>							<select name="select" class="select" [(ngModel)]="usuario.tipo_documento">								<option value={{item.value}} *ngFor="let item of listDocumento">{{item.nombre}}</option>							</select>						</div>					</div>				</div>				<div class="col-6">					<mat-form-field>						<mat-label>Número de documento</mat-label>						<input matInput type="number" name="numero_documento" placeholder="Número Documento"							autocomplete="off" [(ngModel)]="usuario.numero_documento" #numero_documento="ngModel"							required>					</mat-form-field>				</div>			</div>		</div>		<div class="form-group mb-0">			<mat-form-field>				<mat-label>Email</mat-label>				<input matInput type="email" name="email" placeholder="Email address" autocomplete="off"					[(ngModel)]="usuario.email" #email="ngModel" email="true" required>			</mat-form-field>		</div>		<div class="form-group mb-0">			<mat-form-field>				<mat-label>Contraseña</mat-label>				<input matInput minlength="4" type="password" name="password" placeholder="Contraseña"					autocomplete="off" [(ngModel)]="usuario.password" #password="ngModel" required>			</mat-form-field>		</div>		<div class="form-group mb-0">			<mat-form-field>				<mat-label>Confirmar Contraseña</mat-label>				<input matInput minlength="4" type="password" name="rpassword" placeholder="Confirmar contraseña"					autocomplete="off" [(ngModel)]="usuario.rpassword" #rpassword="ngModel" required>			</mat-form-field>		</div>		<div class="form-group mb-0">			<mat-form-field>				<mat-label>Ocupaciòn</mat-label>				<input matInput minlength="1" type="text" name="ocupacion" placeholder="Ocupación" autocomplete="off"					[(ngModel)]="usuario.ocupacion" #ocupacion="ngModel" required>			</mat-form-field>		</div>		<div class="row">			<div class="col-6">				<div class="form-group ">					<label class="color-lablel">Pais</label>					<div>						<select name="select" class="select" [(ngModel)]="usuario.pais">							<option value={{item.nombre}} *ngFor="let item of listPais">{{item.nombre}}</option>						</select>					</div>				</div>			</div>			<div class="col-6">				<div class="form-group mb-0">					<mat-form-field>						<mat-label>Teléfono</mat-label>						<input matInput minlength="4" type="tel" name="telefono" placeholder="Teléfono"							autocomplete="off"  [(ngModel)]="usuario.telefono"							#telefono="ngModel" required>					</mat-form-field>				</div>			</div>		</div>		<div class="form-group mb-0">			<mat-checkbox name="agree" required="true" [(ngModel)]="usuario.terminos" #terminos="ngModel">Acepto los				terminos				<a>y condiciones</a>			</mat-checkbox>		</div>	</form>	<!--end::Form-->	<!--begin::Action-->	<div class="m-login__action m-login__action--fit">		<button mat-button (click)="loginPage($event)" [disabled]="loading">Atrás</button>		<m-spinner-button [options]="spinner" (click)="submit()">Enviar</m-spinner-button>	</div>	<!--end::Action--></div><!--end::Signin--></div>'
+    var COMPONENTS = [{'name': 'AccordionControlComponent', 'selector': 'm-accordion-control'},{'name': 'ActionComponent', 'selector': 'm-action'},{'name': 'AppComponent', 'selector': 'body[m-root]'},{'name': 'AsideLeftComponent', 'selector': 'm-aside-left'},{'name': 'AsideRightComponent', 'selector': 'm-aside-right'},{'name': 'AuditLogComponent', 'selector': 'm-audit-log'},{'name': 'AuditLogComponent', 'selector': 'm-audit-log'},{'name': 'AuthComponent', 'selector': 'm-auth'},{'name': 'AuthNoticeComponent', 'selector': 'm-auth-notice'},{'name': 'AuthorProfitComponent', 'selector': 'm-author-profit'},{'name': 'BarChartComponent', 'selector': 'm-bar-chart'},{'name': 'BestSellerComponent', 'selector': 'm-best-seller'},{'name': 'BlogComponent', 'selector': 'm-blog'},{'name': 'BrandComponent', 'selector': 'm-brand'},{'name': 'BuilderComponent', 'selector': 'm-builder'},{'name': 'ChatComponent', 'selector': 'app-chat'},{'name': 'CodePreviewComponent', 'selector': 'm-code-preview'},{'name': 'CodePreviewInnerComponent', 'selector': 'm-code-preview-inner'},{'name': 'DashboardComponent', 'selector': 'm-dashboard'},{'name': 'DataTableComponent', 'selector': 'm-data-table'},{'name': 'Dayana1Component', 'selector': 'm-dayana1'},{'name': 'Dayana2Component', 'selector': 'm-dayana2'},{'name': 'Dayana3Component', 'selector': 'm-dayana3'},{'name': 'DayanaComponent', 'selector': 'm-dayana'},{'name': 'DoughnutChartComponent', 'selector': 'm-doughnut-chart'},{'name': 'ErrorPageComponent', 'selector': 'm-error-page'},{'name': 'FinanceStatsComponent', 'selector': 'm-finance-stats'},{'name': 'FooterComponent', 'selector': 'm-footer'},{'name': 'ForgotPasswordComponent', 'selector': 'm-forgot-password'},{'name': 'HeaderComponent', 'selector': 'm-header'},{'name': 'HeaderSearchComponent', 'selector': 'm-header-search'},{'name': 'IndexComponent', 'selector': 'm-index'},{'name': 'LanguageSelectorComponent', 'selector': 'm-language-selector'},{'name': 'ListSettingsComponent', 'selector': 'm-list-settings'},{'name': 'ListTimelineComponent', 'selector': 'm-list-timeline'},{'name': 'LoginComponent', 'selector': 'm-login'},{'name': 'MailComponent', 'selector': 'm-mail'},{'name': 'MaterialPreviewComponent', 'selector': 'm-material-preview'},{'name': 'MenuHorizontalComponent', 'selector': 'm-menu-horizontal'},{'name': 'MenuSectionComponent', 'selector': 'm-menu-section'},{'name': 'MessengerComponent', 'selector': 'm-messenger'},{'name': 'MessengerInComponent', 'selector': 'm-messenger-in'},{'name': 'MessengerOutComponent', 'selector': 'm-messenger-out'},{'name': 'NoticeComponent', 'selector': 'm-notice'},{'name': 'NotificationComponent', 'selector': 'm-notification'},{'name': 'PackagesComponent', 'selector': 'm-packages'},{'name': 'PagesComponent', 'selector': 'm-pages'},{'name': 'PortletComponent', 'selector': 'm-portlet'},{'name': 'ProfileComponent', 'selector': 'm-profile'},{'name': 'QuickActionComponent', 'selector': 'm-quick-action'},{'name': 'QuickSidebarComponent', 'selector': 'm-quick-sidebar'},{'name': 'RecentActivitiesComponent', 'selector': 'm-recent-activities'},{'name': 'RecentNotificationsComponent', 'selector': 'm-recent-notifications'},{'name': 'RecuperarPasswordComponent', 'selector': 'm-recuperar-password'},{'name': 'RegisterComponent', 'selector': 'm-register'},{'name': 'ScrollTopComponent', 'selector': 'm-scroll-top'},{'name': 'SearchDefaultComponent', 'selector': 'm-search-default'},{'name': 'SearchDropdownComponent', 'selector': 'm-search-dropdown'},{'name': 'SpinnerButtonComponent', 'selector': 'm-spinner-button'},{'name': 'StatComponent', 'selector': 'm-stat'},{'name': 'SubheaderComponent', 'selector': 'm-subheader'},{'name': 'SupportTicketsComponent', 'selector': 'm-support-tickets'},{'name': 'TasksComponent', 'selector': 'm-tasks'},{'name': 'TimelineItemComponent', 'selector': 'm-timeline-item'},{'name': 'TooltipsComponent', 'selector': 'm-tooltips'},{'name': 'TopbarComponent', 'selector': 'm-topbar'},{'name': 'UserManagementComponent', 'selector': 'm-user-management'},{'name': 'UserProfileComponent', 'selector': 'm-user-profile'}];
+    var DIRECTIVES = [{'name': 'AccordionControlPanelContentDirective', 'selector': 'ng-template[AccordionControlPanelContent]'},{'name': 'AccordionControlPanelDirective', 'selector': 'm-accordion-control-panel'},{'name': 'AccordionControlPanelTitleDirective', 'selector': 'ng-template[AccordionControlPanelTitle]'},{'name': 'ClipboardDirective', 'selector': '[clipboard]'},{'name': 'HeaderDirective', 'selector': '[mHeader]'},{'name': 'MenuAsideDirective', 'selector': '[mMenuAside]'},{'name': 'MenuAsideOffcanvasDirective', 'selector': '[mMenuAsideOffcanvas]'},{'name': 'MenuAsideToggleDirective', 'selector': '[mMenuAsideToggle]'},{'name': 'MenuHorizontalDirective', 'selector': '[mMenuHorizontal]'},{'name': 'MenuHorizontalOffcanvasDirective', 'selector': '[mMenuHorizontalOffcanvas]'},{'name': 'PortletDirective', 'selector': '[mPortlet]'},{'name': 'QuickSearchDirective', 'selector': '[mQuickSearch]'},{'name': 'QuickSidebarOffcanvasDirective', 'selector': '[mQuickSidebarOffcanvas]'},{'name': 'ScrollTopDirective', 'selector': '[mScrollTop]'}];
+    var ACTUAL_COMPONENT = {'name': 'RegisterComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No hay resultados que coincidan "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'RegisterComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,646 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">default documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>BuilderComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/content/pages/builder/builder.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+            <tr>
+                <td class="col-md-3">changeDetection</td>
+                <td class="col-md-9"><code>ChangeDetectionStrategy.OnPush</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>m-builder</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">template</td>
+                <td class="col-md-9"><pre class="line-numbers"><code class="language-html">./builder.component.html</code></pre></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#form">form</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#resetPreview">resetPreview</a>
+                            </li>
+                            <li>
+                                <a href="#submitPreview">submitPreview</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#model">model</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(layoutConfigService: <a href="../injectables/LayoutConfigService.html">LayoutConfigService</a>, classInitService: <a href="../injectables/ClassInitService.html">ClassInitService</a>, layoutConfigStorageService: <a href="../injectables/LayoutConfigStorageService.html">LayoutConfigStorageService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/content/pages/builder/builder.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>layoutConfigService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LayoutConfigService.html" target="_self" >LayoutConfigService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>classInitService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ClassInitService.html" target="_self" >ClassInitService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>layoutConfigStorageService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LayoutConfigStorageService.html" target="_self" >LayoutConfigStorageService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="model"></a>
+                        <b>model</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/content/pages/builder/builder.component.ts:14</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">src/app/content/pages/builder/builder.component.ts:27</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetPreview"></a>
+                    <span class="name">
+                        <b>
+                            resetPreview
+                        </b>
+                        <a href="#resetPreview"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resetPreview(event: <a href="https://angular.io/api/router/Event" target="_blank">Event</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="33"
+                            class="link-to-prism">src/app/content/pages/builder/builder.component.ts:33</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/router/Event" target="_blank" >Event</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="submitPreview"></a>
+                    <span class="name">
+                        <b>
+                            submitPreview
+                        </b>
+                        <a href="#submitPreview"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>submitPreview(form: <a href="https://angular.io/api/forms/NgForm" target="_blank">NgForm</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/app/content/pages/builder/builder.component.ts:29</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>form</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/NgForm" target="_blank" >NgForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="form"></a>
+                        <span class="name">
+                            <b>
+                            form</b>
+                            <a href="#form"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/forms/NgForm" target="_blank" >NgForm</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;builderForm&#x27;)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/content/pages/builder/builder.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { LayoutConfigStorageService } from &#x27;../../../core/services/layout-config-storage.service&#x27;;
+import { Component, OnInit, Input, ViewChild, ChangeDetectionStrategy } from &#x27;@angular/core&#x27;;
+import { NgForm } from &#x27;@angular/forms&#x27;;
+import { LayoutConfigService } from &#x27;../../../core/services/layout-config.service&#x27;;
+import { ClassInitService } from &#x27;../../../core/services/class-init.service&#x27;;
+import { LayoutConfig } from &#x27;../../../config/layout&#x27;;
+
+@Component({
+	selector: &#x27;m-builder&#x27;,
+	template: &quot;./builder.component.html&quot;,
+	changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class BuilderComponent implements OnInit {
+	@Input() model: any;
+	@ViewChild(&#x27;builderForm&#x27;) form: NgForm;
+
+	constructor(
+		private layoutConfigService: LayoutConfigService,
+		private classInitService: ClassInitService,
+		private layoutConfigStorageService: LayoutConfigStorageService
+	) {
+		this.layoutConfigService.onLayoutConfigUpdated$.subscribe(config &#x3D;&gt; {
+			this.model &#x3D; config.config;
+		});
+	}
+
+	ngOnInit(): void {}
+
+	submitPreview(form: NgForm): void {
+		this.layoutConfigService.setModel(new LayoutConfig(this.model));
+	}
+
+	resetPreview(event: Event): void {
+		event.preventDefault();
+		this.layoutConfigStorageService.resetConfig();
+		location.reload();
+	}
+}
+</code></pre>
+    </div>
+
+
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div>./builder.component.html</div>'
+    var COMPONENTS = [{'name': 'AccordionControlComponent', 'selector': 'm-accordion-control'},{'name': 'ActionComponent', 'selector': 'm-action'},{'name': 'AppComponent', 'selector': 'body[m-root]'},{'name': 'AsideLeftComponent', 'selector': 'm-aside-left'},{'name': 'AsideRightComponent', 'selector': 'm-aside-right'},{'name': 'AuditLogComponent', 'selector': 'm-audit-log'},{'name': 'AuditLogComponent', 'selector': 'm-audit-log'},{'name': 'AuthComponent', 'selector': 'm-auth'},{'name': 'AuthNoticeComponent', 'selector': 'm-auth-notice'},{'name': 'AuthorProfitComponent', 'selector': 'm-author-profit'},{'name': 'BarChartComponent', 'selector': 'm-bar-chart'},{'name': 'BestSellerComponent', 'selector': 'm-best-seller'},{'name': 'BlogComponent', 'selector': 'm-blog'},{'name': 'BrandComponent', 'selector': 'm-brand'},{'name': 'BuilderComponent', 'selector': 'm-builder'},{'name': 'ChatComponent', 'selector': 'app-chat'},{'name': 'CodePreviewComponent', 'selector': 'm-code-preview'},{'name': 'CodePreviewInnerComponent', 'selector': 'm-code-preview-inner'},{'name': 'DashboardComponent', 'selector': 'm-dashboard'},{'name': 'DataTableComponent', 'selector': 'm-data-table'},{'name': 'Dayana1Component', 'selector': 'm-dayana1'},{'name': 'Dayana2Component', 'selector': 'm-dayana2'},{'name': 'Dayana3Component', 'selector': 'm-dayana3'},{'name': 'DayanaComponent', 'selector': 'm-dayana'},{'name': 'DoughnutChartComponent', 'selector': 'm-doughnut-chart'},{'name': 'ErrorPageComponent', 'selector': 'm-error-page'},{'name': 'FinanceStatsComponent', 'selector': 'm-finance-stats'},{'name': 'FooterComponent', 'selector': 'm-footer'},{'name': 'ForgotPasswordComponent', 'selector': 'm-forgot-password'},{'name': 'HeaderComponent', 'selector': 'm-header'},{'name': 'HeaderSearchComponent', 'selector': 'm-header-search'},{'name': 'IndexComponent', 'selector': 'm-index'},{'name': 'LanguageSelectorComponent', 'selector': 'm-language-selector'},{'name': 'ListSettingsComponent', 'selector': 'm-list-settings'},{'name': 'ListTimelineComponent', 'selector': 'm-list-timeline'},{'name': 'LoginComponent', 'selector': 'm-login'},{'name': 'MailComponent', 'selector': 'm-mail'},{'name': 'MaterialPreviewComponent', 'selector': 'm-material-preview'},{'name': 'MenuHorizontalComponent', 'selector': 'm-menu-horizontal'},{'name': 'MenuSectionComponent', 'selector': 'm-menu-section'},{'name': 'MessengerComponent', 'selector': 'm-messenger'},{'name': 'MessengerInComponent', 'selector': 'm-messenger-in'},{'name': 'MessengerOutComponent', 'selector': 'm-messenger-out'},{'name': 'NoticeComponent', 'selector': 'm-notice'},{'name': 'NotificationComponent', 'selector': 'm-notification'},{'name': 'PackagesComponent', 'selector': 'm-packages'},{'name': 'PagesComponent', 'selector': 'm-pages'},{'name': 'PortletComponent', 'selector': 'm-portlet'},{'name': 'ProfileComponent', 'selector': 'm-profile'},{'name': 'QuickActionComponent', 'selector': 'm-quick-action'},{'name': 'QuickSidebarComponent', 'selector': 'm-quick-sidebar'},{'name': 'RecentActivitiesComponent', 'selector': 'm-recent-activities'},{'name': 'RecentNotificationsComponent', 'selector': 'm-recent-notifications'},{'name': 'RecuperarPasswordComponent', 'selector': 'm-recuperar-password'},{'name': 'RegisterComponent', 'selector': 'm-register'},{'name': 'ScrollTopComponent', 'selector': 'm-scroll-top'},{'name': 'SearchDefaultComponent', 'selector': 'm-search-default'},{'name': 'SearchDropdownComponent', 'selector': 'm-search-dropdown'},{'name': 'SpinnerButtonComponent', 'selector': 'm-spinner-button'},{'name': 'StatComponent', 'selector': 'm-stat'},{'name': 'SubheaderComponent', 'selector': 'm-subheader'},{'name': 'SupportTicketsComponent', 'selector': 'm-support-tickets'},{'name': 'TasksComponent', 'selector': 'm-tasks'},{'name': 'TimelineItemComponent', 'selector': 'm-timeline-item'},{'name': 'TooltipsComponent', 'selector': 'm-tooltips'},{'name': 'TopbarComponent', 'selector': 'm-topbar'},{'name': 'UserManagementComponent', 'selector': 'm-user-management'},{'name': 'UserProfileComponent', 'selector': 'm-user-profile'}];
+    var DIRECTIVES = [{'name': 'AccordionControlPanelContentDirective', 'selector': 'ng-template[AccordionControlPanelContent]'},{'name': 'AccordionControlPanelDirective', 'selector': 'm-accordion-control-panel'},{'name': 'AccordionControlPanelTitleDirective', 'selector': 'ng-template[AccordionControlPanelTitle]'},{'name': 'ClipboardDirective', 'selector': '[clipboard]'},{'name': 'HeaderDirective', 'selector': '[mHeader]'},{'name': 'MenuAsideDirective', 'selector': '[mMenuAside]'},{'name': 'MenuAsideOffcanvasDirective', 'selector': '[mMenuAsideOffcanvas]'},{'name': 'MenuAsideToggleDirective', 'selector': '[mMenuAsideToggle]'},{'name': 'MenuHorizontalDirective', 'selector': '[mMenuHorizontal]'},{'name': 'MenuHorizontalOffcanvasDirective', 'selector': '[mMenuHorizontalOffcanvas]'},{'name': 'PortletDirective', 'selector': '[mPortlet]'},{'name': 'QuickSearchDirective', 'selector': '[mQuickSearch]'},{'name': 'QuickSidebarOffcanvasDirective', 'selector': '[mQuickSidebarOffcanvas]'},{'name': 'ScrollTopDirective', 'selector': '[mScrollTop]'}];
+    var ACTUAL_COMPONENT = {'name': 'BuilderComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'BuilderComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

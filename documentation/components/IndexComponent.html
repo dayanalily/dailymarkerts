@@ -1,0 +1,1449 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>default documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">default documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>IndexComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/content/pages/components/index/index.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>m-index</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./index.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./index.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#dataSource">dataSource</a>
+                            </li>
+                            <li>
+                                <a href="#displayedColumns">displayedColumns</a>
+                            </li>
+                            <li>
+                                <a href="#ELEMENT_DATA">ELEMENT_DATA</a>
+                            </li>
+                            <li>
+                                <a href="#indice">indice</a>
+                            </li>
+                            <li>
+                                <a href="#lengthPage">lengthPage</a>
+                            </li>
+                            <li>
+                                <a href="#ListaPaginados">ListaPaginados</a>
+                            </li>
+                            <li>
+                                <a href="#paginator">paginator</a>
+                            </li>
+                            <li>
+                                <a href="#usuario">usuario</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#accion">accion</a>
+                            </li>
+                            <li>
+                                <a href="#eliminar">eliminar</a>
+                            </li>
+                            <li>
+                                <a href="#isUser">isUser</a>
+                            </li>
+                            <li>
+                                <a href="#listarPaginacion">listarPaginacion</a>
+                            </li>
+                            <li>
+                                <a href="#listarPrueba">listarPrueba</a>
+                            </li>
+                            <li>
+                                <a href="#listarUsuariosRegistrados">listarUsuariosRegistrados</a>
+                            </li>
+                            <li>
+                                <a href="#mostrarDatos">mostrarDatos</a>
+                            </li>
+                            <li>
+                                <a href="#mostrarMas">mostrarMas</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(indexService: <a href="../injectables/IndexService.html">IndexService</a>, auth: <a href="../injectables/AuthenticationService.html">AuthenticationService</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/content/pages/components/index/index.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>indexService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/IndexService.html" target="_self" >IndexService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>auth</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthenticationService.html" target="_self" >AuthenticationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="accion"></a>
+                    <span class="name">
+                        <b>
+                            accion
+                        </b>
+                        <a href="#accion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>accion(event, element)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="116"
+                            class="link-to-prism">src/app/content/pages/components/index/index.component.ts:116</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>element</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="eliminar"></a>
+                    <span class="name">
+                        <b>
+                            eliminar
+                        </b>
+                        <a href="#eliminar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>eliminar(element)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="153"
+                            class="link-to-prism">src/app/content/pages/components/index/index.component.ts:153</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>element</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isUser"></a>
+                    <span class="name">
+                        <b>
+                            isUser
+                        </b>
+                        <a href="#isUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isUser(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="135"
+                            class="link-to-prism">src/app/content/pages/components/index/index.component.ts:135</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listarPaginacion"></a>
+                    <span class="name">
+                        <b>
+                            listarPaginacion
+                        </b>
+                        <a href="#listarPaginacion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listarPaginacion()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="77"
+                            class="link-to-prism">src/app/content/pages/components/index/index.component.ts:77</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listarPrueba"></a>
+                    <span class="name">
+                        <b>
+                            listarPrueba
+                        </b>
+                        <a href="#listarPrueba"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listarPrueba()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="94"
+                            class="link-to-prism">src/app/content/pages/components/index/index.component.ts:94</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listarUsuariosRegistrados"></a>
+                    <span class="name">
+                        <b>
+                            listarUsuariosRegistrados
+                        </b>
+                        <a href="#listarUsuariosRegistrados"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>listarUsuariosRegistrados()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="62"
+                            class="link-to-prism">src/app/content/pages/components/index/index.component.ts:62</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mostrarDatos"></a>
+                    <span class="name">
+                        <b>
+                            mostrarDatos
+                        </b>
+                        <a href="#mostrarDatos"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>mostrarDatos(usuario)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="193"
+                            class="link-to-prism">src/app/content/pages/components/index/index.component.ts:193</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>usuario</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mostrarMas"></a>
+                    <span class="name">
+                        <b>
+                            mostrarMas
+                        </b>
+                        <a href="#mostrarMas"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>mostrarMas(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="85"
+                            class="link-to-prism">src/app/content/pages/components/index/index.component.ts:85</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="58"
+                            class="link-to-prism">src/app/content/pages/components/index/index.component.ts:58</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dataSource"></a>
+                        <span class="name">
+                            <b>
+                            dataSource</b>
+                            <a href="#dataSource"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new MatTableDataSource&lt;Element&gt;(this.ELEMENT_DATA)</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/content/pages/components/index/index.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="displayedColumns"></a>
+                        <span class="name">
+                            <b>
+                            displayedColumns</b>
+                            <a href="#displayedColumns"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[&#x27;nombre&#x27;, &#x27;apellido&#x27;, &#x27;email&#x27;, &#x27;pais&#x27;, &#x27;accion&#x27;]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/content/pages/components/index/index.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ELEMENT_DATA"></a>
+                        <span class="name">
+                            <b>
+                            ELEMENT_DATA</b>
+                            <a href="#ELEMENT_DATA"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/Element.html" target="_self" >Element[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/content/pages/components/index/index.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="indice"></a>
+                        <span class="name">
+                            <b>
+                            indice</b>
+                            <a href="#indice"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/content/pages/components/index/index.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lengthPage"></a>
+                        <span class="name">
+                            <b>
+                            lengthPage</b>
+                            <a href="#lengthPage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/content/pages/components/index/index.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ListaPaginados"></a>
+                        <span class="name">
+                            <b>
+                            ListaPaginados</b>
+                            <a href="#ListaPaginados"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/content/pages/components/index/index.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paginator"></a>
+                        <span class="name">
+                            <b>
+                            paginator</b>
+                            <a href="#paginator"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>MatPaginator</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(MatPaginator, {static: false})<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/content/pages/components/index/index.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="usuario"></a>
+                        <span class="name">
+                            <b>
+                            usuario</b>
+                            <a href="#usuario"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Usuario.html" target="_self" >Usuario</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/content/pages/components/index/index.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { MatTableDataSource } from &#x27;@angular/material/table&#x27;;
+import { MatPaginator } from &#x27;@angular/material/paginator&#x27;;
+import { IndexService } from &#x27;./index.service&#x27;;
+import swal from &#x27;sweetalert2&#x27;;
+import { AuthenticationService } from &#x27;../../../../core/auth/authentication.service&#x27;;
+import { Usuario } from &#x27;../../../../core/interfaces/usuario&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+export interface Element {
+
+  apellido: String,
+  enabled: String,
+  foto: String,
+  id: String,
+  nombre: String,
+  numero_documento: number,
+  roles: String,
+  terminos: Boolean
+  tipo_documento: number,
+  email: String,
+  pais: String,
+
+}
+
+@Component({
+  selector: &#x27;m-index&#x27;,
+  templateUrl: &#x27;./index.component.html&#x27;,
+  styleUrls: [&#x27;./index.component.scss&#x27;]
+})
+export class IndexComponent implements OnInit {
+  indice &#x3D; 0;
+  usuario: Usuario;
+  ELEMENT_DATA: Element[] &#x3D; [];
+  displayedColumns &#x3D; [&#x27;nombre&#x27;, &#x27;apellido&#x27;, &#x27;email&#x27;, &#x27;pais&#x27;, &#x27;accion&#x27;];
+  dataSource &#x3D; new MatTableDataSource&lt;Element&gt;(this.ELEMENT_DATA);
+  lengthPage: any;
+  ListaPaginados: any;
+  @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
+
+
+
+
+  constructor(
+    private indexService: IndexService,
+    private auth: AuthenticationService,
+    private router: Router) {
+    this.listarUsuariosRegistrados();
+    this.listarPaginacion();
+    this.listarPrueba()
+    const datosUser &#x3D; JSON.parse(sessionStorage.usuario)
+    this.usuario &#x3D; new Usuario();
+    this.usuario.nombre &#x3D; datosUser.nombre;
+    this.usuario.apellido &#x3D; datosUser.apellido;
+    this.usuario.email &#x3D; datosUser.email;
+    this.usuario.roles &#x3D; datosUser.roles;
+  }
+
+  ngOnInit() {
+
+  }
+
+  listarUsuariosRegistrados() {
+    this.indexService.listarUsuariosRegistrados().subscribe(data &#x3D;&gt; {
+      this.ELEMENT_DATA &#x3D; [];
+      this.dataSource &#x3D; new MatTableDataSource&lt;Element&gt;(this.ELEMENT_DATA);
+
+      for (let index &#x3D; 0; index &lt; data.length; index++) {
+        const element &#x3D; data[index];
+        this.ELEMENT_DATA.push(element)
+      }
+      this.dataSource &#x3D; new MatTableDataSource&lt;Element&gt;(this.ELEMENT_DATA);
+      this.dataSource.paginator &#x3D; this.paginator;
+
+    })
+  }
+
+  listarPaginacion() {
+    this.indice &#x3D; 0;
+    this.indexService.listarPaginacion(0).subscribe(data &#x3D;&gt; {
+      this.lengthPage &#x3D; data.totalPages
+      this.ListaPaginados &#x3D; data;
+    })
+  }
+
+  mostrarMas(event) {
+
+    if (this.ListaPaginados.number &#x3D;&#x3D;&#x3D; this.indice) {
+      this.indice &#x3D; this.indice + 4;
+      this.listarPaginacion()
+
+    }
+  }
+
+  listarPrueba() {
+
+    var number &#x3D; 0
+    var data2 &#x3D; []
+    this.indexService.listarPrueba().subscribe(data &#x3D;&gt; {
+      for (let index &#x3D; 0; index &lt; data.length; index++) {
+        const element &#x3D; data[index];
+        if (index &lt; 5) {
+          data2.push(element)
+          number++
+          return
+        }
+
+
+      }
+
+
+    });
+
+
+  }
+
+  accion(event, element) {
+
+    if (event &#x3D;&#x3D;&#x3D; &#x27;eliminar&#x27;) {
+
+      if (this.usuario.roles[0] &#x3D;&#x3D;&#x3D; &quot;ROLE_USER&quot;) {
+        this.isUser(event);
+      } else {
+        this.eliminar(element);
+      }
+    } else if (event &#x3D;&#x3D;&#x3D; &#x27;edita&#x27;) {
+      this.router.navigate([&#x27;/profile&#x27;])
+    } else if (event &#x3D;&#x3D;&#x3D; &#x27;ver&#x27;) {
+
+      this.mostrarDatos(element)
+
+    }
+
+
+  }
+  isUser(event) {
+    const Toast &#x3D; swal.mixin({
+      toast: true,
+      position: &#x27;center-end&#x27;,
+      showConfirmButton: false,
+      timer: 5000,
+      timerProgressBar: true,
+      onOpen: (toast) &#x3D;&gt; {
+        toast.addEventListener(&#x27;mouseenter&#x27;, swal.stopTimer)
+        toast.addEventListener(&#x27;mouseleave&#x27;, swal.resumeTimer)
+      }
+    })
+
+    Toast.fire({
+      icon: &#x27;success&#x27;,
+      title: &#x60;Para ${event} , debes tener permisos!&#x60;
+    })
+  }
+  eliminar(element) {
+    swal.fire({
+      title: &#x27;¿Estás seguro?&#x27;,
+      text: &quot;¡No podrás revertir esto!&quot;,
+      icon: &#x27;warning&#x27;,
+      showCancelButton: true,
+      confirmButtonColor: &#x27;#4c309a&#x27;,
+      cancelButtonColor: &#x27;#fffff&#x27;,
+      confirmButtonText: &#x27;Si, eliminar!&#x27;
+    }).then((result) &#x3D;&gt; {
+      if (result.value) {
+        if (result.value &#x3D;&#x3D;&#x3D; true) {
+          this.indexService.eliminarUsuario(element.id).subscribe(data &#x3D;&gt; {
+            if (data !&#x3D;&#x3D; undefined) {
+              this.listarUsuariosRegistrados()
+              const Toast &#x3D; swal.mixin({
+                toast: true,
+                position: &#x27;center-end&#x27;,
+                showConfirmButton: false,
+                timer: 5000,
+                timerProgressBar: true,
+                onOpen: (toast) &#x3D;&gt; {
+                  toast.addEventListener(&#x27;mouseenter&#x27;, swal.stopTimer)
+                  toast.addEventListener(&#x27;mouseleave&#x27;, swal.resumeTimer)
+                }
+              })
+
+              Toast.fire({
+                icon: &#x27;success&#x27;,
+                title: &#x60;El usuario se ha eliminado!&#x60;
+              })
+            }
+          })
+
+        }
+
+      }
+    })
+  }
+
+  mostrarDatos(usuario) {
+    swal.fire({
+
+      html:
+
+        &#x27;&lt;div&gt;&#x27; + &#x60; &lt;img style&#x3D;&quot;width: 149px; height: 149px;-moz-border-radius: 50%;-webkit-border-radius: 50%;border-radius: 50%;&quot; src&#x3D;&quot;https://edaily-spring.herokuapp.com/api/uploads/img/${usuario.foto}&quot; &gt;&#x60; + &#x27;&lt;/div&gt;&#x27; +
+
+        &#x60;Nombre:  ${usuario.nombre}&#x60; + &#x27;&lt;br/&gt;&#x27; +
+        &#x60;Apellido: ${usuario.apellido}&#x60; + &#x27;&lt;br/&gt;&#x27; +
+        &#x60;Email: ${usuario.email}&#x60; + &#x27;&lt;br/&gt;&#x27;,
+      showCancelButton: true,
+      cancelButtonColor: &#x27;#fffff&#x27;,
+      cancelButtonText: &#x27;volver&#x27;,
+      showConfirmButton: false,
+
+    })
+
+  }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row&quot;&gt;
+
+&lt;div class&#x3D;&quot;col-12&quot; &gt;
+&lt;!--  &lt;span&gt;&lt;img src&#x3D;&quot;./assets/app/media/img/products/en-contruccion.jpeg&quot; alt&#x3D;&quot;&quot;&gt; &lt;/span&gt;--&gt;
+&lt;div class&#x3D;&quot;example-container mat-elevation-z8&quot;&gt;
+  &lt;mat-table #table [dataSource]&#x3D;&quot;dataSource&quot;&gt;
+    &lt;!-- Position Column --&gt;
+    &lt;ng-container matColumnDef&#x3D;&quot;position&quot;&gt;
+      &lt;mat-header-cell *matHeaderCellDef&gt; No. &lt;/mat-header-cell&gt;
+      &lt;mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt; {{element.position}} &lt;/mat-cell&gt;
+    &lt;/ng-container&gt;
+    &lt;!-- Name Column --&gt;
+    &lt;ng-container matColumnDef&#x3D;&quot;nombre&quot;&gt;
+      &lt;mat-header-cell *matHeaderCellDef&gt; Nombre &lt;/mat-header-cell&gt;
+      &lt;mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt; {{element.nombre}} &lt;/mat-cell&gt;
+    &lt;/ng-container&gt;
+    &lt;!-- Weight Column --&gt;
+    &lt;ng-container matColumnDef&#x3D;&quot;apellido&quot;&gt;
+      &lt;mat-header-cell *matHeaderCellDef&gt; Apellido &lt;/mat-header-cell&gt;
+      &lt;mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt; {{element.apellido}} &lt;/mat-cell&gt;
+    &lt;/ng-container&gt;
+    &lt;!-- Symbol Column --&gt;
+    &lt;ng-container matColumnDef&#x3D;&quot;email&quot;&gt;
+      &lt;mat-header-cell *matHeaderCellDef&gt; Email &lt;/mat-header-cell&gt;
+      &lt;mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt; {{element.email}} &lt;/mat-cell&gt;
+    &lt;/ng-container&gt;
+    &lt;ng-container matColumnDef&#x3D;&quot;pais&quot;&gt;
+      &lt;mat-header-cell *matHeaderCellDef&gt; Pais &lt;/mat-header-cell&gt;
+      &lt;mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt; {{element.pais}} &lt;/mat-cell&gt;
+    &lt;/ng-container&gt; 
+    &lt;ng-container matColumnDef&#x3D;&quot;accion&quot;&gt;
+      &lt;mat-header-cell *matHeaderCellDef&gt; Acción &lt;/mat-header-cell&gt;
+      &lt;mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt; 
+        &lt;span class&#x3D;&quot;material-icons&quot;  (click)&#x3D;&quot;accion(&#x27;eliminar&#x27;, element)&quot;&gt; 
+        delete
+      &lt;/span&gt; 
+      &lt;span class&#x3D;&quot;material-icons&quot; (click)&#x3D;&quot;accion(&#x27;ver&#x27;, element)&quot;&gt;
+        visibility
+      &lt;/span&gt;
+      &lt;span class&#x3D;&quot;material-icons&quot; (click)&#x3D;&quot;accion(&#x27;edita&#x27;,element)&quot;&gt;
+        perm_identity
+      &lt;/span&gt;
+    &lt;/mat-cell&gt;
+    &lt;/ng-container&gt;
+    &lt;mat-header-row *matHeaderRowDef&#x3D;&quot;displayedColumns&quot;&gt;&lt;/mat-header-row&gt;
+    &lt;mat-row *matRowDef&#x3D;&quot;let row; columns: displayedColumns;&quot;&gt;&lt;/mat-row&gt;
+  &lt;/mat-table&gt;
+  &lt;mat-paginator #paginator 
+
+  (page)&#x3D;&quot;mostrarMas($event)&quot;
+  
+    [pageSizeOptions]&#x3D;&quot;[4]&quot;
+     [showFirstLastButtons]&#x3D;&quot;true&quot;&gt;
+  &lt;/mat-paginator&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;row&quot;&gt;
+
+&lt;/div&gt;
+
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./index.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.example-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+.mat-table {
+  overflow: auto;
+  max-height: 500px;
+}
+
+
+.material-icons {
+    font-family: &#x27;Material Icons&#x27;;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: &#x27;liga&#x27;;
+    color: rebeccapurple !important;
+    width: 31px!important;
+    height: 29px!important;
+    cursor: pointer!important;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row"><div class="col-12" ><!--  <span><img src="./assets/app/media/img/products/en-contruccion.jpeg" alt=""> </span>--><div class="example-container mat-elevation-z8">  <mat-table #table [dataSource]="dataSource">    <!-- Position Column -->    <ng-container matColumnDef="position">      <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>      <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>    </ng-container>    <!-- Name Column -->    <ng-container matColumnDef="nombre">      <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>      <mat-cell *matCellDef="let element"> {{element.nombre}} </mat-cell>    </ng-container>    <!-- Weight Column -->    <ng-container matColumnDef="apellido">      <mat-header-cell *matHeaderCellDef> Apellido </mat-header-cell>      <mat-cell *matCellDef="let element"> {{element.apellido}} </mat-cell>    </ng-container>    <!-- Symbol Column -->    <ng-container matColumnDef="email">      <mat-header-cell *matHeaderCellDef> Email </mat-header-cell>      <mat-cell *matCellDef="let element"> {{element.email}} </mat-cell>    </ng-container>    <ng-container matColumnDef="pais">      <mat-header-cell *matHeaderCellDef> Pais </mat-header-cell>      <mat-cell *matCellDef="let element"> {{element.pais}} </mat-cell>    </ng-container>     <ng-container matColumnDef="accion">      <mat-header-cell *matHeaderCellDef> Acción </mat-header-cell>      <mat-cell *matCellDef="let element">         <span class="material-icons"  (click)="accion(\'eliminar\', element)">         delete      </span>       <span class="material-icons" (click)="accion(\'ver\', element)">        visibility      </span>      <span class="material-icons" (click)="accion(\'edita\',element)">        perm_identity      </span>    </mat-cell>    </ng-container>    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>  </mat-table>  <mat-paginator #paginator   (page)="mostrarMas($event)"      [pageSizeOptions]="[4]"     [showFirstLastButtons]="true">  </mat-paginator></div></div></div><div class="row"></div></div>'
+    var COMPONENTS = [{'name': 'AccordionControlComponent', 'selector': 'm-accordion-control'},{'name': 'ActionComponent', 'selector': 'm-action'},{'name': 'AppComponent', 'selector': 'body[m-root]'},{'name': 'AsideLeftComponent', 'selector': 'm-aside-left'},{'name': 'AsideRightComponent', 'selector': 'm-aside-right'},{'name': 'AuditLogComponent', 'selector': 'm-audit-log'},{'name': 'AuditLogComponent', 'selector': 'm-audit-log'},{'name': 'AuthComponent', 'selector': 'm-auth'},{'name': 'AuthNoticeComponent', 'selector': 'm-auth-notice'},{'name': 'AuthorProfitComponent', 'selector': 'm-author-profit'},{'name': 'BarChartComponent', 'selector': 'm-bar-chart'},{'name': 'BestSellerComponent', 'selector': 'm-best-seller'},{'name': 'BlogComponent', 'selector': 'm-blog'},{'name': 'BrandComponent', 'selector': 'm-brand'},{'name': 'BuilderComponent', 'selector': 'm-builder'},{'name': 'ChatComponent', 'selector': 'app-chat'},{'name': 'CodePreviewComponent', 'selector': 'm-code-preview'},{'name': 'CodePreviewInnerComponent', 'selector': 'm-code-preview-inner'},{'name': 'DashboardComponent', 'selector': 'm-dashboard'},{'name': 'DataTableComponent', 'selector': 'm-data-table'},{'name': 'Dayana1Component', 'selector': 'm-dayana1'},{'name': 'Dayana2Component', 'selector': 'm-dayana2'},{'name': 'Dayana3Component', 'selector': 'm-dayana3'},{'name': 'DayanaComponent', 'selector': 'm-dayana'},{'name': 'DoughnutChartComponent', 'selector': 'm-doughnut-chart'},{'name': 'ErrorPageComponent', 'selector': 'm-error-page'},{'name': 'FinanceStatsComponent', 'selector': 'm-finance-stats'},{'name': 'FooterComponent', 'selector': 'm-footer'},{'name': 'ForgotPasswordComponent', 'selector': 'm-forgot-password'},{'name': 'HeaderComponent', 'selector': 'm-header'},{'name': 'HeaderSearchComponent', 'selector': 'm-header-search'},{'name': 'IndexComponent', 'selector': 'm-index'},{'name': 'LanguageSelectorComponent', 'selector': 'm-language-selector'},{'name': 'ListSettingsComponent', 'selector': 'm-list-settings'},{'name': 'ListTimelineComponent', 'selector': 'm-list-timeline'},{'name': 'LoginComponent', 'selector': 'm-login'},{'name': 'MailComponent', 'selector': 'm-mail'},{'name': 'MaterialPreviewComponent', 'selector': 'm-material-preview'},{'name': 'MenuHorizontalComponent', 'selector': 'm-menu-horizontal'},{'name': 'MenuSectionComponent', 'selector': 'm-menu-section'},{'name': 'MessengerComponent', 'selector': 'm-messenger'},{'name': 'MessengerInComponent', 'selector': 'm-messenger-in'},{'name': 'MessengerOutComponent', 'selector': 'm-messenger-out'},{'name': 'NoticeComponent', 'selector': 'm-notice'},{'name': 'NotificationComponent', 'selector': 'm-notification'},{'name': 'PackagesComponent', 'selector': 'm-packages'},{'name': 'PagesComponent', 'selector': 'm-pages'},{'name': 'PortletComponent', 'selector': 'm-portlet'},{'name': 'ProfileComponent', 'selector': 'm-profile'},{'name': 'QuickActionComponent', 'selector': 'm-quick-action'},{'name': 'QuickSidebarComponent', 'selector': 'm-quick-sidebar'},{'name': 'RecentActivitiesComponent', 'selector': 'm-recent-activities'},{'name': 'RecentNotificationsComponent', 'selector': 'm-recent-notifications'},{'name': 'RecuperarPasswordComponent', 'selector': 'm-recuperar-password'},{'name': 'RegisterComponent', 'selector': 'm-register'},{'name': 'ScrollTopComponent', 'selector': 'm-scroll-top'},{'name': 'SearchDefaultComponent', 'selector': 'm-search-default'},{'name': 'SearchDropdownComponent', 'selector': 'm-search-dropdown'},{'name': 'SpinnerButtonComponent', 'selector': 'm-spinner-button'},{'name': 'StatComponent', 'selector': 'm-stat'},{'name': 'SubheaderComponent', 'selector': 'm-subheader'},{'name': 'SupportTicketsComponent', 'selector': 'm-support-tickets'},{'name': 'TasksComponent', 'selector': 'm-tasks'},{'name': 'TimelineItemComponent', 'selector': 'm-timeline-item'},{'name': 'TooltipsComponent', 'selector': 'm-tooltips'},{'name': 'TopbarComponent', 'selector': 'm-topbar'},{'name': 'UserManagementComponent', 'selector': 'm-user-management'},{'name': 'UserProfileComponent', 'selector': 'm-user-profile'}];
+    var DIRECTIVES = [{'name': 'AccordionControlPanelContentDirective', 'selector': 'ng-template[AccordionControlPanelContent]'},{'name': 'AccordionControlPanelDirective', 'selector': 'm-accordion-control-panel'},{'name': 'AccordionControlPanelTitleDirective', 'selector': 'ng-template[AccordionControlPanelTitle]'},{'name': 'ClipboardDirective', 'selector': '[clipboard]'},{'name': 'HeaderDirective', 'selector': '[mHeader]'},{'name': 'MenuAsideDirective', 'selector': '[mMenuAside]'},{'name': 'MenuAsideOffcanvasDirective', 'selector': '[mMenuAsideOffcanvas]'},{'name': 'MenuAsideToggleDirective', 'selector': '[mMenuAsideToggle]'},{'name': 'MenuHorizontalDirective', 'selector': '[mMenuHorizontal]'},{'name': 'MenuHorizontalOffcanvasDirective', 'selector': '[mMenuHorizontalOffcanvas]'},{'name': 'PortletDirective', 'selector': '[mPortlet]'},{'name': 'QuickSearchDirective', 'selector': '[mQuickSearch]'},{'name': 'QuickSidebarOffcanvasDirective', 'selector': '[mQuickSidebarOffcanvas]'},{'name': 'ScrollTopDirective', 'selector': '[mScrollTop]'}];
+    var ACTUAL_COMPONENT = {'name': 'IndexComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'IndexComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
