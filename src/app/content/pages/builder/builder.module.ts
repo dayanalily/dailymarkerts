@@ -7,7 +7,6 @@ import { PartialsModule } from '../../partials/partials.module';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatTabsModule } from '@angular/material/tabs';
-import { HighlightModule } from 'ngx-highlightjs';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 
 @NgModule({
@@ -19,8 +18,6 @@ import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 		NgbModule,
 		MatTabsModule,
 		PerfectScrollbarModule,
-		// HighlightModule.forRoot({ theme: 'googlecode' }),
-		HighlightModule,
 		RouterModule.forChild([
 			{
 				path: '',

@@ -13,19 +13,6 @@ import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { NoticeComponent } from './content/general/notice/notice.component';
 import { PortletModule } from './content/general/portlet/portlet.module';
 import { SpinnerButtonModule } from './content/general/spinner-button/spinner-button.module';
-import { BlogComponent } from './content/widgets/general/blog/blog.component';
-import { FinanceStatsComponent } from './content/widgets/general/finance-stats/finance-stats.component';
-import { PackagesComponent } from './content/widgets/general/packages/packages.component';
-import { TasksComponent } from './content/widgets/general/tasks/tasks.component';
-import { SupportTicketsComponent } from './content/widgets/general/support-tickets/support-tickets.component';
-import { RecentActivitiesComponent } from './content/widgets/general/recent-activities/recent-activities.component';
-import { RecentNotificationsComponent } from './content/widgets/general/recent-notifications/recent-notifications.component';
-import { AuditLogComponent } from './content/widgets/general/audit-log/audit-log.component';
-import { BestSellerComponent } from './content/widgets/general/best-seller/best-seller.component';
-import { AuthorProfitComponent } from './content/widgets/general/author-profit/author-profit.component';
-import { DataTableComponent } from './content/widgets/general/data-table/data-table.component';
-import { WidgetChartsModule } from './content/widgets/charts/widget-charts.module';
-import { StatComponent } from './content/widgets/general/stat/stat.component';
 
 import {  MatSortModule} from '@angular/material/sort';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -46,19 +33,7 @@ import { MatInputModule } from '@angular/material/input';
 		ScrollTopComponent,
 		TooltipsComponent,
 		ListSettingsComponent,
-		NoticeComponent,
-		BlogComponent,
-		FinanceStatsComponent,
-		PackagesComponent,
-		TasksComponent,
-		SupportTicketsComponent,
-		RecentActivitiesComponent,
-		RecentNotificationsComponent,
-		AuditLogComponent,
-		BestSellerComponent,
-		AuthorProfitComponent,
-		DataTableComponent,
-		StatComponent,
+		NoticeComponent
 	],
 	exports: [
 		QuickSidebarComponent,
@@ -66,18 +41,6 @@ import { MatInputModule } from '@angular/material/input';
 		TooltipsComponent,
 		ListSettingsComponent,
 		NoticeComponent,
-		BlogComponent,
-		FinanceStatsComponent,
-		PackagesComponent,
-		TasksComponent,
-		SupportTicketsComponent,
-		RecentActivitiesComponent,
-		RecentNotificationsComponent,
-		AuditLogComponent,
-		BestSellerComponent,
-		AuthorProfitComponent,
-		DataTableComponent,
-		StatComponent,
 		MatInputModule,
 		PortletModule,
 		SpinnerButtonModule
@@ -102,7 +65,7 @@ import { MatInputModule } from '@angular/material/input';
 		MatCheckboxModule,
 		MatIconModule,
 		MatToolbarModule,
-		WidgetChartsModule
+		
 	]
 })
 export class PartialsModule {}

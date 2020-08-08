@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { HighlightModule } from 'ngx-highlightjs';
 import { MaterialPreviewComponent } from './material-preview.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
@@ -16,8 +15,6 @@ import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 		CommonModule,
 		NgbModule,
 		CoreModule,
-		// HighlightModule.forRoot({ theme: 'googlecode' }),
-		HighlightModule,
 		PerfectScrollbarModule,
 
 		// material modules
